@@ -1,0 +1,76 @@
+[
+  {
+    "company": "Notion Labs",
+    "domain": "notion.com",
+    "enquiry_message": "We're looking for a tool to help our sales team research inbound leads before calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "$275M",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Airtable",
+    "domain": "airtable.com",
+    "enquiry_message": "Interested in automating research for our SDR team before outbound and inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Bending Spoons"
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "Acquired by Bending Spoons, announced Aug 4 2026 — recent enough to test whether the agent's search surfaces current status rather than stale 2021 Series F info."
+  },
+  {
+    "company": "Linear",
+    "domain": "linear.app",
+    "enquiry_message": "Evaluating tools to help our AE team get up to speed on inbound accounts faster.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series C",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": ["customer_count"],
+    "notes": "linear.app/customers and other current pages say 40,000+ companies; the June 2025 Series C announcement (linear.app/now/building-our-way) says 15,000+. Both real, both currently live — the agent should surface this, not silently pick one."
+  },
+  {
+    "company": "Retool",
+    "domain": "retool.com",
+    "enquiry_message": "Looking into research automation tools for our SDR org ahead of qualification calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series C"
+    },
+    "must_abstain": ["current_arr_or_revenue", "exact_current_headcount"],
+    "known_conflicts": [],
+    "notes": "Retool doesn't disclose revenue or headcount. The only ARR figure findable ($120M) is a third-party analyst estimate (Sacra), not company-disclosed — the agent should not present it as a verified fact."
+  },
+  {
+    "company": "Vercel",
+    "domain": "vercel.com",
+    "enquiry_message": "Our sales team wants a way to pull together account context automatically before inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series F",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Ramp",
+    "domain": "ramp.com",
+    "enquiry_message": "We'd like to see how this could speed up research for our SDR team before calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series F",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "Series F ($750M, $44B valuation) announced June 2026 — only ~2 months old at eval time, a good freshness check."
+  }
+]

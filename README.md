@@ -96,3 +96,105 @@ verifiable facts are genuinely sparse (the golden set's abstention and
 known-conflict subsets in CLAUDE.md §7 exist specifically to probe that).
 Phase 3's eval harness is what turns "seemed fine on 3 runs" into an actual
 number instead of an impression.
+
+**Update after Phase 3:** the degradation did show up — just across repeated
+runs of the same company, not within one run. See "Cross-run inconsistency"
+below. Re-running Notion Labs produced a materially different funding claim
+than the Phase 2 spot-check above.
+
+### Phase 3 — evaluation harness
+
+6-company pilot golden set (`eval/golden.json`), not yet the full 20 CLAUDE.md
+§7 specifies — see "Scope" below. Facts in the golden set were independently
+researched via live web search, not copied from the Phase 2 agent's own
+output — using the agent's prior answers as ground truth would make the eval
+circular. Companies: 4 ordinary (Notion Labs, Airtable, Linear, Vercel) +
+1 must-abstain (Retool — revenue/headcount it doesn't disclose) + 1
+known-conflict (Linear again — a real, independently-verified customer-count
+discrepancy between two of its own live pages).
+
+**Citation-validity judge** (`eval/judge.py`): `gpt-4o-mini`, temperature 0,
+binary verdict with reasoning first. Deliberately *not* a `gpt-5.6-*` model —
+that whole family forces `temperature=1` with no override, which would
+violate the temperature-0 requirement outright; `gpt-4o-mini` is a classic
+model that still honors it. Validated against 10 hand-labeled examples
+(`eval/judge_labels.json`) before trusting its numbers on the real run: **90%
+accuracy (9/10)**. The one miss is informative, not just noise — it
+conflated "the $120M figure is numerically correct" with "the company
+disclosed it" (it's actually a third-party analyst estimate), missing the
+verified-vs-estimated distinction that's the whole point of this project.
+Worth knowing as a limit on the judge, not something to prompt-tune away for
+one label.
+
+**Results — `uv run python eval/run.py`, 6/6 runs completed:**
+
+| Metric | Score |
+| --- | --- |
+| Citation validity | 83% |
+| Factual accuracy | 58% |
+| Avg. initial violations (pre-repair) | 0.50/brief |
+| Fraction of briefs needing ≥1 repair | 33% |
+| Abstention correctness | 83% |
+| Conflict detection | 100% |
+| Avg. cost/brief | $0.092 |
+| Avg. latency/brief | 34.6s |
+| Avg. tool calls/brief | 8.7 |
+
+Full per-claim detail and raw `Brief` objects are persisted to
+`eval/results/<company>.json` for each run — the summary numbers above are
+traceable back to exactly which claim failed and why, not just an aggregate.
+
+**What the misses actually are** (this is the part worth reading past the
+table):
+
+1. **Citation validity is weakest on hiring_signals, not funding/company
+   claims** (which hit 100% every run). Every hiring_signals miss was the
+   judge saying the re-fetched careers page didn't mention the specific role
+   titles the claim named. `fetch_page` is plain `requests` + BeautifulSoup
+   with no JS execution — if a careers page renders its listings
+   client-side, the agent may be asserting specific titles beyond what its
+   own fetched text actually contained. The harness re-fetches live at judge
+   time rather than replaying the original tool output, so this can't yet
+   fully separate "the agent overreached" from "the page changed between the
+   agent's fetch and the judge's" — a known gap, worth fixing before scaling
+   to 20 companies by persisting the original tool outputs too.
+
+2. **Most "factual accuracy" misses are honest hedging against a stale or
+   narrower source, not fabrication.** Ramp's funding claim explicitly named
+   its source and date — "Contrary Research reported... as of its October
+   16, 2025 update" — and was right about what that source said. It just
+   never found the actual June 2026 $750M Series F my golden label expected,
+   because the system prompt tells it to favor a handful of tool calls over
+   exhaustive search (a cost-control decision, §5). Airtable's brief didn't
+   find the August 2026 Bending Spoons acquisition (3 weeks old at eval
+   time) — but it explicitly listed "acquisitions after the December 2021
+   Series F" under `unverified` rather than asserting the stale info as
+   current. That's the hard constraints working correctly; the metric just
+   can't currently tell "wrong" apart from "well-hedged but shallow." Vercel
+   returned `funding: null` outright rather than guess — also scored as a
+   miss by the same blunt metric, also correct agent behavior. Refining
+   `factual_accuracy` to separate active misstatement from calibrated
+   non-coverage is the clearest next improvement to the harness itself.
+
+3. **Cross-run inconsistency, found by accident and worth taking
+   seriously.** Notion's funding claim in this Phase 3 run: *"Contrary
+   Research reports that Notion has raised $343.2M and is at Series C
+   stage"* (evidence: 1 source, no conflict raised). Notion's funding claim
+   in the Phase 2 spot-check two sections up: `$275M Series D`, with
+   `$343.2M` vs `$340.2M` explicitly raised and resolved as a **Conflict**
+   between two sources. Same company, same agent, same system prompt — two
+   runs, two different verified claims, because which sources a given run's
+   handful of tool calls happens to surface isn't deterministic. This is
+   exactly the citation-drift Phase 2 predicted, just visible only *across*
+   repeated runs rather than within a single long one — the scale at which
+   this pilot could actually observe it. It's the strongest single piece of
+   evidence in this pilot for why Phase 4's isolated, more thorough
+   sub-agents need to exist.
+
+**Scope note:** this is 6 companies, not CLAUDE.md's specified 20. The
+mechanism is proven and the numbers above are real, not placeholders — but a
+pilot this size shouldn't be read as a final verdict, especially for
+abstention/conflict correctness where the pilot has only one example each.
+Scaling the golden set (and the judge's label set proportionally) is the
+natural next increment before leaning on these numbers for the Phase 4
+comparison.

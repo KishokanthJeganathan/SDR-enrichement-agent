@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "company": {
+      "value": "Retool is an enterprise platform for building production-ready internal software, AI apps, workflows, and agents on connected business data with governance controls such as access controls and audit logging.",
+      "confidence": "HIGH",
+      "evidence": [
+        2,
+        3
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Retool raised a $45M Series C2 round in July 2022 at a reported $3.2B valuation; the reported lead investors included Sequoia Capital, John and Patrick Collison, Nat Friedman, Elad Gil, Daniel Gross, and Caryn Marooney.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        4
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Retool\u2019s careers page listed 33 open roles across business operations, data science and analytics, engineering, product, professional services, sales, and sales development, among other functions.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Current openings include a Staff Product Manager, Automation; Senior Product Manager, Enterprise Platform; Software Engineer, Governance; and Software Engineer, Enterprise Expansion\u2014signals of continued investment in automation, enterprise capabilities, and governance.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Potential fit for governed SDR pre-call research automation: use AI workflows/agents to connect CRM and other business systems, synthesize account context, and retain auditability and role-based access. This is an inference from Retool\u2019s stated workflow, agent, data-connection, and governance capabilities\u2014not confirmation of its current SDR tooling or process.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        2,
+        3
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "MID-MARKET to ENTERPRISE (tentative): Retool presents itself as an enterprise platform and reports 10,000+ teams using its products; the live hiring footprint also spans Sales Development and enterprise-focused product/engineering roles. Actual budget, SDR-seat count, and procurement scope are unverified.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current SDR-org size, structure, and leadership.",
+      "Existing sales-engagement, CRM, account-intelligence, or research-automation tools.",
+      "Whether Retool has an active project, budget, timeline, or procurement process for SDR research automation.",
+      "Which data sources Retool would permit an SDR research workflow to access."
+    ],
+    "conflicts": [],
+    "suggested_opening": "Retool is clearly building around AI workflows and enterprise governance. For qualification calls, where would a research workflow need to pull context from today\u2014and how important are permissioning, audit trails, and a human review step before SDRs use the output?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://retool.com/careers",
+        "fetched_at": "2026-08-24T13:05:14.904794Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://retool.com",
+        "fetched_at": "2026-08-24T13:05:20.613782Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://retool.com/ai",
+        "fetched_at": "2026-08-24T13:05:20.614943Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://www.thesaasnews.com/news/retool-raised-45-million-in-series-c2",
+        "fetched_at": "2026-08-24T13:05:23.263251Z",
+        "published_at": "2022-07-28T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T13:05:23.263251Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Retool is an enterprise platform for building production-ready internal software, AI apps, workflows, and agents on connected business data with governance controls such as access controls and audit logging.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Retool is an app builder that provides enterprise security and governance features, including access controls and audit logging. It mentions that apps built with Retool are production-ready and that governance is built into the platform, which aligns with the claim about Retool being an enterprise platform for building internal software and AI applications with governance controls. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Retool raised a $45M Series C2 round in July 2022 at a reported $3.2B valuation; the reported lead investors included Sequoia Capital, John and Patrick Collison, Nat Friedman, Elad Gil, Daniel Gross, and Caryn Marooney.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Retool raised $45 million in a Series C2 funding round in July 2022, and it confirms the valuation of the company at $3.2 billion. Additionally, it lists the lead investors, which matches the names provided in the claim. Therefore, the source text directly supports the claim made."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Retool\u2019s careers page listed 33 open roles across business operations, data science and analytics, engineering, product, professional services, sales, and sales development, among other functions.",
+      "supported": false,
+      "reasoning": "The source text does not provide any specific information about the number of open roles at Retool or the specific functions they cover. It mentions that there are openings and describes the company culture and interview process, but it does not quantify the roles or list them by category. Therefore, the claim that Retool\u2019s careers page listed 33 open roles across various functions is not supported by the text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Current openings include a Staff Product Manager, Automation; Senior Product Manager, Enterprise Platform; Software Engineer, Governance; and Software Engineer, Enterprise Expansion\u2014signals of continued investment in automation, enterprise capabilities, and governance.",
+      "supported": false,
+      "reasoning": "The source text does not provide specific information about current job openings, including the roles of Staff Product Manager, Automation; Senior Product Manager, Enterprise Platform; Software Engineer, Governance; and Software Engineer, Enterprise Expansion. It discusses the company culture, values, and general information about Retool, but it does not list any job openings or imply the specific roles mentioned in the claim. Therefore, the claim is not supported by the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true
+  },
+  "abstain_detail": {
+    "current_arr_or_revenue": false,
+    "exact_current_headcount": false
+  },
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 7,
+    "input_tokens": 27851,
+    "output_tokens": 1720,
+    "estimated_cost_usd": 0.076342,
+    "latency_seconds": 27.739139666082337
+  }
+}

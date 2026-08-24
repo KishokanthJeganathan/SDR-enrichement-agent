@@ -1,0 +1,91 @@
+{
+  "brief": {
+    "company": {
+      "value": "Notion is a productivity software and AI-workspace company that is building a sales-led motion alongside its product-led growth model.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Contrary Research reports that Notion has raised $343.2M and is at Series C stage.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [],
+    "likely_use_case": {
+      "value": "Likely fit: augment Notion\u2019s sales workflow with inbound-account research and prioritization. Notion has been shifting toward an upmarket, more outbound sales motion and has already internally built tooling that combines product signals, custom account research, and email drafts; an external research tool could help standardize and accelerate pre-call preparation without adding manual research work.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Strategic / enterprise evaluation potential: Notion is investing in a sales-led upmarket motion and internal AI-enabled sales workflows, suggesting meaningful value if a tool can demonstrably improve seller research quality and efficiency. Budget, incumbent tooling, and buying process are unknown.",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current open roles and hiring volume: the Notion careers page was checked, but its full content was unavailable to fetch due to robots restrictions.",
+      "Sales-team size, current inbound-research workflow, incumbent vendors, budget, procurement process, and timeline.",
+      "Whether the enquiry represents a broader rollout or an individual/team-level evaluation."
+    ],
+    "conflicts": [],
+    "suggested_opening": "Notion has already been experimenting with using product signals, custom research, and drafted outreach to help its sales team focus on the right accounts. For inbound calls specifically, where does the team still lose time assembling account context, and what would a useful pre-call brief need to include?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://www.firstround.com/ai/notion?ref=review.firstround.com",
+        "fetched_at": "2026-08-24T13:03:07.560411Z",
+        "published_at": "2025-12-18T00:00:00"
+      },
+      {
+        "index": 2,
+        "url": "https://research.contrary.com/company/notion",
+        "fetched_at": "2026-08-24T13:03:07.561474Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T13:03:17.484639Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Notion is a productivity software and AI-workspace company that is building a sales-led motion alongside its product-led growth model.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Notion is a \"productivity software and AI workspace\" and mentions that it is regarded as one of the most impressive product-led growth (PLG) companies while also building out a \"sales-led motion.\" This directly supports the claim that Notion is a productivity software and AI-workspace company that is developing a sales-led approach alongside its existing product-led growth model."
+    },
+    {
+      "field": "funding",
+      "claim": "Contrary Research reports that Notion has raised $343.2M and is at Series C stage.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Notion has raised a total funding of $343.2M and is currently at the Series C stage. This directly supports the claim made about Notion's funding and stage of development."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 1,
+    "initial_violations": 2,
+    "model_calls": 5,
+    "tool_calls": 10,
+    "input_tokens": 42851,
+    "output_tokens": 2503,
+    "estimated_cost_usd": 0.115738,
+    "latency_seconds": 45.06809945916757
+  }
+}

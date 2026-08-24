@@ -1,0 +1,137 @@
+{
+  "brief": {
+    "company": {
+      "value": "Linear is a remote-first software company building a product-development system for teams and agents. Its current positioning spans customer discovery, planning, and execution, with AI and agent capabilities integrated into product workflows.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Linear announced an $82M Series C at a $1.25B valuation on June 10, 2025. Accel led, with continued support from Sequoia and 01A, among others.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Linear is actively hiring Account Executives across Enterprise, Growth, and Startups segments in North America. Its Startup AE posting says it is layering a product-led sales motion onto its self-serve business to reach more and larger companies.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The careers page also lists Customer Success, Implementation, Solutions Engineering, Deal Desk, Revenue Operations, and Demand Generation roles\u2014evidence of investment across the GTM and post-sale motion.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely evaluating an account-research and AE-enablement workflow that gives a growing, segmented sales team fast account context before inbound-trial/evaluation conversations. This aligns with Linear\u2019s move from self-serve toward product-led sales and its AEs\u2019 responsibility to guide prospects through trials and build stakeholder relationships.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Mid-market / team rollout potential",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current AE headcount and team structure",
+      "Existing sales-intelligence, CRM, or enablement stack",
+      "Budget, buying process, and target implementation timeline",
+      "Whether the inbound-accounts initiative is limited to AEs or intended for the wider GTM organization"
+    ],
+    "conflicts": [
+      {
+        "field": "Customer/company count",
+        "positions": [
+          "Linear\u2019s June 2025 Series C announcement says that over 15,000 companies choose Linear.",
+          "A current Startup AE posting says Linear is the platform of choice for more than 40,000 companies."
+        ],
+        "evidence": [
+          1,
+          2
+        ],
+        "resolution": "Leave unresolved: the sources may use different definitions or reporting dates. Avoid using either figure for sizing the opportunity."
+      }
+    ],
+    "suggested_opening": "You mentioned helping AEs get up to speed on inbound accounts faster. Given Linear is expanding a product-led sales motion across Enterprise, Growth, and Startups, I\u2019d be interested in how reps currently assemble account context when a self-serve prospect begins an evaluation\u2014and where that research slows down discovery or follow-up.",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://linear.app/careers/c21af93e-210f-4969-8eaa-90fb16a5b720",
+        "fetched_at": "2026-08-24T13:04:37.135868Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://linear.app/now/building-our-way",
+        "fetched_at": "2026-08-24T13:04:43.223693Z",
+        "published_at": "2025-06-10T00:00:00"
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T13:04:43.223693Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Linear is a remote-first software company building a product-development system for teams and agents. Its current positioning spans customer discovery, planning, and execution, with AI and agent capabilities integrated into product workflows.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Linear is building a product development system for teams and agents, which directly supports the claim. It also mentions that AI is integrated into their workflows, aligning with the claim's mention of AI and agent capabilities. Furthermore, the text describes Linear as a remote-first company, confirming the claim's assertion about their work model. Therefore, the claim is well-supported by the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Linear announced an $82M Series C at a $1.25B valuation on June 10, 2025. Accel led, with continued support from Sequoia and 01A, among others.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Linear raised an $82M Series C at a $1.25B valuation on June 10, 2025, and that the round was led by Accel with continued support from Sequoia and 01A. This directly supports the claim made."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Linear is actively hiring Account Executives across Enterprise, Growth, and Startups segments in North America. Its Startup AE posting says it is layering a product-led sales motion onto its self-serve business to reach more and larger companies.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Linear is hiring for the Account Executive position in the Startups segment and mentions that this role is open to candidates based in North America. Additionally, it confirms that Linear is layering a product-led sales motion onto its self-serve business to reach more and larger companies. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "The careers page also lists Customer Success, Implementation, Solutions Engineering, Deal Desk, Revenue Operations, and Demand Generation roles\u2014evidence of investment across the GTM and post-sale motion.",
+      "supported": false,
+      "reasoning": "The source text does not mention any specific roles such as Customer Success, Implementation, Solutions Engineering, Deal Desk, Revenue Operations, or Demand Generation. It primarily focuses on the Account Executive position and the company's growth and culture. Therefore, it does not support the claim that the careers page lists those specific roles as evidence of investment across the GTM and post-sale motion."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true,
+    "has_open_engineering_roles": true
+  },
+  "abstain_detail": {},
+  "conflict_detail": {
+    "customer_count": true
+  },
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 5,
+    "tool_calls": 9,
+    "input_tokens": 44157,
+    "output_tokens": 1587,
+    "estimated_cost_usd": 0.107358,
+    "latency_seconds": 30.581672833068296
+  }
+}

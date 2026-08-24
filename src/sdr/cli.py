@@ -21,8 +21,8 @@ def main() -> None:
         company_name=args.company,
         message=args.message,
     )
-    brief = run(enquiry)
-    print(render_brief(brief))
+    trace = run(enquiry)
+    print(render_brief(trace.brief))
 
 
 if __name__ == "__main__":

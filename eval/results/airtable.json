@@ -1,0 +1,91 @@
+{
+  "brief": {
+    "company": {
+      "value": "Airtable is a connected-apps platform whose low-code tools let knowledge workers build customized applications for business processes; it also provides trigger-and-action automations and third-party integrations.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment reported at that time to $1.36B at an $11B pre-money valuation.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [],
+    "likely_use_case": {
+      "value": "Airtable is likely evaluating SDR pre-call and inbound research automation that can enrich or update a central prospect record, then trigger handoff or notification workflows. This fits Airtable\u2019s documented trigger-and-action automations, third-party integrations, and example of notifying an assigned salesperson after a prospective customer submits a contact form.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / strategic evaluation; estimate only, not a pricing signal.",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current open roles and hiring priorities: Airtable\u2019s careers page was checked, but its fetched content did not expose job listings.",
+      "Any funding rounds, valuation changes, or acquisitions after the December 2021 Series F.",
+      "The SDR team\u2019s current research workflow, data sources, CRM, volume, and budget."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You already position Airtable around configurable, integrated automations. For the SDR workflow specifically, where does pre-call or inbound research still require someone to leave the workflow, gather information manually, and then update the prospect record?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://www.airtable.com/newsroom/series-f",
+        "fetched_at": "2026-08-24T13:03:55.641590Z",
+        "published_at": "2021-12-13T00:00:00"
+      },
+      {
+        "index": 2,
+        "url": "https://www.airtable.com/guides/customize/save-time-with-automations",
+        "fetched_at": "2026-08-24T13:04:03.430261Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T13:04:03.430261Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Airtable is a connected-apps platform whose low-code tools let knowledge workers build customized applications for business processes; it also provides trigger-and-action automations and third-party integrations.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Airtable is a connected apps platform that enables knowledge workers to build customized applications for various business processes using low-code tools. It also mentions the company's focus on product development and the ability to create tailored applications, which aligns with the claim about providing trigger-and-action automations and third-party integrations. Therefore, the source text supports the claim."
+    },
+    {
+      "field": "funding",
+      "claim": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment reported at that time to $1.36B at an $11B pre-money valuation.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Airtable announced a $735 million Series F funding round on December 13, 2021, and confirms that this funding brings the total investment to $1.36 billion at an $11 billion pre-money valuation. Therefore, the claim is directly supported by the information provided in the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 1,
+    "initial_violations": 1,
+    "model_calls": 6,
+    "tool_calls": 8,
+    "input_tokens": 42134,
+    "output_tokens": 1948,
+    "estimated_cost_usd": 0.107644,
+    "latency_seconds": 34.026704125106335
+  }
+}

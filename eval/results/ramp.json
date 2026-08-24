@@ -1,0 +1,85 @@
+{
+  "brief": {
+    "company": {
+      "value": "Ramp is a private fintech/finance-software company that provides corporate cards, expense management, bill pay, vendor management, procurement, and AI-enabled finance-operations automation.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Contrary Research reported that Ramp had raised $2.7B in total funding and was at Series E as of its October 16, 2025 update.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [],
+    "likely_use_case": {
+      "value": "Ramp is likely evaluating the product as an AI-enabled research workflow for SDR pre-call preparation. This is a plausible fit because Ramp is positioned around using AI agents to automate operational work at scale; the stated enquiry specifically identifies speeding up SDR research before calls as the evaluation goal.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / strategic potential",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current open roles and hiring priorities: the Ramp careers page was checked, but its full content was unavailable to the research tool due to robots restrictions.",
+      "More recent funding, valuation, employee count, and go-to-market-team details were not independently verified from accessible full-text sources.",
+      "The specific SDR systems, data sources, and research bottlenecks Ramp wants to improve were not disclosed."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned speeding up SDR research before calls. Given Ramp\u2019s focus on applying AI agents to operational workflows, I\u2019d be interested in understanding where rep prep is still manual today\u2014account research, trigger discovery, qualification, or briefing creation\u2014and showing how we could compress that without sacrificing confidence in the output.",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://research.contrary.com/company/ramp",
+        "fetched_at": "2026-08-24T13:06:51.429537Z",
+        "published_at": "2025-10-16T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T13:06:51Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Ramp is a private fintech/finance-software company that provides corporate cards, expense management, bill pay, vendor management, procurement, and AI-enabled finance-operations automation.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Ramp provides a suite of products designed to automate finance operations, including expense management software, corporate cards, bill payments, vendor management, and procurement operations. It also mentions that Ramp is a private fintech company, which aligns with the claim. Therefore, the source text directly supports the claim made about Ramp's offerings and its status as a private company."
+    },
+    {
+      "field": "funding",
+      "claim": "Contrary Research reported that Ramp had raised $2.7B in total funding and was at Series E as of its October 16, 2025 update.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Ramp has raised a total funding of $2.7 billion and is currently at Series E as of the update on October 16, 2025. This directly supports the claim made."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 5,
+    "tool_calls": 12,
+    "input_tokens": 33848,
+    "output_tokens": 1888,
+    "estimated_cost_usd": 0.090352,
+    "latency_seconds": 49.35326787503436
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "claim": "Linear's Series C round was led by Accel.",
+    "evidence": "Linear announced an $82 million round of Series C funding. The round was led by Accel, with participation from existing investors 01A and Sequoia, and new investors Seven Seven Six and Designer Fund.",
+    "expected": true
+  },
+  {
+    "claim": "Linear has over 100,000 customers.",
+    "evidence": "Linear powers more than 40,000 organizations, which is mentioned across multiple pages on their website including their customers, about, pricing, and various product pages.",
+    "expected": false
+  },
+  {
+    "claim": "Ramp is headquartered in New York.",
+    "evidence": "Ramp is a New York-based fintech company. The funding round was led by ICONIQ, GIC, and Ontario Teachers' Pension Plan.",
+    "expected": true
+  },
+  {
+    "claim": "Ramp has over 500 engineers.",
+    "evidence": "Ramp raises $750 million in Series F financing at a $44 billion valuation, a 38% increase from its $32 billion valuation seven months ago.",
+    "expected": false
+  },
+  {
+    "claim": "Vercel closed a $300M Series F round.",
+    "evidence": "Vercel closed a $300 million Series F funding round at a post-money valuation of $9.3 billion, co-led by Accel and GIC.",
+    "expected": true
+  },
+  {
+    "claim": "Vercel is headquartered in New York.",
+    "evidence": "Vercel is headquartered in San Francisco, California, United States.",
+    "expected": false
+  },
+  {
+    "claim": "Retool's Series C was led by Sequoia Capital.",
+    "evidence": "Retool raised a $45M Series C in July 2022 at a $3.2B valuation, led by Sequoia Capital.",
+    "expected": true
+  },
+  {
+    "claim": "Retool's annual recurring revenue is $120M, as disclosed by the company.",
+    "evidence": "Sacra estimates that Retool hit $120M in annual recurring revenue (ARR) in October 2025, up from $90M at the end of 2024. Retool is a private company and does not publish financial results.",
+    "expected": false
+  },
+  {
+    "claim": "Notion is headquartered in San Francisco.",
+    "evidence": "Notion's headquarters is located at 685 Market Street, San Francisco.",
+    "expected": true
+  },
+  {
+    "claim": "Notion raised a $500M funding round in 2021.",
+    "evidence": "Notion's latest funding was a $275M Series D round on Sep 28, 2021, with participation from 3 investors.",
+    "expected": false
+  }
+]

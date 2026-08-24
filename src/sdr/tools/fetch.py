@@ -52,6 +52,16 @@ def _fetch(url: str) -> dict:
     return {"url": url, "fetched_at": fetched_at, "text": _extract_text(response.text)[:_MAX_CHARS]}
 
 
+def fetch_text(url: str) -> str | None:
+    """Fetch a URL and return its extracted text, or None on failure. Public,
+    non-tool helper — used by the eval harness (Phase 3) to re-fetch a cited
+    source and check whether it actually supports the claim, without
+    reaching into this module's private _fetch().
+    """
+    result = _fetch(url)
+    return result.get("text")
+
+
 @tool
 def fetch_page(url: str) -> str:
     """Fetch a specific page and return its visible text. Returns JSON with
