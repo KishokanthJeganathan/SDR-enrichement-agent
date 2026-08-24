@@ -15,6 +15,13 @@ Confidence = Literal["HIGH", "MEDIUM", "LOW"]
 ClaimKind = Literal["verified", "inference"]
 
 
+class Enquiry(BaseModel):
+    contact_name: str  # passed through, never researched
+    contact_email: str  # domain is used; the address is not researched
+    company_name: str
+    message: str
+
+
 class Source(BaseModel):
     index: int
     url: str
