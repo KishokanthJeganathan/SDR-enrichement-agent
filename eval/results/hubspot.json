@@ -1,0 +1,140 @@
+{
+  "brief": {
+    "company": {
+      "value": "HubSpot is a public customer-platform software company. Its investor-relations site reports over 306,000 customers in more than 135 countries, $3.4B trailing-twelve-month revenue, and 9,016 employees as of June 30, 2026.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Public funding-history directory Startup Intros reports that HubSpot raised $100.5M across six venture rounds, most recently a $35M Series E in November 2012.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "HubSpot's sales careers page describes Business Development Representatives conducting high-volume prospecting to generate qualified leads, alongside Account Executives using daily outbound prospecting. The page also directs candidates to open sales roles.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "HubSpot's main careers page says employees work hands-on with AI and describes the company as remote-first and results-oriented.",
+        "confidence": "HIGH",
+        "evidence": [
+          4
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "HubSpot is likely assessing an account-research tool for its own SDR/BDR motion, with the strongest fit being faster, source-backed account context and prioritization for high-volume outbound work. This would need clear differentiation from\u2014or complementarity with\u2014HubSpot's own AI prospecting capabilities, which already cover prospect research, enrichment, buying signals, scoring, and personalized outreach.",
+      "confidence": "HIGH",
+      "evidence": [
+        3,
+        5
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / strategic evaluation",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Whether HubSpot has an active procurement project, approved budget, timeline, or technical requirements for an external account-research tool.",
+      "Whether the tool would be used internally by HubSpot's SDR/BDR organization, embedded in HubSpot's product, or evaluated for another team.",
+      "The number of currently open SDR/BDR roles; the careers material confirms the role and sales organization but not a count of live openings."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You clearly operate a high-volume outbound motion: HubSpot describes BDRs as generating qualified leads through high-volume prospecting. Since HubSpot also has native AI prospecting features, would it be useful to compare where external, source-backed account research could add coverage or depth before records and outreach enter your existing workflow?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://ir.hubspot.com",
+        "fetched_at": "2026-08-24T14:06:33.227561Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://startupintros.com/orgs/hubspot",
+        "fetched_at": "2026-08-24T14:06:18.457495Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://www.hubspot.com/careers/sales",
+        "fetched_at": "2026-08-24T14:06:33.228997Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://hubspot.com/careers",
+        "fetched_at": "2026-08-24T14:06:18.454614Z",
+        "published_at": null
+      },
+      {
+        "index": 5,
+        "url": "https://www.hubspot.com/products/sales/ai-sales-prospecting",
+        "fetched_at": "2026-08-24T14:06:25.809998Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:06:33.228997Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "HubSpot is a public customer-platform software company. Its investor-relations site reports over 306,000 customers in more than 135 countries, $3.4B trailing-twelve-month revenue, and 9,016 employees as of June 30, 2026.",
+      "supported": true,
+      "reasoning": "The source text confirms that HubSpot has over 306,000 customers in more than 135 countries, reports a trailing twelve-month revenue of $3.4 billion, and has 9,016 employees as of June 30, 2026. It also identifies HubSpot as a public company by including stock information, which implies it operates in the public market. Therefore, the claim is fully supported by the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Public funding-history directory Startup Intros reports that HubSpot raised $100.5M across six venture rounds, most recently a $35M Series E in November 2012.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that HubSpot has raised a total of $100.5M across 6 funding rounds, and it specifically mentions that the most recent round was a $35M Series E in November 2012. This directly supports the claim made about HubSpot's funding history as reported by Startup Intros."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "HubSpot's sales careers page describes Business Development Representatives conducting high-volume prospecting to generate qualified leads, alongside Account Executives using daily outbound prospecting. The page also directs candidates to open sales roles.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that as a Business Development Representative (BDR), one will conduct high-volume prospecting to generate qualified leads. It also mentions that Account Executives use daily outbound prospecting strategies to find new business. Additionally, the text includes a section titled 'Sales Roles at HubSpot' which directs candidates to view open sales roles, confirming that the page indeed directs candidates to open sales positions. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "HubSpot's main careers page says employees work hands-on with AI and describes the company as remote-first and results-oriented.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that employees at HubSpot work \"hands-on with AI\" and describes the company as \"remote-first, trust-driven, and results-oriented.\" This directly supports the claim made about HubSpot's main careers page."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 9,
+    "input_tokens": 32911,
+    "output_tokens": 1661,
+    "estimated_cost_usd": 0.085754,
+    "latency_seconds": 33.81108024995774
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "brief": {
+    "company": {
+      "value": "Datadog is a publicly traded (NASDAQ: DDOG) AI-powered observability and security SaaS platform for cloud applications, spanning infrastructure and application monitoring, log management, user-experience monitoring, and cloud security.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": null,
+    "hiring_signals": [
+      {
+        "value": "Datadog reports 8,100+ employees and is actively hiring globally, with 147 open Sales roles and 96 Technical Solutions roles listed on its careers page.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The current hiring mix indicates continued investment in go-to-market coverage and technical customer-facing capacity.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          1
+        ],
+        "kind": "inference"
+      }
+    ],
+    "likely_use_case": {
+      "value": "An account-context solution is likely most relevant for helping Datadog's expanding sales organization prepare for and route inbound opportunities: surfacing company, technical environment, and likely observability/security priorities before AE conversations. This fits a technical, multi-product sales motion supported by substantial Sales and Technical Solutions hiring.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise \u2014 likely $100K+ annual contract potential, contingent on deployment scope across AEs, SDRs, and supporting technical teams.",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "The current size of Datadog's AE and SDR teams beyond the open-role counts.",
+      "The CRM, sales-engagement, enrichment, or account-research tools currently in use.",
+      "The intended initial user group, workflow integration requirements, budget, procurement process, and timeline.",
+      "Whether the evaluation is for a point solution or a broader revenue-technology consolidation."
+    ],
+    "conflicts": [],
+    "suggested_opening": "I saw Datadog is continuing to add sales and technical-solutions capacity globally while serving a highly technical observability and security market. For inbound opportunities, how are AEs currently getting a fast, consistent view of an account's cloud environment, likely priorities, and relevant Datadog use cases before the first call?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://datadoghq.com/careers",
+        "fetched_at": "2026-08-24T14:02:32.418963Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-announces-dash-2026-ai-and-observability-event",
+        "fetched_at": "2026-08-24T14:02:38.799711Z",
+        "published_at": "2026-02-18T17:00:00Z"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:02:38.801647Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Datadog is a publicly traded (NASDAQ: DDOG) AI-powered observability and security SaaS platform for cloud applications, spanning infrastructure and application monitoring, log management, user-experience monitoring, and cloud security.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Datadog is an \"AI-powered observability and security platform for cloud applications\" and mentions its listing on NASDAQ as \"(NASDAQ: DDOG)\". This directly supports the claim that Datadog is a publicly traded AI-powered observability and security SaaS platform for cloud applications, covering various aspects such as infrastructure and application monitoring, log management, user-experience monitoring, and cloud security. Therefore, the claim is fully supported by the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Datadog reports 8,100+ employees and is actively hiring globally, with 147 open Sales roles and 96 Technical Solutions roles listed on its careers page.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Datadog has \"8,100+ employees\" and lists \"147 positions\" in Sales and \"96 positions\" in Technical Solutions, confirming the details of the claim. Additionally, it mentions that Datadog is looking to expand its global presence, which implies that they are actively hiring. Therefore, the claim is directly supported by the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 7,
+    "input_tokens": 23104,
+    "output_tokens": 1473,
+    "estimated_cost_usd": 0.063884,
+    "latency_seconds": 44.94288216601126
+  }
+}

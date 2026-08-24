@@ -1,0 +1,114 @@
+{
+  "brief": {
+    "company": {
+      "value": "Mixpanel is a product-analytics platform that uses an event-based data model to help teams measure and optimize digital-product behavior; its site lists product, web, and mobile analytics, experimentation/feature flagging, session replay, and AI/data capabilities.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Mixpanel secured a $200M Series C growth investment from Bain Capital Tech Opportunities in November 2021 at a $1.05B valuation. Bain stated that total investment to date was $277M, including a prior $65M Series B led by Andreessen Horowitz in 2014.",
+      "confidence": "HIGH",
+      "evidence": [
+        3
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Mixpanel\u2019s careers page says it strategically hires in hub locations and uses both in-person and remote work depending on the role; it lists hubs across North America, Europe, Asia-Pacific, and Latin America. The fetched page did not expose specific open roles.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: an SDR pre-call research workflow that quickly surfaces a prospect\u2019s digital-product maturity, analytics/experimentation priorities, and relevant triggers\u2014helping Mixpanel\u2019s go-to-market team tailor inbound follow-up for product-, data-, marketing-, and engineering-oriented buyers. This is inferred from Mixpanel\u2019s product focus and its stated emphasis on expanding to digital-first businesses.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Likely a mid-market-to-enterprise sales-tool opportunity, but scope and budget are unverified. This estimate is based on Mixpanel\u2019s global operating footprint and historically substantial growth funding, not on a confirmed current procurement budget.",
+      "confidence": "LOW",
+      "evidence": [
+        2,
+        3
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current SDR-team size, tooling stack, and ownership of inbound-call research.",
+      "Whether Mixpanel has active job openings; the careers page was checked but specific listings were not visible in the fetched content.",
+      "Current revenue, employee count, and current budget or procurement process for a research tool."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned evaluating a research tool for SDRs before inbound calls. Given Mixpanel\u2019s focus on helping digital-product teams act on behavioral data, would it be useful to see how reps could arrive at calls with a concise view of a prospect\u2019s product motion, likely analytics priorities, and relevant triggers?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://mixpanel.com/about",
+        "fetched_at": "2026-08-24T14:04:19.857162Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://mixpanel.com/careers",
+        "fetched_at": "2026-08-24T14:04:15.817284Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://www.baincapital.com/news/product-analytics-leader-mixpanel-secures-200-million-growth-investment-help-more-teams-build",
+        "fetched_at": "2026-08-24T14:04:19.858232Z",
+        "published_at": "2021-11-16T00:00:00"
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:04:19.859089Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Mixpanel is a product-analytics platform that uses an event-based data model to help teams measure and optimize digital-product behavior; its site lists product, web, and mobile analytics, experimentation/feature flagging, session replay, and AI/data capabilities.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that Mixpanel is a product analytics platform that helps measure and optimize products, including web and mobile analytics, experimentation/feature flagging, session replay, and AI capabilities. This directly supports the claim made about Mixpanel's functionalities and offerings."
+    },
+    {
+      "field": "funding",
+      "claim": "Mixpanel secured a $200M Series C growth investment from Bain Capital Tech Opportunities in November 2021 at a $1.05B valuation. Bain stated that total investment to date was $277M, including a prior $65M Series B led by Andreessen Horowitz in 2014.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Mixpanel secured a $200 million Series C growth investment from Bain Capital Tech Opportunities in November 2021 at a $1.05 billion valuation. It also mentions that the total investment to date is $277 million, which includes a prior $65 million Series B led by Andreessen Horowitz in 2014. Therefore, the claim is directly supported by the information provided in the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Mixpanel\u2019s careers page says it strategically hires in hub locations and uses both in-person and remote work depending on the role; it lists hubs across North America, Europe, Asia-Pacific, and Latin America. The fetched page did not expose specific open roles.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Mixpanel strategically hires in hub locations and mentions that both in-person and remote work are utilized depending on the job. It also lists various hub locations across North America, Europe, Asia-Pacific, and Latin America. However, it does not provide specific open roles, which aligns with the claim that the fetched page did not expose specific open roles. Therefore, the claim is fully supported by the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 19321,
+    "output_tokens": 1464,
+    "estimated_cost_usd": 0.05621,
+    "latency_seconds": 25.306178707862273
+  }
+}

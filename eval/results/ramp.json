@@ -1,24 +1,41 @@
 {
   "brief": {
     "company": {
-      "value": "Ramp is a private fintech/finance-software company that provides corporate cards, expense management, bill pay, vendor management, procurement, and AI-enabled finance-operations automation.",
-      "confidence": "MEDIUM",
+      "value": "Ramp is an all-in-one AI finance platform focused on helping finance teams save time and money; its site says it serves 70,000+ companies.",
+      "confidence": "HIGH",
       "evidence": [
         1
       ],
       "kind": "verified"
     },
     "funding": {
-      "value": "Contrary Research reported that Ramp had raised $2.7B in total funding and was at Series E as of its October 16, 2025 update.",
-      "confidence": "MEDIUM",
+      "value": "Ramp announced a $115M Series B co-led by D1 Capital Partners and Stripe on April 7, 2021, at a $1.6B valuation. This is a historical, not necessarily latest, funding datapoint.",
+      "confidence": "HIGH",
       "evidence": [
-        1
+        3
       ],
       "kind": "verified"
     },
-    "hiring_signals": [],
+    "hiring_signals": [
+      {
+        "value": "Ramp\u2019s careers page lists 52 open Sales roles, indicating continued investment in go-to-market capacity.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Ramp\u2019s careers page lists 27 Engineering roles and highlights internally built AI agents for lead generation and a \u201cGTM brain\u201d used in sales calls.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
     "likely_use_case": {
-      "value": "Ramp is likely evaluating the product as an AI-enabled research workflow for SDR pre-call preparation. This is a plausible fit because Ramp is positioned around using AI agents to automate operational work at scale; the stated enquiry specifically identifies speeding up SDR research before calls as the evaluation goal.",
+      "value": "Evaluate SDR pre-call research automation, likely as a complement or benchmark to Ramp\u2019s existing internal GTM-agent capabilities. Ramp appears especially likely to value research that is fast, operationally usable in live sales workflows, and trustworthy enough for a sophisticated GTM organization.",
       "confidence": "MEDIUM",
       "evidence": [
         1
@@ -26,7 +43,7 @@
       "kind": "inference"
     },
     "deal_band": {
-      "value": "Enterprise / strategic potential",
+      "value": "Enterprise / strategic evaluation potential, but likely subject to a high technical and workflow-fit bar because Ramp is actively building internal GTM agents.",
       "confidence": "LOW",
       "evidence": [
         1
@@ -34,52 +51,76 @@
       "kind": "inference"
     },
     "unverified": [
-      "Current open roles and hiring priorities: the Ramp careers page was checked, but its full content was unavailable to the research tool due to robots restrictions.",
-      "More recent funding, valuation, employee count, and go-to-market-team details were not independently verified from accessible full-text sources.",
-      "The specific SDR systems, data sources, and research bottlenecks Ramp wants to improve were not disclosed."
+      "Current/latest funding round, valuation, and total capital raised beyond the verified 2021 Series B.",
+      "Whether Ramp currently uses a third-party SDR research platform, its procurement process, or available budget.",
+      "The exact team, systems, and success metrics behind the enquiry."
     ],
     "conflicts": [],
-    "suggested_opening": "You mentioned speeding up SDR research before calls. Given Ramp\u2019s focus on applying AI agents to operational workflows, I\u2019d be interested in understanding where rep prep is still manual today\u2014account research, trigger discovery, qualification, or briefing creation\u2014and showing how we could compress that without sacrificing confidence in the output.",
+    "suggested_opening": "I saw Ramp is already building agents for lead generation and a GTM brain used in sales calls. For this SDR-research evaluation, where does the current workflow still create friction\u2014finding the right account context, validating it, or getting it into reps\u2019 hands before a call?",
     "sources": [
       {
         "index": 1,
-        "url": "https://research.contrary.com/company/ramp",
-        "fetched_at": "2026-08-24T13:06:51.429537Z",
-        "published_at": "2025-10-16T00:00:00"
+        "url": "https://ramp.com/careers",
+        "fetched_at": "2026-08-24T14:01:02.514613Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://ramp.com/intelligence",
+        "fetched_at": "2026-08-24T14:01:09.716604Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://ramp.com/blog/ramp-raises-115m-from-stripe-and-d1-to-become-nys-fastest-growing-startup-ever",
+        "fetched_at": "2026-08-24T14:01:09.719959Z",
+        "published_at": "2021-04-07T00:00:00"
       }
     ],
     "overall_confidence": "MEDIUM",
-    "generated_at": "2026-08-24T13:06:51Z"
+    "generated_at": "2026-08-24T14:01:09.719959Z"
   },
   "citation_detail": [
     {
       "field": "company",
-      "claim": "Ramp is a private fintech/finance-software company that provides corporate cards, expense management, bill pay, vendor management, procurement, and AI-enabled finance-operations automation.",
+      "claim": "Ramp is an all-in-one AI finance platform focused on helping finance teams save time and money; its site says it serves 70,000+ companies.",
       "supported": true,
-      "reasoning": "The source text explicitly states that Ramp provides a suite of products designed to automate finance operations, including expense management software, corporate cards, bill payments, vendor management, and procurement operations. It also mentions that Ramp is a private fintech company, which aligns with the claim. Therefore, the source text directly supports the claim made about Ramp's offerings and its status as a private company."
+      "reasoning": "The source text explicitly states that Ramp is an \"all-in-one AI finance platform\" and mentions that it serves \"70,000+ companies\". This directly supports the claim that Ramp is focused on helping finance teams save time and money and that it serves a large number of companies."
     },
     {
       "field": "funding",
-      "claim": "Contrary Research reported that Ramp had raised $2.7B in total funding and was at Series E as of its October 16, 2025 update.",
+      "claim": "Ramp announced a $115M Series B co-led by D1 Capital Partners and Stripe on April 7, 2021, at a $1.6B valuation. This is a historical, not necessarily latest, funding datapoint.",
       "supported": true,
-      "reasoning": "The source text explicitly states that Ramp has raised a total funding of $2.7 billion and is currently at Series E as of the update on October 16, 2025. This directly supports the claim made."
+      "reasoning": "The source text explicitly states that Ramp closed a $115 million Series B funding round co-led by D1 Capital Partners and Stripe on April 7, 2021, and that this funding round values the company at $1.6 billion. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Ramp\u2019s careers page lists 52 open Sales roles, indicating continued investment in go-to-market capacity.",
+      "supported": false,
+      "reasoning": "The source text does not provide any specific information about the number of open Sales roles at Ramp or any direct indication of the company's investment in go-to-market capacity. While it mentions growth and hiring, it does not quantify the number of roles available, particularly in Sales, nor does it explicitly link this to an investment strategy. Therefore, the claim is not supported by the text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Ramp\u2019s careers page lists 27 Engineering roles and highlights internally built AI agents for lead generation and a \u201cGTM brain\u201d used in sales calls.",
+      "supported": false,
+      "reasoning": "The source text mentions that Ramp has built a 'GTM brain' used in sales calls and refers to agents that run lead generation, which supports the claim about AI agents for lead generation and the 'GTM brain'. However, it does not explicitly state that there are 27 Engineering roles listed on the careers page. Therefore, while part of the claim is supported, the specific number of roles is not confirmed in the text."
     }
   ],
   "accuracy_detail": {
     "hq_country": true,
     "funding_round": false,
-    "has_open_engineering_roles": false
+    "has_open_engineering_roles": true
   },
   "abstain_detail": {},
   "conflict_detail": {},
   "trace": {
     "repair_attempts": 0,
     "initial_violations": 0,
-    "model_calls": 5,
-    "tool_calls": 12,
-    "input_tokens": 33848,
-    "output_tokens": 1888,
-    "estimated_cost_usd": 0.090352,
-    "latency_seconds": 49.35326787503436
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 20250,
+    "output_tokens": 1346,
+    "estimated_cost_usd": 0.056652,
+    "latency_seconds": 28.361721666064113
   }
 }

@@ -24,31 +24,6 @@
     "notes": "Acquired by Bending Spoons, announced Aug 4 2026 — recent enough to test whether the agent's search surfaces current status rather than stale 2021 Series F info."
   },
   {
-    "company": "Linear",
-    "domain": "linear.app",
-    "enquiry_message": "Evaluating tools to help our AE team get up to speed on inbound accounts faster.",
-    "expected_facts": {
-      "hq_country": "US",
-      "funding_round": "Series C",
-      "has_open_engineering_roles": true
-    },
-    "must_abstain": [],
-    "known_conflicts": ["customer_count"],
-    "notes": "linear.app/customers and other current pages say 40,000+ companies; the June 2025 Series C announcement (linear.app/now/building-our-way) says 15,000+. Both real, both currently live — the agent should surface this, not silently pick one."
-  },
-  {
-    "company": "Retool",
-    "domain": "retool.com",
-    "enquiry_message": "Looking into research automation tools for our SDR org ahead of qualification calls.",
-    "expected_facts": {
-      "hq_country": "US",
-      "funding_round": "Series C"
-    },
-    "must_abstain": ["current_arr_or_revenue", "exact_current_headcount"],
-    "known_conflicts": [],
-    "notes": "Retool doesn't disclose revenue or headcount. The only ARR figure findable ($120M) is a third-party analyst estimate (Sacra), not company-disclosed — the agent should not present it as a verified fact."
-  },
-  {
     "company": "Vercel",
     "domain": "vercel.com",
     "enquiry_message": "Our sales team wants a way to pull together account context automatically before inbound calls.",
@@ -72,5 +47,200 @@
     "must_abstain": [],
     "known_conflicts": [],
     "notes": "Series F ($750M, $44B valuation) announced June 2026 — only ~2 months old at eval time, a good freshness check."
+  },
+  {
+    "company": "Figma",
+    "domain": "figma.com",
+    "enquiry_message": "Looking into research automation for our SDR team ahead of inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "IPO",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "IPO'd on NYSE July 2025 (~$19.3B initial valuation) — tests whether the agent surfaces current public-company status rather than pre-IPO funding round history."
+  },
+  {
+    "company": "Datadog",
+    "domain": "datadoghq.com",
+    "enquiry_message": "Evaluating tools to help our AEs get account context faster before inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Snowflake",
+    "domain": "snowflake.com",
+    "enquiry_message": "We're exploring tools to automate account research for our sales team.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Mixpanel",
+    "domain": "mixpanel.com",
+    "enquiry_message": "Interested in a research tool for our SDR team before inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series C",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Asana",
+    "domain": "asana.com",
+    "enquiry_message": "Looking for a way to give our AE team better account context before calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "monday.com",
+    "domain": "monday.com",
+    "enquiry_message": "We'd like to automate SDR research ahead of inbound and outbound calls.",
+    "expected_facts": {
+      "hq_country": "Israel",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "Non-US HQ (Tel Aviv) for geographic diversity in the golden set."
+  },
+  {
+    "company": "HubSpot",
+    "domain": "hubspot.com",
+    "enquiry_message": "Interested in a tool to speed up account research for our SDR team.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Zapier",
+    "domain": "zapier.com",
+    "enquiry_message": "We're looking for a research automation tool for our sales team.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Y Combinator",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "Raised only one ~$1.3M seed round (2012, YC) and has been profitable/self-funded since — tests whether the agent correctly reports minimal funding rather than assuming a large round exists for a company this size."
+  },
+  {
+    "company": "Amplitude",
+    "domain": "amplitude.com",
+    "enquiry_message": "Evaluating account research tools for our SDR org before calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "public",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": []
+  },
+  {
+    "company": "Intercom",
+    "domain": "intercom.com",
+    "enquiry_message": "We'd like to see how this could help our SDR team prep for inbound calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "$250M",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": [],
+    "notes": "$250M debt round (Hercules Capital) closed March 2026, explicitly tied to funding 650 new hires — recent and a strong hiring signal to test freshness."
+  },
+  {
+    "company": "Retool",
+    "domain": "retool.com",
+    "enquiry_message": "Looking into research automation tools for our SDR org ahead of qualification calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series C"
+    },
+    "must_abstain": ["current_arr_or_revenue", "exact_current_headcount"],
+    "known_conflicts": [],
+    "notes": "Retool doesn't disclose revenue or headcount. The only ARR figure findable ($120M) is a third-party analyst estimate (Sacra), not company-disclosed — the agent should not present it as a verified fact."
+  },
+  {
+    "company": "Postman",
+    "domain": "postman.com",
+    "enquiry_message": "Interested in automating our SDR team's pre-call research.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series D"
+    },
+    "must_abstain": ["current_arr_or_revenue"],
+    "known_conflicts": [],
+    "notes": "Postman has never officially disclosed revenue — the $313.1M ARR figure findable via search is a third-party (getlatka) estimate, same must-abstain pattern as Retool."
+  },
+  {
+    "company": "Discord",
+    "domain": "discord.com",
+    "enquiry_message": "We're looking for a tool to research inbound accounts before our AEs get on calls.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series H"
+    },
+    "must_abstain": ["current_arr_or_revenue"],
+    "known_conflicts": [],
+    "notes": "Discord has not officially disclosed revenue; findable figures ($1.1B, $750-800M) are third-party estimates that even disagree with each other — good test of whether the agent notices the estimates conflict and abstains rather than picking one."
+  },
+  {
+    "company": "Linear",
+    "domain": "linear.app",
+    "enquiry_message": "Evaluating tools to help our AE team get up to speed on inbound accounts faster.",
+    "expected_facts": {
+      "hq_country": "US",
+      "funding_round": "Series C",
+      "has_open_engineering_roles": true
+    },
+    "must_abstain": [],
+    "known_conflicts": ["customer_count"],
+    "notes": "linear.app/customers and other current pages say 40,000+ companies; the June 2025 Series C announcement (linear.app/now/building-our-way) says 15,000+. Both real, both currently live — the agent should surface this, not silently pick one."
+  },
+  {
+    "company": "Miro",
+    "domain": "miro.com",
+    "enquiry_message": "Looking into research tools to help our sales team prep for inbound calls.",
+    "expected_facts": {
+      "funding_round": "Series C"
+    },
+    "must_abstain": [],
+    "known_conflicts": ["user_count"],
+    "notes": "Miro's own newsroom/community posts state 100 million users (Oct 2025) on one page and \"over 95 million users\" on another current marketing page — a real same-period discrepancy. HQ deliberately omitted from expected_facts: Miro genuinely has dual SF/Amsterdam headquarters, which the harness's single-value hq_country check can't represent cleanly."
+  },
+  {
+    "company": "Webflow",
+    "domain": "webflow.com",
+    "enquiry_message": "We'd like to automate pre-call research for our SDR team.",
+    "expected_facts": {
+      "hq_country": "US"
+    },
+    "must_abstain": [],
+    "known_conflicts": ["total_funding_amount"],
+    "notes": "Crunchbase lists $334.9M total funding across 5 rounds; Tracxn lists $336M across 6 rounds. funding_round deliberately omitted from expected_facts — separate 2022 press coverage gives conflicting $120M/$4B vs $140M/$2.1B figures that may describe different events entirely, too ambiguous to use as a single expected value."
   }
 ]

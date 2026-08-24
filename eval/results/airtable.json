@@ -1,75 +1,96 @@
 {
   "brief": {
     "company": {
-      "value": "Airtable is a connected-apps platform whose low-code tools let knowledge workers build customized applications for business processes; it also provides trigger-and-action automations and third-party integrations.",
+      "value": "Airtable is an AI-powered app-building and digital-operations platform. Its website says it has 700 employees across five offices and that 500,000 organizations build on Airtable.",
       "confidence": "HIGH",
       "evidence": [
-        1,
-        2
+        1
       ],
       "kind": "verified"
     },
     "funding": {
-      "value": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment reported at that time to $1.36B at an $11B pre-money valuation.",
+      "value": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment at that time to $1.36B and placing its pre-money valuation at $11B. The round was led by XN and included investors such as Franklin Templeton, J.P. Morgan Growth Equity Partners, Salesforce Ventures, Silver Lake, and T. Rowe Price-advised funds.",
       "confidence": "HIGH",
       "evidence": [
-        1
+        3
       ],
       "kind": "verified"
     },
-    "hiring_signals": [],
+    "hiring_signals": [
+      {
+        "value": "Airtable\u2019s company site states that it has 700 people across five offices and directs candidates to open roles. Its careers search result also describes AI fluency as an expectation for most roles, indicating an AI-oriented operating environment.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          1,
+          4
+        ],
+        "kind": "verified"
+      }
+    ],
     "likely_use_case": {
-      "value": "Airtable is likely evaluating SDR pre-call and inbound research automation that can enrich or update a central prospect record, then trigger handoff or notification workflows. This fits Airtable\u2019s documented trigger-and-action automations, third-party integrations, and example of notifying an assigned salesperson after a prospective customer submits a contact form.",
-      "confidence": "HIGH",
+      "value": "Airtable is likely evaluating an SDR pre-call research workflow that collects account information, synthesizes it into structured briefs, and makes the output usable in a governed operational workflow. This aligns with Airtable\u2019s stated focus on agents handling manual work, AI embedded in recurring business processes, and connecting governed enterprise data to departmental workflows.",
+      "confidence": "MEDIUM",
       "evidence": [
+        1,
         2
       ],
       "kind": "inference"
     },
-    "deal_band": {
-      "value": "Enterprise / strategic evaluation; estimate only, not a pricing signal.",
-      "confidence": "LOW",
-      "evidence": [
-        1
-      ],
-      "kind": "inference"
-    },
+    "deal_band": null,
     "unverified": [
-      "Current open roles and hiring priorities: Airtable\u2019s careers page was checked, but its fetched content did not expose job listings.",
-      "Any funding rounds, valuation changes, or acquisitions after the December 2021 Series F.",
-      "The SDR team\u2019s current research workflow, data sources, CRM, volume, and budget."
+      "Specific currently open roles and hiring volume could not be verified because the fetched careers pages did not expose job listings.",
+      "The SDR team\u2019s size, current research process, CRM, data providers, and budget are not verified.",
+      "No current funding, valuation, or acquisition activity after the 2021 Series F was verified from a fetched primary source."
     ],
     "conflicts": [],
-    "suggested_opening": "You already position Airtable around configurable, integrated automations. For the SDR workflow specifically, where does pre-call or inbound research still require someone to leave the workflow, gather information manually, and then update the prospect record?",
+    "suggested_opening": "Thanks for sharing the SDR research use case. Airtable is already focused on putting AI into recurring, governed operational workflows\u2014would it be useful to map what an account-research brief should contain, which sources your SDRs trust, and where the output needs to land before inbound and outbound calls?",
     "sources": [
       {
         "index": 1,
-        "url": "https://www.airtable.com/newsroom/series-f",
-        "fetched_at": "2026-08-24T13:03:55.641590Z",
-        "published_at": "2021-12-13T00:00:00"
+        "url": "https://www.airtable.com/about?adid=ZWNkMmQ3NTUtYzc3NC00MzQ4LTg5NTQtNjY1MTFjOGZhZDE4Ug%3D%3D",
+        "fetched_at": "2026-08-24T13:59:40.620607Z",
+        "published_at": null
       },
       {
         "index": 2,
-        "url": "https://www.airtable.com/guides/customize/save-time-with-automations",
-        "fetched_at": "2026-08-24T13:04:03.430261Z",
+        "url": "https://www.airtable.com/newsroom/meet-new-airtable-AI-era",
+        "fetched_at": "2026-08-24T13:59:40.622522Z",
+        "published_at": "2024-09-26T00:00:00"
+      },
+      {
+        "index": 3,
+        "url": "https://www.airtable.com/newsroom/series-f",
+        "fetched_at": "2026-08-24T13:59:40.623838Z",
+        "published_at": "2021-12-13T00:00:00"
+      },
+      {
+        "index": 4,
+        "url": "https://www.airtable.com/careers/jobs",
+        "fetched_at": "2026-08-24T13:59:40.625206Z",
         "published_at": null
       }
     ],
     "overall_confidence": "MEDIUM",
-    "generated_at": "2026-08-24T13:04:03.430261Z"
+    "generated_at": "2026-08-24T13:59:44Z"
   },
   "citation_detail": [
     {
       "field": "company",
-      "claim": "Airtable is a connected-apps platform whose low-code tools let knowledge workers build customized applications for business processes; it also provides trigger-and-action automations and third-party integrations.",
-      "supported": true,
-      "reasoning": "The source text explicitly states that Airtable is a connected apps platform that enables knowledge workers to build customized applications for various business processes using low-code tools. It also mentions the company's focus on product development and the ability to create tailored applications, which aligns with the claim about providing trigger-and-action automations and third-party integrations. Therefore, the source text supports the claim."
+      "claim": "Airtable is an AI-powered app-building and digital-operations platform. Its website says it has 700 employees across five offices and that 500,000 organizations build on Airtable.",
+      "supported": false,
+      "reasoning": "The source text explicitly states that \"500,000 organizations build in Airtable,\" which supports the claim about the number of organizations using the platform. However, it does not mention anything about Airtable being an \"AI-powered app-building and digital-operations platform\" or the number of employees (700) across five offices. Therefore, while part of the claim is supported, the overall claim is not fully supported by the source text."
     },
     {
       "field": "funding",
-      "claim": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment reported at that time to $1.36B at an $11B pre-money valuation.",
+      "claim": "Airtable announced a $735M Series F on December 13, 2021, bringing total investment at that time to $1.36B and placing its pre-money valuation at $11B. The round was led by XN and included investors such as Franklin Templeton, J.P. Morgan Growth Equity Partners, Salesforce Ventures, Silver Lake, and T. Rowe Price-advised funds.",
       "supported": true,
-      "reasoning": "The source text explicitly states that Airtable announced a $735 million Series F funding round on December 13, 2021, and confirms that this funding brings the total investment to $1.36 billion at an $11 billion pre-money valuation. Therefore, the claim is directly supported by the information provided in the source text."
+      "reasoning": "The source text explicitly states that Airtable announced a $735 million Series F funding round on December 13, 2021, which aligns with the claim. It also confirms that this funding brought Airtable's total investment to $1.36 billion and placed its pre-money valuation at $11 billion. Furthermore, the text lists XN as the lead investor along with other investors including Franklin Templeton, J.P. Morgan Growth Equity Partners, Salesforce Ventures, Silver Lake, and T. Rowe Price, which matches the details in the claim. Therefore, the source text directly supports the claim."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Airtable\u2019s company site states that it has 700 people across five offices and directs candidates to open roles. Its careers search result also describes AI fluency as an expectation for most roles, indicating an AI-oriented operating environment.",
+      "supported": false,
+      "reasoning": "The source text provided does not contain any information about Airtable's company size, the number of offices, or any details regarding open roles or expectations for AI fluency. It only mentions a browser compatibility issue and suggests using a desktop app or a different browser. Therefore, it does not support the claim."
     }
   ],
   "accuracy_detail": {
@@ -79,13 +100,13 @@
   "abstain_detail": {},
   "conflict_detail": {},
   "trace": {
-    "repair_attempts": 1,
-    "initial_violations": 1,
-    "model_calls": 6,
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
     "tool_calls": 8,
-    "input_tokens": 42134,
-    "output_tokens": 1948,
-    "estimated_cost_usd": 0.107644,
-    "latency_seconds": 34.026704125106335
+    "input_tokens": 27568,
+    "output_tokens": 1881,
+    "estimated_cost_usd": 0.077708,
+    "latency_seconds": 32.23683204106055
   }
 }

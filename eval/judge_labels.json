@@ -48,5 +48,105 @@
     "claim": "Notion raised a $500M funding round in 2021.",
     "evidence": "Notion's latest funding was a $275M Series D round on Sep 28, 2021, with participation from 3 investors.",
     "expected": false
+  },
+  {
+    "claim": "Figma went public on the NYSE in 2025.",
+    "evidence": "Figma priced its IPO on July 30, 2025 at $33.00 per share. On its July 31 NYSE debut under ticker FIG, the stock opened at $85 and closed at $115.50.",
+    "expected": true
+  },
+  {
+    "claim": "Figma's valuation reached $100B during its IPO.",
+    "evidence": "Figma priced its IPO implying a roughly $19.3B valuation. On its NYSE debut, the stock closed the day with a market cap of approximately $68B.",
+    "expected": false
+  },
+  {
+    "claim": "Datadog is headquartered in New York City.",
+    "evidence": "Datadog is headquartered in New York City, with its registered global HQ at 620 8th Avenue, 45th Floor in Midtown Manhattan.",
+    "expected": true
+  },
+  {
+    "claim": "Datadog went public in 2015.",
+    "evidence": "Datadog went public on September 19, 2019, raising approximately $648 million at a valuation of around $7.8 billion.",
+    "expected": false
+  },
+  {
+    "claim": "Snowflake's IPO raised over $3 billion.",
+    "evidence": "Snowflake got listed on September 16, 2020. This IPO raised $3.34 billion, making it the largest ever IPO launched by a software company.",
+    "expected": true
+  },
+  {
+    "claim": "Snowflake is headquartered in Seattle.",
+    "evidence": "Snowflake is located in San Mateo, California, United States.",
+    "expected": false
+  },
+  {
+    "claim": "Mixpanel's Series C was led by Bain Capital.",
+    "evidence": "Mixpanel has raised $277.1M in total funding across 6 rounds, most recently a $200M Series C round in 2021. Bain Capital is the lead investor in Mixpanel's latest funding round held on Nov 15, 2021.",
+    "expected": true
+  },
+  {
+    "claim": "Mixpanel is a publicly traded company.",
+    "evidence": "Mixpanel is a private company. Mixpanel reached a $1.1B valuation in 2021, set during its Series C round.",
+    "expected": false
+  },
+  {
+    "claim": "Asana was founded by a Facebook co-founder.",
+    "evidence": "Asana was founded by Facebook co-founder Dustin Moskovitz and Justin Rosenstein, and Asana's software helps teams plan projects.",
+    "expected": true
+  },
+  {
+    "claim": "Asana completed a traditional IPO with underwriters.",
+    "evidence": "Asana is a public company traded on NYSE under the ticker ASAN. The company completed a direct listing on the New York Stock Exchange on September 30, 2020.",
+    "expected": false
+  },
+  {
+    "claim": "monday.com is headquartered in Tel Aviv, Israel.",
+    "evidence": "monday.com is headquartered in Tel Aviv, Israel.",
+    "expected": true
+  },
+  {
+    "claim": "monday.com went public on the NYSE.",
+    "evidence": "monday.com is a public company traded on NASDAQ under the ticker MNDY. The company officially became publicly traded on NASDAQ on June 10, 2021.",
+    "expected": false
+  },
+  {
+    "claim": "HubSpot's global headquarters is in Cambridge, Massachusetts.",
+    "evidence": "HubSpot's global headquarters is in Cambridge, MA.",
+    "expected": true
+  },
+  {
+    "claim": "HubSpot went public in 2020.",
+    "evidence": "HubSpot went public on the New York Stock Exchange in 2014, later transferring its listing to NASDAQ, under ticker HUBS.",
+    "expected": false
+  },
+  {
+    "claim": "Zapier has operated fully remotely since its founding.",
+    "evidence": "Zapier is headquartered in San Francisco, California, but does not have work offices and has operated fully remotely since its founding.",
+    "expected": true
+  },
+  {
+    "claim": "Zapier has raised over $50 million in venture funding.",
+    "evidence": "Zapier reached scale having raised only about $1.2 to $1.4 million in outside money, all of it a single 2012 seed round, and has been profitable since 2014.",
+    "expected": false
+  },
+  {
+    "claim": "Amplitude went public via a direct listing.",
+    "evidence": "Amplitude was the first product analytics platform to go public via a direct listing, becoming a public company on 09/28/2021, now traded on NASDAQ under ticker AMPL.",
+    "expected": true
+  },
+  {
+    "claim": "Amplitude has never raised outside venture funding.",
+    "evidence": "Amplitude raised a total funding of $336M over 11 rounds from 38 investors, including Y Combinator, Sequoia Capital and SV Angel.",
+    "expected": false
+  },
+  {
+    "claim": "Intercom's March 2026 funding round was structured as debt financing.",
+    "evidence": "Intercom's largest funding round was a Conventional Debt round held on Mar 09, 2026 for $250M, led by Hercules Capital, to fund development of AI customer service agents and global hiring.",
+    "expected": true
+  },
+  {
+    "claim": "Intercom's $250M round in 2026 was an equity Series E.",
+    "evidence": "Intercom's largest funding round was a Conventional Debt round held on Mar 09, 2026 for $250M, led by Hercules Capital.",
+    "expected": false
   }
 ]

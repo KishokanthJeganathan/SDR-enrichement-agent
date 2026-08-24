@@ -1,0 +1,128 @@
+{
+  "brief": {
+    "company": {
+      "value": "Figma is a collaborative, AI-enabled design and product-development platform that positions itself as a workspace for teams to move from work-in-progress to shipped products.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Figma secured $200 million in Series E funding at a reported $10 billion valuation in June 2021; the round was co-led by Durable Capital Partners and Morgan Stanley\u2019s Counterpoint Global.",
+      "confidence": "HIGH",
+      "evidence": [
+        3
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Figma\u2019s careers page lists open sales roles across enterprise, mid-market, SMB, strategic, inside sales, sales leadership, solutions consulting, and customer enablement, including positions in multiple international locations.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Figma is actively investing in AI-related product and technical work: current openings include AI Applied Scientist, AI Product engineering and management roles, AI Platforms engineering, AI Growth product management, and Director of Research\u2014AI Evals.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Figma is likely evaluating research automation to help a distributed, multi-segment sales organization prepare for and qualify inbound conversations with more consistent company context, prioritization, and account insights.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / potentially broad SDR deployment",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current SDR headcount, team structure, and ownership of inbound qualification.",
+      "Existing prospecting, enrichment, CRM, routing, or research-automation tooling.",
+      "Budget, procurement process, implementation timeline, and success metrics for the evaluation.",
+      "Whether the enquiry is intended for a pilot or a company-wide SDR workflow."
+    ],
+    "conflicts": [],
+    "suggested_opening": "Thanks for reaching out about research automation for inbound SDR calls. To make this useful, could we start with where reps currently lose the most time\u2014account research, routing and prioritization, or turning research into a consistent call brief\u2014and what a successful pilot would need to improve?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://figma.com/careers",
+        "fetched_at": "2026-08-24T14:01:42.026542Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://www.figma.com",
+        "fetched_at": "2026-08-24T14:01:52.007449Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://globalventuring.com/corporate/figma-designs-200m-series-e-round",
+        "fetched_at": "2026-08-24T14:01:57.560587Z",
+        "published_at": "2021-06-25T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:02:00Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Figma is a collaborative, AI-enabled design and product-development platform that positions itself as a workspace for teams to move from work-in-progress to shipped products.",
+      "supported": true,
+      "reasoning": "The source text describes Figma as a collaborative platform that allows teams to work together from the initial stages of product development (work-in-progress) to the final product (shipped products). It mentions that Figma is an 'AI-native canvas' where teammates and AI agents collaborate in the same space, which aligns with the claim that Figma is AI-enabled. Therefore, the source text supports the claim that Figma is a collaborative, AI-enabled design and product-development platform for teams."
+    },
+    {
+      "field": "funding",
+      "claim": "Figma secured $200 million in Series E funding at a reported $10 billion valuation in June 2021; the round was co-led by Durable Capital Partners and Morgan Stanley\u2019s Counterpoint Global.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Figma secured $200 million in Series E funding at a $10 billion valuation, and it mentions that the round was co-led by Durable Capital Partners and Morgan Stanley\u2019s Counterpoint Global. This directly supports the claim made."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Figma\u2019s careers page lists open sales roles across enterprise, mid-market, SMB, strategic, inside sales, sales leadership, solutions consulting, and customer enablement, including positions in multiple international locations.",
+      "supported": false,
+      "reasoning": "The source text lists various job openings at Figma, including roles in business development, operations, customer support, and design. However, it does not specifically mention open sales roles across the categories outlined in the claim (enterprise, mid-market, SMB, strategic, inside sales, sales leadership, solutions consulting, and customer enablement). While it does indicate that Figma is hiring across multiple international locations, the absence of specific sales roles means the claim is not directly supported by the text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Figma is actively investing in AI-related product and technical work: current openings include AI Applied Scientist, AI Product engineering and management roles, AI Platforms engineering, AI Growth product management, and Director of Research\u2014AI Evals.",
+      "supported": true,
+      "reasoning": "The source text lists several job openings at Figma, including roles specifically related to AI, such as 'Director, Research - AI Evals', 'Product Designer, AI Models', and 'Support Engineer, AI Infrastructure'. This indicates that Figma is indeed investing in AI-related product and technical work, as the claim states. Therefore, the claim is directly supported by the information provided in the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": true
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 7,
+    "input_tokens": 31067,
+    "output_tokens": 1603,
+    "estimated_cost_usd": 0.08137,
+    "latency_seconds": 34.42760549997911
+  }
+}

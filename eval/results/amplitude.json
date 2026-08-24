@@ -1,0 +1,129 @@
+{
+  "brief": {
+    "company": {
+      "value": "Amplitude is an AI analytics platform focused on helping companies build and optimize digital products and experiences. Its company page states it has 700+ employees, offices across the US, Europe, and Asia, and 4,500+ customers, including 30 Fortune 100 companies.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Historical funding: Amplitude announced a $150M Series F on June 9, 2021, led by Sequoia Capital with GIC, Battery Ventures, and IVP participating. The announcement said this brought total funding to $336M and set a $4B pre-money valuation.",
+      "confidence": "HIGH",
+      "evidence": [
+        3
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Amplitude maintains an active careers presence and describes a global workforce of 700+ people across eight offices. Its careers page highlights GTM Strategy & Analytics and Global Solution Architecture roles, indicating established go-to-market and customer-facing functions. Specific currently open SDR roles were not verified.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely use case: equip Amplitude's SDR/GTM organization with pre-call account research that surfaces relevant company context and buying signals, enabling more tailored outreach at scale. This fits a 700+ employee, multi-region company that explicitly highlights GTM Strategy & Analytics and customer-facing solution architecture functions.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Likely departmental-to-enterprise SDR-org evaluation, potentially beginning with a pilot. The estimate is based on Amplitude's 700+ employees, global office footprint, and established GTM functions; no budget, seat count, procurement process, or SDR-team size was verified.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current number of SDRs, sales-development leadership, and account-research-tool users",
+      "Current open roles and whether any are specifically SDR positions",
+      "Existing account-research, sales-engagement, CRM, or data-enrichment vendors",
+      "Budget, buying timeline, evaluation criteria, and procurement process",
+      "Whether the 2021 Series F was Amplitude's most recent financing event"
+    ],
+    "conflicts": [
+      {
+        "field": "customer count",
+        "positions": [
+          "Amplitude's company page states it has over 4,500 customers.",
+          "Amplitude's careers page states that more than 3,200 customers use Amplitude."
+        ],
+        "evidence": [
+          1,
+          2
+        ],
+        "resolution": "The pages disagree, likely because they were updated at different times. Use the company-page figure only as Amplitude's stated current total and avoid treating the careers-page figure as current."
+      }
+    ],
+    "suggested_opening": "You mentioned evaluating account-research tools for SDRs before calls. Given Amplitude's global, 700+ person organization and established GTM operations, I\u2019d be interested in where reps currently lose the most time: finding relevant account context, validating priorities, or turning research into a call-ready point of view.",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://amplitude.com/company",
+        "fetched_at": "2026-08-24T14:07:47.952575Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://amplitude.com/careers",
+        "fetched_at": "2026-08-24T14:07:36.033811Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://amplitude.com/press/amplitude-announces-150-million-round",
+        "fetched_at": "2026-08-24T14:07:56.759243Z",
+        "published_at": "2021-06-09T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:07:56.759243Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Amplitude is an AI analytics platform focused on helping companies build and optimize digital products and experiences. Its company page states it has 700+ employees, offices across the US, Europe, and Asia, and 4,500+ customers, including 30 Fortune 100 companies.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Amplitude has over 700 employees, offices in the US, Europe, and Asia, and over 4,500 customers, including 30 Fortune 100 companies. This directly supports the claim made about Amplitude being an AI analytics platform focused on helping companies build and optimize digital products and experiences, as well as the specific employee and customer statistics mentioned in the claim."
+    },
+    {
+      "field": "funding",
+      "claim": "Historical funding: Amplitude announced a $150M Series F on June 9, 2021, led by Sequoia Capital with GIC, Battery Ventures, and IVP participating. The announcement said this brought total funding to $336M and set a $4B pre-money valuation.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Amplitude announced a $150 million Series F funding round on June 9, 2021, led by Sequoia Capital with participation from GIC, Battery Ventures, and IVP. It also confirms that this funding round brought the total funding to $336 million and set a pre-money valuation of $4 billion. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Amplitude maintains an active careers presence and describes a global workforce of 700+ people across eight offices. Its careers page highlights GTM Strategy & Analytics and Global Solution Architecture roles, indicating established go-to-market and customer-facing functions. Specific currently open SDR roles were not verified.",
+      "supported": false,
+      "reasoning": "The source text confirms that Amplitude has a global workforce of more than 700 people and mentions roles related to GTM Strategy and Global Solution Architecture, which aligns with the claim. However, it does not provide specific information about currently open SDR roles, which is a part of the claim that remains unverified. Therefore, while the majority of the claim is supported, the specific mention of SDR roles is not confirmed in the text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 8,
+    "input_tokens": 25817,
+    "output_tokens": 1625,
+    "estimated_cost_usd": 0.071134,
+    "latency_seconds": 40.76009062491357
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "brief": {
+    "company": {
+      "value": "Zapier is an automation and AI-orchestration platform that markets workflows for sales teams, including pre-call research, activity logging, lead routing, CRM updates, and pipeline management.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Zapier raised one institutional round of $1.2 million in 2012, according to an interview with co-founder Wade Foster published by First Round Review.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        3
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Zapier\u2019s careers page says it is hiring and emphasizes an AI-first mindset, automation, and experimentation with new tools.",
+        "confidence": "HIGH",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Zapier describes itself as remote-first since 2011 and says it operates with a distributed, asynchronous work culture.",
+        "confidence": "HIGH",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Sales-team research automation that enriches account and prospect context, surfaces pre-call briefs, and routes the resulting insights into Zapier\u2019s existing CRM/outreach workflows. This aligns with Zapier\u2019s stated sales-automation focus on pre-call research, centralized account details, and connecting CRM, outreach, and support systems.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Likely a departmental sales-team deployment with expansion potential if the research output can reliably feed Zapier\u2019s broader GTM automation workflows.",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current sales-team size, sales-tech stack, and named CRM/outreach tools used internally.",
+      "Current budget, procurement process, buying timeline, and decision-makers for the research-automation initiative.",
+      "Whether the enquiry is for Zapier\u2019s internal sales organization, a customer-facing product workflow, or both.",
+      "Current funding status after the historical 2012 round described by First Round Review."
+    ],
+    "conflicts": [
+      {
+        "field": "Number of connected apps/tools",
+        "positions": [
+          "Zapier\u2019s careers page says it connects 7,000+ online tools.",
+          "Zapier\u2019s sales-solutions page says its workflow features pair with 9,000+ integrations."
+        ],
+        "evidence": [
+          1,
+          2
+        ],
+        "resolution": "Left unresolved. The sources likely use different counting methods or were updated at different times; no app-count claim is used in the brief."
+      }
+    ],
+    "suggested_opening": "You mentioned research automation for the sales team. Where does the biggest manual burden sit today\u2014account research before calls, prospect enrichment, or getting research into the CRM and outreach workflow?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://zapier.com/solutions/sales",
+        "fetched_at": "2026-08-24T14:07:06.689787Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://zapier.com/jobs",
+        "fetched_at": "2026-08-24T14:07:00.197740Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://review.firstround.com/how-zapier-pulled-off-its-one-and-done-approach-to-fundraising",
+        "fetched_at": "2026-08-24T14:07:06.692480Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:07:06Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Zapier is an automation and AI-orchestration platform that markets workflows for sales teams, including pre-call research, activity logging, lead routing, CRM updates, and pipeline management.",
+      "supported": true,
+      "reasoning": "The source text describes Zapier as an automation platform that helps sales teams by handling various tasks such as pre-call research, activity logging, and CRM updates. It emphasizes the benefits of using Zapier for sales automation, including improved efficiency and the ability to focus on selling rather than administrative tasks. The mention of automating workflows for sales processes aligns with the claim that Zapier markets workflows for sales teams, including the specific tasks listed in the claim. Therefore, the source text supports the claim."
+    },
+    {
+      "field": "funding",
+      "claim": "Zapier raised one institutional round of $1.2 million in 2012, according to an interview with co-founder Wade Foster published by First Round Review.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Zapier raised $1.2 million in 2012 and mentions that it was their only institutional round of funding. This directly supports the claim that Zapier raised one institutional round of $1.2 million in 2012, according to an interview with co-founder Wade Foster."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Zapier\u2019s careers page says it is hiring and emphasizes an AI-first mindset, automation, and experimentation with new tools.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Zapier is hiring and emphasizes an AI-first mindset, automation, and experimentation with new tools. It mentions the mission to make automation work for everyone and highlights the importance of AI and automation in their work culture. Additionally, it discusses the value of exploring new tools and experimenting with possibilities, which directly supports the claim."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Zapier describes itself as remote-first since 2011 and says it operates with a distributed, asynchronous work culture.",
+      "supported": false,
+      "reasoning": "The source text explicitly mentions that Zapier excels in a fully remote work environment and embraces asynchronous communication to stay connected with colleagues globally. This supports the claim that Zapier operates with a distributed, asynchronous work culture. However, the text does not specify that Zapier has been remote-first since 2011, which is a critical part of the claim. Therefore, while the second part of the claim is supported, the first part is not directly addressed in the text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 20064,
+    "output_tokens": 1489,
+    "estimated_cost_usd": 0.057996,
+    "latency_seconds": 27.123576666926965
+  }
+}

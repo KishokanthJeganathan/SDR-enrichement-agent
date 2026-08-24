@@ -104,97 +104,125 @@ than the Phase 2 spot-check above.
 
 ### Phase 3 — evaluation harness
 
-6-company pilot golden set (`eval/golden.json`), not yet the full 20 CLAUDE.md
-§7 specifies — see "Scope" below. Facts in the golden set were independently
-researched via live web search, not copied from the Phase 2 agent's own
-output — using the agent's prior answers as ground truth would make the eval
-circular. Companies: 4 ordinary (Notion Labs, Airtable, Linear, Vercel) +
-1 must-abstain (Retool — revenue/headcount it doesn't disclose) + 1
-known-conflict (Linear again — a real, independently-verified customer-count
-discrepancy between two of its own live pages).
+Full 20-company golden set (`eval/golden.json`), matching CLAUDE.md §7's
+exact composition: 14 ordinary + 3 must-abstain (Retool, Postman, Discord —
+each has revenue/headcount that's genuinely undisclosed, only third-party
+estimates exist) + 3 known-conflict (Linear's customer count, Miro's user
+count, Webflow's total-funding figure — each a real, independently-verified
+discrepancy between two live sources, not manufactured). Every fact was
+researched independently via live web search, never copied from the agent's
+own prior output — using the agent's answers as its own ground truth would
+make the eval circular. Scaled up from an initial 6-company pilot once the
+harness mechanism was proven working.
 
 **Citation-validity judge** (`eval/judge.py`): `gpt-4o-mini`, temperature 0,
 binary verdict with reasoning first. Deliberately *not* a `gpt-5.6-*` model —
 that whole family forces `temperature=1` with no override, which would
 violate the temperature-0 requirement outright; `gpt-4o-mini` is a classic
-model that still honors it. Validated against 10 hand-labeled examples
-(`eval/judge_labels.json`) before trusting its numbers on the real run: **90%
-accuracy (9/10)**. The one miss is informative, not just noise — it
-conflated "the $120M figure is numerically correct" with "the company
-disclosed it" (it's actually a third-party analyst estimate), missing the
-verified-vs-estimated distinction that's the whole point of this project.
-Worth knowing as a limit on the judge, not something to prompt-tune away for
-one label.
+model that still honors it. Validated against the full 30 hand-labeled
+examples CLAUDE.md §7 specifies (`eval/judge_labels.json`) before trusting
+its numbers: **97% accuracy (29/30)**. The one consistent miss is
+informative, not noise — it conflates "the $120M figure is numerically
+correct" with "the company disclosed it" (it's a third-party analyst
+estimate), missing the verified-vs-estimated distinction that's the whole
+point of this project. Worth knowing as a real limit on the judge, not
+something to prompt-tune away for one label.
 
-**Results — `uv run python eval/run.py`, 6/6 runs completed:**
+**Two real bugs found and fixed while scaling to 20 companies** — both
+significant enough that earlier numbers from smaller runs shouldn't be
+trusted, which is why this section only reports the final, corrected run:
+
+1. **False robots.txt blocks.** `RobotFileParser.read()` fetches
+   `robots.txt` itself via bare `urllib`, with no `User-Agent` header. Sites
+   like CNBC 403 that generic request as an anti-bot measure, and Python's
+   stdlib treats a 403 on robots.txt as "disallow everything" — even though
+   the site's actual policy allows normal crawling. Postman and Discord
+   briefs came back with 0% citation validity and "no fetchable evidence" on
+   every claim before this was caught; re-fetching the same URLs manually
+   with a proper `User-Agent` worked fine. Fixed in `fetch.py` by fetching
+   `robots.txt` the same way the real page fetch does — `requests`, same
+   header — instead of letting `RobotFileParser` fetch it blind.
+2. **A crash with no repair path.** The model occasionally wrote a partial
+   date (`"2026-05"`, no day) for a `Source.published_at` field, which
+   Pydantic's strict datetime parser rejects. That error is raised *inside*
+   LangChain's structured-output parsing, before `validate_brief` or the
+   existing repair loop ever sees a `Brief` object — so it wasn't a
+   validation failure the harness could recover from, it was an unhandled
+   exception that killed the whole 20-company run partway through. Fixed by
+   catching `StructuredOutputValidationError` in `agent_simple.run()` and
+   feeding it back through the same repair-message mechanism, with explicit
+   instructions to use a full ISO datetime or omit the field.
+
+**Results — `uv run python eval/run.py`, 20/20 runs completed, 0 repairs
+needed:**
 
 | Metric | Score |
 | --- | --- |
-| Citation validity | 83% |
-| Factual accuracy | 58% |
-| Avg. initial violations (pre-repair) | 0.50/brief |
-| Fraction of briefs needing ≥1 repair | 33% |
-| Abstention correctness | 83% |
-| Conflict detection | 100% |
-| Avg. cost/brief | $0.092 |
-| Avg. latency/brief | 34.6s |
-| Avg. tool calls/brief | 8.7 |
+| Citation validity | 75% |
+| Factual accuracy | 52% |
+| Avg. initial violations (pre-repair) | 0.00/brief |
+| Fraction of briefs needing ≥1 repair | 0% |
+| Abstention correctness | 95% |
+| Conflict detection | 85% |
+| Avg. cost/brief | $0.067 |
+| Avg. latency/brief | 30.7s |
+| Avg. tool calls/brief | 7.1 |
 
 Full per-claim detail and raw `Brief` objects are persisted to
-`eval/results/<company>.json` for each run — the summary numbers above are
-traceable back to exactly which claim failed and why, not just an aggregate.
+`eval/results/<company>.json` for every run — every number above is
+traceable back to exactly which claim failed and why.
 
-**What the misses actually are** (this is the part worth reading past the
-table):
+**What the misses actually are:**
 
-1. **Citation validity is weakest on hiring_signals, not funding/company
-   claims** (which hit 100% every run). Every hiring_signals miss was the
-   judge saying the re-fetched careers page didn't mention the specific role
-   titles the claim named. `fetch_page` is plain `requests` + BeautifulSoup
-   with no JS execution — if a careers page renders its listings
-   client-side, the agent may be asserting specific titles beyond what its
-   own fetched text actually contained. The harness re-fetches live at judge
-   time rather than replaying the original tool output, so this can't yet
-   fully separate "the agent overreached" from "the page changed between the
-   agent's fetch and the judge's" — a known gap, worth fixing before scaling
-   to 20 companies by persisting the original tool outputs too.
+1. **Zero repairs needed, across all 20 companies.** `validate_brief`'s
+   citation-structure rules (every evidence index resolves, verified claims
+   have evidence, inferences trace to verified evidence) held on the first
+   attempt every single time. The schema-level guarantee is solid; the gaps
+   that remain are in what the agent chooses to research and how
+   thoroughly, not in whether its citations are internally consistent.
 
-2. **Most "factual accuracy" misses are honest hedging against a stale or
-   narrower source, not fabrication.** Ramp's funding claim explicitly named
-   its source and date — "Contrary Research reported... as of its October
-   16, 2025 update" — and was right about what that source said. It just
-   never found the actual June 2026 $750M Series F my golden label expected,
-   because the system prompt tells it to favor a handful of tool calls over
-   exhaustive search (a cost-control decision, §5). Airtable's brief didn't
-   find the August 2026 Bending Spoons acquisition (3 weeks old at eval
-   time) — but it explicitly listed "acquisitions after the December 2021
-   Series F" under `unverified` rather than asserting the stale info as
-   current. That's the hard constraints working correctly; the metric just
-   can't currently tell "wrong" apart from "well-hedged but shallow." Vercel
-   returned `funding: null` outright rather than guess — also scored as a
-   miss by the same blunt metric, also correct agent behavior. Refining
-   `factual_accuracy` to separate active misstatement from calibrated
-   non-coverage is the clearest next improvement to the harness itself.
+2. **Abstention (95%) and conflict detection (85%) — the two metrics this
+   project's thesis actually rests on — are the strongest numbers here.**
+   Retool, Postman, and Discord all correctly declined to assert undisclosed
+   revenue/headcount as fact. Two of three known-conflict cases (Linear,
+   Miro) were missed this run — the agent found the more recent number in
+   each case (40,000+ customers, 100M users) but didn't happen to
+   cross-check against the older, differently-dated figure that would have
+   surfaced the discrepancy. Same underlying cause as finding #3 below.
 
-3. **Cross-run inconsistency, found by accident and worth taking
-   seriously.** Notion's funding claim in this Phase 3 run: *"Contrary
-   Research reports that Notion has raised $343.2M and is at Series C
-   stage"* (evidence: 1 source, no conflict raised). Notion's funding claim
-   in the Phase 2 spot-check two sections up: `$275M Series D`, with
-   `$343.2M` vs `$340.2M` explicitly raised and resolved as a **Conflict**
-   between two sources. Same company, same agent, same system prompt — two
-   runs, two different verified claims, because which sources a given run's
-   handful of tool calls happens to surface isn't deterministic. This is
-   exactly the citation-drift Phase 2 predicted, just visible only *across*
-   repeated runs rather than within a single long one — the scale at which
-   this pilot could actually observe it. It's the strongest single piece of
-   evidence in this pilot for why Phase 4's isolated, more thorough
-   sub-agents need to exist.
+3. **Most "factual accuracy" misses are honest reporting of a source that's
+   real but older, not fabrication.** monday.com's funding claim is
+   explicitly labeled *"Historical funding signal: TechCrunch reported... a
+   $150M Series D... in July 2019"* — correctly attributed, correctly dated,
+   MEDIUM confidence — it just never found that monday.com has been public
+   on NASDAQ since 2021. Ramp similarly cited a real $115M Series B from
+   2021 rather than the $750M Series F from two months before this eval ran.
+   Vercel returned `funding: null` outright — an honest abstention, still
+   scored as a miss by this blunt metric. The hard constraints (attribute
+   sources, hedge confidence, don't guess) are visibly working; what's
+   missing is *research depth* — the agent settles for the first credible
+   funding source it finds rather than checking whether a more recent one
+   exists.
 
-**Scope note:** this is 6 companies, not CLAUDE.md's specified 20. The
-mechanism is proven and the numbers above are real, not placeholders — but a
-pilot this size shouldn't be read as a final verdict, especially for
-abstention/conflict correctness where the pilot has only one example each.
-Scaling the golden set (and the judge's label set proportionally) is the
-natural next increment before leaning on these numbers for the Phase 4
-comparison.
+4. **That research-depth gap traces to a concrete, checkable cause: tool
+   calls per brief dropped from 9.1 to 7.1 after the robots.txt fix.**
+   Fixing false-positive blocks meant more of the agent's *first* fetch
+   attempts now succeed — which sounds like a pure win, but the system
+   prompt (§5: "a handful of well-chosen tool calls beats exhaustively
+   searching," written to control cost) means the agent now stops sooner,
+   satisfied with the first funding source that actually loads, rather than
+   being forced by fetch failures into trying alternate sources — which had
+   the accidental side effect of occasionally surfacing more current
+   information. That's a real tension between the cost-control instruction
+   this project's own system prompt gives the agent and the freshness this
+   eval is measuring — not a bug, but a design trade-off worth naming
+   explicitly rather than discovering by accident again in Phase 4.
+
+Point 4 is the clearest, most concrete hypothesis this pilot produced for
+what Phase 4's isolated sub-agents should actually fix: not citation
+structure (already solid at 0% repair rate) but giving each research area
+(funding, hiring, news) its own tool-call budget instead of one shared,
+cost-constrained budget across all of them — which is exactly what "isolated
+context per sub-agent" (CLAUDE.md §4) provides. The Phase 2 vs. Phase 4
+comparison this harness enables should watch tool-calls-per-area and
+source-recency specifically, not just the six top-line metrics.

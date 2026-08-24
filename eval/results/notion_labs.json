@@ -1,91 +1,143 @@
 {
   "brief": {
     "company": {
-      "value": "Notion is a productivity software and AI-workspace company that is building a sales-led motion alongside its product-led growth model.",
+      "value": "Notion is a private, San Francisco-based business/productivity software company. Its product vision is an all-in-one workspace that combines workflows such as task lists, product roadmaps, and design repositories; PitchBook lists 1,200 employees as of 2026.",
       "confidence": "HIGH",
       "evidence": [
-        1
+        1,
+        2
       ],
       "kind": "verified"
     },
     "funding": {
-      "value": "Contrary Research reports that Notion has raised $343.2M and is at Series C stage.",
+      "value": "PitchBook reports that Notion has raised $343M over time; its latest listed transaction is a completed $270M private secondary transaction dated January 26, 2026.",
       "confidence": "MEDIUM",
       "evidence": [
         2
       ],
       "kind": "verified"
     },
-    "hiring_signals": [],
+    "hiring_signals": [
+      {
+        "value": "Notion\u2019s careers page lists Business Development Representative openings in New York and San Francisco, plus region-specific BDR roles for Benelux, DACH, France, MEA, Nordics, and UKI in Dublin.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Notion is actively hiring across AI-oriented engineering, including AI Applications, AI Platform, AI Workflows, AI Capture, Mobile AI, Search & Context Platform, and Model Behavior roles.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The company also lists commercial and enterprise Outcomes Architect roles, alongside revenue-operations and GTM finance positions.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      }
+    ],
     "likely_use_case": {
-      "value": "Likely fit: augment Notion\u2019s sales workflow with inbound-account research and prioritization. Notion has been shifting toward an upmarket, more outbound sales motion and has already internally built tooling that combines product signals, custom account research, and email drafts; an external research tool could help standardize and accelerate pre-call preparation without adding manual research work.",
+      "value": "Likely use case: equip Notion\u2019s expanding BDR and sales organization with faster, consistent inbound-account research and pre-call context. The broad BDR hiring footprint and commercial/enterprise roles indicate active investment in scaled go-to-market coverage; the inbound-enquiry context makes lead preparation the most relevant initial workflow to validate.",
       "confidence": "HIGH",
       "evidence": [
-        1
+        3
       ],
       "kind": "inference"
     },
     "deal_band": {
-      "value": "Strategic / enterprise evaluation potential: Notion is investing in a sales-led upmarket motion and internal AI-enabled sales workflows, suggesting meaningful value if a tool can demonstrably improve seller research quality and efficiency. Budget, incumbent tooling, and buying process are unknown.",
+      "value": "Enterprise / strategic sales-team deployment potential, likely best approached as an initial BDR or inbound-pod pilot.",
       "confidence": "LOW",
       "evidence": [
-        1
+        2,
+        3
       ],
       "kind": "inference"
     },
     "unverified": [
-      "Current open roles and hiring volume: the Notion careers page was checked, but its full content was unavailable to fetch due to robots restrictions.",
-      "Sales-team size, current inbound-research workflow, incumbent vendors, budget, procurement process, and timeline.",
-      "Whether the enquiry represents a broader rollout or an individual/team-level evaluation."
+      "Current inbound-lead volume, routing process, and research turnaround time.",
+      "Existing sales-engagement, CRM, enrichment, or account-research tools.",
+      "Specific users, budget owner, security/procurement requirements, and rollout scope.",
+      "Whether the immediate requirement is for BDRs, AEs, solutions architects, or another customer-facing team."
     ],
     "conflicts": [],
-    "suggested_opening": "Notion has already been experimenting with using product signals, custom research, and drafted outreach to help its sales team focus on the right accounts. For inbound calls specifically, where does the team still lose time assembling account context, and what would a useful pre-call brief need to include?",
+    "suggested_opening": "You mentioned improving inbound-lead research before calls. I noticed Notion is hiring BDRs across North America and multiple EMEA territories, alongside commercial and enterprise-facing roles. How are those teams currently turning an inbound form fill into account context and a useful first-call brief\u2014and where does that process break down today?",
     "sources": [
       {
         "index": 1,
-        "url": "https://www.firstround.com/ai/notion?ref=review.firstround.com",
-        "fetched_at": "2026-08-24T13:03:07.560411Z",
-        "published_at": "2025-12-18T00:00:00"
+        "url": "https://www.notion.com/about",
+        "fetched_at": "2026-08-24T13:59:02.047365Z",
+        "published_at": null
       },
       {
         "index": 2,
-        "url": "https://research.contrary.com/company/notion",
-        "fetched_at": "2026-08-24T13:03:07.561474Z",
+        "url": "https://pitchbook.com/profiles/company/168506-47",
+        "fetched_at": "2026-08-24T13:59:02.048648Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://notion.com/careers",
+        "fetched_at": "2026-08-24T13:58:55.789366Z",
         "published_at": null
       }
     ],
     "overall_confidence": "MEDIUM",
-    "generated_at": "2026-08-24T13:03:17.484639Z"
+    "generated_at": "2026-08-24T13:59:02Z"
   },
   "citation_detail": [
     {
       "field": "company",
-      "claim": "Notion is a productivity software and AI-workspace company that is building a sales-led motion alongside its product-led growth model.",
-      "supported": true,
-      "reasoning": "The source text explicitly states that Notion is a \"productivity software and AI workspace\" and mentions that it is regarded as one of the most impressive product-led growth (PLG) companies while also building out a \"sales-led motion.\" This directly supports the claim that Notion is a productivity software and AI-workspace company that is developing a sales-led approach alongside its existing product-led growth model."
+      "claim": "Notion is a private, San Francisco-based business/productivity software company. Its product vision is an all-in-one workspace that combines workflows such as task lists, product roadmaps, and design repositories; PitchBook lists 1,200 employees as of 2026.",
+      "supported": false,
+      "reasoning": "The source text explicitly states that Notion is based in San Francisco, which supports the claim that it is a San Francisco-based company. It also describes Notion's product vision as an all-in-one workspace that combines various workflows, including task lists, product roadmaps, and design repositories, which aligns with the claim about its product vision. However, the source text does not provide any information about the number of employees or mention PitchBook, so that part of the claim is not supported. Overall, while the claim is partially supported, it is not fully substantiated due to the lack of employee information."
     },
     {
       "field": "funding",
-      "claim": "Contrary Research reports that Notion has raised $343.2M and is at Series C stage.",
-      "supported": true,
-      "reasoning": "The source text explicitly states that Notion has raised a total funding of $343.2M and is currently at the Series C stage. This directly supports the claim made about Notion's funding and stage of development."
+      "claim": "PitchBook reports that Notion has raised $343M over time; its latest listed transaction is a completed $270M private secondary transaction dated January 26, 2026.",
+      "supported": false,
+      "reasoning": "The source text provides information about Notion's funding history, including the latest transaction amount of $270M dated January 26, 2026. However, it does not explicitly state that Notion has raised a total of $343M over time. Therefore, while the latest transaction amount is supported, the total amount raised is not confirmed in the text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Notion\u2019s careers page lists Business Development Representative openings in New York and San Francisco, plus region-specific BDR roles for Benelux, DACH, France, MEA, Nordics, and UKI in Dublin.",
+      "supported": false,
+      "reasoning": "The source text explicitly lists open positions for Business Development Representatives in both New York and San Francisco. However, it does not mention any region-specific BDR roles for Benelux, DACH, France, MEA, Nordics, or UKI in Dublin. Therefore, while the first part of the claim is supported, the second part regarding region-specific roles is not supported by the text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Notion is actively hiring across AI-oriented engineering, including AI Applications, AI Platform, AI Workflows, AI Capture, Mobile AI, Search & Context Platform, and Model Behavior roles.",
+      "supported": false,
+      "reasoning": "The source text mentions that Notion is hiring and lists various departments and roles, but it does not specifically mention any AI-oriented engineering roles such as AI Applications, AI Platform, AI Workflows, AI Capture, Mobile AI, Search & Context Platform, or Model Behavior roles. Therefore, the claim that Notion is actively hiring across these specific AI-oriented engineering roles is not supported by the text."
+    },
+    {
+      "field": "hiring_signals[2]",
+      "claim": "The company also lists commercial and enterprise Outcomes Architect roles, alongside revenue-operations and GTM finance positions.",
+      "supported": false,
+      "reasoning": "The source text explicitly lists job positions under the 'Open Positions' section, including 'Outcomes Architect' and 'Revenue Operations & Strategy'. However, it does not mention 'enterprise Outcomes Architect roles' or 'GTM finance positions'. Therefore, while it supports part of the claim regarding Outcomes Architect and revenue operations roles, it does not fully support the claim as it lacks the specific mention of 'enterprise' and 'GTM finance'."
     }
   ],
   "accuracy_detail": {
     "hq_country": true,
     "funding_round": false,
-    "has_open_engineering_roles": false
+    "has_open_engineering_roles": true
   },
   "abstain_detail": {},
   "conflict_detail": {},
   "trace": {
-    "repair_attempts": 1,
-    "initial_violations": 2,
-    "model_calls": 5,
-    "tool_calls": 10,
-    "input_tokens": 42851,
-    "output_tokens": 2503,
-    "estimated_cost_usd": 0.115738,
-    "latency_seconds": 45.06809945916757
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 20980,
+    "output_tokens": 1443,
+    "estimated_cost_usd": 0.059276,
+    "latency_seconds": 26.154910292010754
   }
 }

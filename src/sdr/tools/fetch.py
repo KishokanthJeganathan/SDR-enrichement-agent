@@ -26,9 +26,20 @@ def _robots_allow(url: str) -> bool:
     parser = RobotFileParser()
     parser.set_url(robots_url)
     try:
-        parser.read()
-    except OSError:
-        return True  # no reachable robots.txt: no restrictions declared
+        # RobotFileParser.read() fetches robots.txt itself via bare urllib,
+        # with no User-Agent header — several sites (e.g. CNBC) 403 that
+        # generic request as an anti-bot measure, and the stdlib treats a
+        # 403 on robots.txt as "disallow everything". Fetch it the same way
+        # we fetch the real page instead, so a missing UA never masquerades
+        # as an actual robots.txt policy.
+        headers = {"User-Agent": _USER_AGENT}
+        response = requests.get(robots_url, headers=headers, timeout=_TIMEOUT_SECONDS)
+        if response.status_code == 404:
+            return True  # no robots.txt: no restrictions declared
+        response.raise_for_status()
+        parser.parse(response.text.splitlines())
+    except requests.RequestException:
+        return True  # robots.txt unreachable for any reason: no restrictions declared
     return parser.can_fetch(_USER_AGENT, url)
 
 

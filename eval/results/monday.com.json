@@ -1,0 +1,130 @@
+{
+  "brief": {
+    "company": {
+      "value": "monday.com is a global software company building AI-powered products for teams to manage work. Its monday CRM is a revenue-execution platform covering lead generation, enrichment, sales outreach, meeting preparation, pipeline monitoring, and forecasting.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Historical funding signal: TechCrunch reported that monday.com raised a $150M Series D led by Sapphire Ventures in July 2019, and reported $234.1M raised to date at that time.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        4
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "monday.com\u2019s careers page listed 37 open jobs across 12 locations, including AI Enablement Solutions Manager, AI Program Manager, and multiple sales/partner roles.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The open AI-focused customer-success and sales-consulting roles indicate continued investment in bringing AI capabilities to customers and go-to-market workflows.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          3
+        ],
+        "kind": "inference"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: evaluate SDR-research enrichment and pre-call briefing automation for monday.com\u2019s revenue teams\u2014either as a complement to, or benchmark against, its native AI CRM agents. monday CRM already positions AI agents for lead sourcing/enrichment and meeting preparation, so differentiation should focus on research quality, data coverage, workflow integration, and control rather than generic AI automation.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Potentially strategic/enterprise-scale, but qualification is required. monday.com operates a broad CRM and AI-agent product business and is actively hiring across AI and GTM functions; no verified procurement scope, budget, or buying process was found.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current SDR or sales-research workflow, including its data sources and manual effort.",
+      "Whether monday.com is seeking an internal operational tool, an integration/partner capability, or competitive intelligence for its CRM product.",
+      "Budget, evaluation timeline, procurement process, and economic buyer.",
+      "Current employee count and current total funding after the historical 2019 funding report."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned automating SDR research before inbound and outbound calls. I saw monday CRM already uses AI for lead sourcing, enrichment, outreach, and meeting prep\u2014where does the current research process still fall short: source coverage, trust in the output, or getting the brief into the rep\u2019s existing workflow?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://monday.com/crm",
+        "fetched_at": "2026-08-24T14:05:50.966451Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://support.monday.com/hc/en-us/articles/25548698480914-monday-CRM-s-AI-features",
+        "fetched_at": "2026-08-24T14:05:50.967852Z",
+        "published_at": "2026-07-28T00:00:00"
+      },
+      {
+        "index": 3,
+        "url": "https://monday.com/careers",
+        "fetched_at": "2026-08-24T14:05:45.793209Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://techcrunch.com/2019/07/30/monday-com-raises-150m-more-now-at-1-9b-valuation-for-workplace-collaboration-tools",
+        "fetched_at": "2026-08-24T14:05:50.968871Z",
+        "published_at": "2019-07-30T00:00:00"
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:05:51Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "monday.com is a global software company building AI-powered products for teams to manage work. Its monday CRM is a revenue-execution platform covering lead generation, enrichment, sales outreach, meeting preparation, pipeline monitoring, and forecasting.",
+      "supported": true,
+      "reasoning": "The source text describes monday.com as a CRM platform that utilizes AI to enhance various aspects of revenue execution, including lead generation, enrichment, sales outreach, meeting preparation, pipeline monitoring, and forecasting. It explicitly mentions features that align with the claim, such as sourcing and enriching leads, preparing for meetings, and providing accurate forecasts. Therefore, the claim is directly supported by the details provided in the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Historical funding signal: TechCrunch reported that monday.com raised a $150M Series D led by Sapphire Ventures in July 2019, and reported $234.1M raised to date at that time.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that monday.com raised $150 million in a Series D funding round led by Sapphire Ventures in July 2019. Additionally, it mentions that the company had raised a total of $234.1 million to date at that time. Therefore, the claim is directly supported by the information provided in the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "monday.com\u2019s careers page listed 37 open jobs across 12 locations, including AI Enablement Solutions Manager, AI Program Manager, and multiple sales/partner roles.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that monday.com has \"37 jobs in 12 locations\" and lists specific job titles, including \"AI Enablement Solutions Manager\" and \"AI Program Manager,\" along with various sales roles. This directly supports the claim made."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": false,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 19248,
+    "output_tokens": 1479,
+    "estimated_cost_usd": 0.056244,
+    "latency_seconds": 23.66526566608809
+  }
+}

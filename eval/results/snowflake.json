@@ -1,0 +1,124 @@
+{
+  "brief": {
+    "company": {
+      "value": "Snowflake is a provider of a fully managed AI Data Cloud platform spanning data engineering, analytics, AI, applications/collaboration, and transactional workloads.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": null,
+    "hiring_signals": [
+      {
+        "value": "Snowflake states that it is actively hiring across locations.",
+        "confidence": "HIGH",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Its careers materials spotlight both Sales and AI Engineering teams; the AI Engineering organization describes work on production-grade LLM applications, intelligent agents, and AI-powered workflows.",
+        "confidence": "HIGH",
+        "evidence": [
+          3,
+          4
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: an enterprise-grade account-research workflow for sales\u2014using AI to synthesize account context and support sales teams\u2014provided it can work within Snowflake's data/AI environment and meet governance expectations. This is an inference from Snowflake's AI-agent investment, governed platform positioning, and sales focus on understanding customer needs.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / strategic evaluation; likely a low-confidence estimate because Snowflake operates a broad enterprise data-and-AI platform and has dedicated Sales and AI Engineering functions.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current funding round, amount, and investors; no primary or reliably fetched funding source was confirmed.",
+      "Specific sales-research tools currently used, CRM/data-enrichment stack, buying owner, budget, procurement process, and timeline.",
+      "Whether the enquiry represents an internal Snowflake deployment, a partner initiative, or another use case."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned exploring automation for sales account research. Snowflake is investing heavily in AI agents and governed enterprise AI workflows; how are your sales teams currently assembling account context, and where do the biggest gaps sit\u2014research coverage, prioritization, or turning findings into outreach?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://www.snowflake.com/en/",
+        "fetched_at": "2026-08-24T14:03:28.534984Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://snowflake.com/careers",
+        "fetched_at": "2026-08-24T14:03:21.543301Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://careers.snowflake.com/us/en/teams",
+        "fetched_at": "2026-08-24T14:03:50.299796Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://careers.snowflake.com/us/en/ai-ml-engineering",
+        "fetched_at": "2026-08-24T14:03:50.301948Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:03:50.301948Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Snowflake is a provider of a fully managed AI Data Cloud platform spanning data engineering, analytics, AI, applications/collaboration, and transactional workloads.",
+      "supported": true,
+      "reasoning": "The source text describes Snowflake as a provider of a fully managed platform that encompasses various aspects of data management, including data engineering, analytics, AI, applications/collaboration, and transactional workloads. It explicitly mentions that Snowflake supports data engineering, analytics, AI, applications, and transactions, which aligns with the claim. Therefore, the source text supports the claim that Snowflake is a provider of a fully managed AI Data Cloud platform spanning these areas."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Snowflake states that it is actively hiring across locations.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that \"Snowflake is growing fast and actively hiring across all locations,\" which directly supports the claim that Snowflake is actively hiring across locations."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Its careers materials spotlight both Sales and AI Engineering teams; the AI Engineering organization describes work on production-grade LLM applications, intelligent agents, and AI-powered workflows.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that the AI Engineering team specializes in developing production-grade LLM applications, intelligent agents, and AI-powered workflows. This directly supports the claim that the careers materials spotlight both Sales and AI Engineering teams, with a specific focus on the work done by the AI Engineering organization. Therefore, the claim is supported by the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": true
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 5,
+    "tool_calls": 10,
+    "input_tokens": 38869,
+    "output_tokens": 1828,
+    "estimated_cost_usd": 0.099674,
+    "latency_seconds": 45.311075958190486
+  }
+}

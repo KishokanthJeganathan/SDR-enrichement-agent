@@ -1,0 +1,137 @@
+{
+  "brief": {
+    "company": {
+      "value": "Webflow is an agentic web marketing platform for high-performing brands, offering shared workspaces for teams and AI agents, a visual CMS, SEO/AEO, analytics, and AI-powered optimization.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Webflow announced a $140M Series B led by Accel and Silversmith, with CapitalG and existing investors participating; it said the round valued the company at more than $2.1B.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Webflow\u2019s careers page lists openings including Corporate Account Executive - West, Senior Infrastructure Engineer, Senior Product Manager, Code, Staff Brand Designer, and Staff Software Engineer, Developer Productivity.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The mix of open sales, infrastructure, code-product, and developer-productivity roles indicates continued investment across go-to-market capacity and the technical platform.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          3
+        ],
+        "kind": "inference"
+      },
+      {
+        "value": "Webflow describes itself as remote-first, with employees around the world and no planned return-to-office mandate.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "A pre-call-research automation workflow could help Webflow\u2019s sales organization standardize account context and preparation for its enterprise-facing motion, particularly across a distributed team. This is an inference based on its open corporate AE role, remote-first operating model, and enterprise platform positioning.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Likely mid-market to enterprise evaluation, but with low confidence: Webflow has an enterprise product and active corporate-sales hiring, yet no sourced information establishes SDR-team size, workflow volume, budget, or procurement scope.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current funding, valuation, and cash position after the 2021 Series B announcement.",
+      "Size, structure, and locations of Webflow's SDR organization.",
+      "Existing sales-engagement, CRM, intent-data, or account-research tooling.",
+      "Named buyer, evaluation timeline, budget, security requirements, and procurement process."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned automating pre-call research for the SDR team. With Webflow hiring in corporate sales while operating as a remote-first organization, it may be useful to compare where reps currently spend time assembling account context and whether a consistent research brief could improve preparation without adding admin work.",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://webflow.com",
+        "fetched_at": "2026-08-24T14:11:59.658871Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://webflow.com/blog/webflow-series-b-funding",
+        "fetched_at": "2026-08-24T14:11:59.660131Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://webflow.com/careers",
+        "fetched_at": "2026-08-24T14:11:55.413149Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:11:59.661598Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Webflow is an agentic web marketing platform for high-performing brands, offering shared workspaces for teams and AI agents, a visual CMS, SEO/AEO, analytics, and AI-powered optimization.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that \"Webflow is the agentic web marketing platform for high-performing brands\" and describes features such as shared workspaces for teams and AI agents, a visual CMS, built-in SEO and AEO, analytics, and AI-powered optimization. These elements directly support the claim made about Webflow's capabilities and offerings."
+    },
+    {
+      "field": "funding",
+      "claim": "Webflow announced a $140M Series B led by Accel and Silversmith, with CapitalG and existing investors participating; it said the round valued the company at more than $2.1B.",
+      "supported": false,
+      "reasoning": "The source text explicitly states that Webflow has raised $140 million in Series B funding and that this funding has brought the company's valuation to over $2.1 billion. However, it does not mention the investors involved in this round, such as Accel, Silversmith, or CapitalG. Therefore, while the funding amount and valuation are supported, the specific details about the investors are not confirmed in the text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Webflow\u2019s careers page lists openings including Corporate Account Executive - West, Senior Infrastructure Engineer, Senior Product Manager, Code, Staff Brand Designer, and Staff Software Engineer, Developer Productivity.",
+      "supported": true,
+      "reasoning": "The source text explicitly lists the job openings at Webflow, including 'Corporate Account Executive - West', 'Senior Infrastructure Engineer', 'Senior Product Manager, Code', 'Staff Brand Designer', and 'Staff Software Engineer, Developer Productivity'. Therefore, the claim is directly supported by the source text as it accurately reflects the content provided."
+    },
+    {
+      "field": "hiring_signals[2]",
+      "claim": "Webflow describes itself as remote-first, with employees around the world and no planned return-to-office mandate.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that Webflow is \"remote-first\" and includes a quote from an employee discussing the benefits of not commuting to an office, which implies that there is no planned return-to-office mandate. This directly supports the claim that Webflow describes itself as remote-first with employees around the world and no planned return-to-office mandate."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {
+    "total_funding_amount": false
+  },
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 22745,
+    "output_tokens": 1314,
+    "estimated_cost_usd": 0.061258,
+    "latency_seconds": 24.00829604198225
+  }
+}

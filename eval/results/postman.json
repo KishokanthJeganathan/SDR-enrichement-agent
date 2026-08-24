@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "company": {
+      "value": "Postman is an API platform for building and using APIs, covering API design, testing, documentation, distribution, monitoring, security, and governance.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Postman announced a $225M Series D led by Insight Partners at a $5.6B valuation on August 18, 2021; Insight stated the company had raised more than $430M across four rounds.",
+      "confidence": "HIGH",
+      "evidence": [
+        4
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Postman\u2019s careers page describes it as a hybrid, globally distributed workplace and directs candidates to open positions.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Postman states it is \u201calways searching\u201d for people across fields, although the fetched careers page did not expose a current role list or hiring volume.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          2,
+          3
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: automating account and pre-call research for a sales team selling a technical, enterprise-oriented API platform\u2014so SDRs can quickly identify a prospect\u2019s API-development maturity, governance/security needs, developer-tool stack, and likely stakeholders before outreach.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        4
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise / strategic deal potential, but qualification is needed.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Whether Postman has an active SDR-research automation project, budget, timeline, or defined evaluation process.",
+      "The current size, structure, tooling, and geographic coverage of its SDR organization.",
+      "Current open roles and whether any specifically support sales operations, revenue operations, or SDR productivity.",
+      "The actual buyer, technical owner, security/procurement requirements, and competing solutions."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned automating pre-call research for your SDR team. Given Postman\u2019s enterprise API-platform motion\u2014where a prospect\u2019s technical environment and API maturity can shape the conversation\u2014I\u2019d be interested in how your team currently gathers and standardizes that context before outreach.",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://www.postman.com/product",
+        "fetched_at": "2026-08-24T14:09:42.097963Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://www.postman.com/company/about-postman",
+        "fetched_at": "2026-08-24T14:09:42.099172Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://postman.com/careers",
+        "fetched_at": "2026-08-24T14:09:36.823576Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://www.insightpartners.com/ideas/postman-closes-225-million-series-d-round-at-a-5-6-billion-valuation-to-power-the-api-first-world",
+        "fetched_at": "2026-08-24T14:09:46.578170Z",
+        "published_at": "2021-08-18T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:09:46.578170Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Postman is an API platform for building and using APIs, covering API design, testing, documentation, distribution, monitoring, security, and governance.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Postman is a unified platform for designing, testing, distributing, documenting, and monitoring APIs. It also mentions governance, which aligns with the claim that Postman covers API design, testing, documentation, distribution, monitoring, security, and governance. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Postman announced a $225M Series D led by Insight Partners at a $5.6B valuation on August 18, 2021; Insight stated the company had raised more than $430M across four rounds.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Postman announced a $225 million Series D round at a $5.6 billion valuation on August 18, 2021. It also mentions that Insight Partners led this round and that Postman has raised more than $430 million across four rounds. Therefore, the claim is directly supported by the information provided in the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Postman\u2019s careers page describes it as a hybrid, globally distributed workplace and directs candidates to open positions.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Postman is a \"hybrid workplace\" and mentions that it is a \"globally distributed workplace\". Additionally, it includes a section titled \"View Open Positions\", which indicates that candidates can find open positions. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "Postman states it is \u201calways searching\u201d for people across fields, although the fetched careers page did not expose a current role list or hiring volume.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Postman is \"always searching for smart, nice people in all fields,\" which directly supports the claim. However, it also mentions that the careers page did not expose a current role list or hiring volume, which is not addressed in the source text. Therefore, while the first part of the claim is supported, the second part regarding the lack of a role list or hiring volume is not mentioned in the text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true
+  },
+  "abstain_detail": {
+    "current_arr_or_revenue": true
+  },
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 8,
+    "input_tokens": 31553,
+    "output_tokens": 1467,
+    "estimated_cost_usd": 0.08071,
+    "latency_seconds": 25.604615041986108
+  }
+}

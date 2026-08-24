@@ -17,6 +17,7 @@ import time
 from dataclasses import dataclass
 
 from langchain.agents import create_agent
+from langchain.agents.structured_output import StructuredOutputValidationError
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_openai import ChatOpenAI
 
@@ -159,7 +160,35 @@ def run(enquiry: Enquiry) -> RunTrace:
 
     for attempt in range(MAX_REPAIR_ATTEMPTS + 1):
         prior_len = len(messages)
-        result = agent.invoke({"messages": messages})
+        try:
+            result = agent.invoke({"messages": messages})
+        except StructuredOutputValidationError as exc:
+            # Pydantic-level shape errors (e.g. a partial date like "2026-05"
+            # instead of a full ISO datetime) raise here, inside LangChain's
+            # own structured-output parsing — before validate_brief ever
+            # gets a Brief to check. There's no result to pull messages or
+            # usage stats from on this path, so the retry reruns research
+            # from the original message list rather than the failed
+            # attempt's trajectory.
+            malformed_output_violation = Violation("structured_output", str(exc))
+            if attempt == MAX_REPAIR_ATTEMPTS:
+                raise RunFailed([malformed_output_violation]) from exc
+            messages = messages + [
+                {
+                    "role": "user",
+                    "content": (
+                        "Your structured output failed schema validation: "
+                        f"{exc}\n\nEvery datetime field (fetched_at, "
+                        "published_at, generated_at) must be a full ISO 8601 "
+                        "datetime, e.g. '2026-05-14T00:00:00Z' — not a "
+                        "partial date like '2026-05'. If you don't know the "
+                        "exact date, omit the field (use null) rather than "
+                        "giving a partial one."
+                    ),
+                }
+            ]
+            continue
+
         mc, tc, itok, otok = _new_message_stats(result["messages"][prior_len:])
         model_calls += mc
         tool_calls += tc

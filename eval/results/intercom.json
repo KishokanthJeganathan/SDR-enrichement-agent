@@ -1,0 +1,128 @@
+{
+  "brief": {
+    "company": {
+      "value": "Intercom\u2019s careers page presents the business as Fin, an AI Customer Agent company; it says Fin was originally founded as Intercom and serves customer experience from support through sales and commerce.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "In March 2018, Intercom announced a $125M Series D at a $1.275B post-money valuation; Index Ventures stated that total funding at that time was $241M.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "The careers page listed 116 open roles across six international offices, signaling active hiring and continued investment in the organization.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The company explicitly describes an AI Group that continuously optimizes Fin through research, experimentation, and innovation, indicating sustained investment in AI product development.",
+        "confidence": "HIGH",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: equip inbound SDRs with faster, more consistent pre-call context and qualification preparation. This aligns with Fin for Sales\u2019 stated focus on managing inbound conversations, guiding discovery, qualifying prospects, booking meetings, and syncing with CRM\u2014suggesting that inbound qualification quality and sales-context workflows are central to the company\u2019s product motion.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        3,
+        1
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Likely enterprise/strategic potential, given the company describes itself as one of the largest private software companies and is actively hiring across 116 roles; exact budget, SDR-seat count, and buying process are unknown.",
+      "confidence": "LOW",
+      "evidence": [
+        1
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current SDR team size, geographic distribution, and inbound-call volume.",
+      "Current CRM, sales-engagement, call-recording, and account-research tooling used by the SDR organization.",
+      "Whether the requested capability is intended for an internal sales team, customer-facing product use, or both.",
+      "Budget, decision-maker, procurement path, and implementation timeline."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You\u2019re building Fin\u2019s sales capability around inbound discovery and qualification. For the SDR side, would it be useful to show how reps can arrive at an inbound call with a consistent account brief\u2014key company context, likely use case, and targeted discovery prompts\u2014rather than researching from scratch?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://intercom.com/careers",
+        "fetched_at": "2026-08-24T14:08:32.495401Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://www.indexventures.com/perspectives/intercom-announces-125-million-series-d-round",
+        "fetched_at": "2026-08-24T14:08:32.496020Z",
+        "published_at": "2018-03-27T00:00:00"
+      },
+      {
+        "index": 3,
+        "url": "https://www.intercom.com/help/en/articles/7120684-fin-ai-agent-explained",
+        "fetched_at": "2026-08-24T14:08:32.497109Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:08:32.497109Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Intercom\u2019s careers page presents the business as Fin, an AI Customer Agent company; it says Fin was originally founded as Intercom and serves customer experience from support through sales and commerce.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Fin is a Customer Agent company delivering customer experiences from support to sales to commerce. It also mentions that Fin was originally founded as Intercom, confirming the claim about its origins. Additionally, it describes the services provided by Fin, which aligns with the claim that it serves customer experience from support through sales and commerce. Therefore, the source text directly supports the claim."
+    },
+    {
+      "field": "funding",
+      "claim": "In March 2018, Intercom announced a $125M Series D at a $1.275B post-money valuation; Index Ventures stated that total funding at that time was $241M.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Intercom announced a $125 million Series D round with a post-money valuation of $1.275 billion. Additionally, it mentions that to-date, Intercom has raised a total of $241 million. This directly supports the claim regarding the funding announcement and the total funding amount at that time."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "The careers page listed 116 open roles across six international offices, signaling active hiring and continued investment in the organization.",
+      "supported": false,
+      "reasoning": "The source text explicitly states that there are \"116 open roles\" but does not mention anything about the roles being across \"six international offices\" or that this signals \"active hiring and continued investment in the organization.\" Therefore, while the number of open roles is supported, the claim about the international offices and implications of hiring and investment is not directly supported by the text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "The company explicitly describes an AI Group that continuously optimizes Fin through research, experimentation, and innovation, indicating sustained investment in AI product development.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that the AI Group at Fin continuously optimizes Fin's performance through cutting-edge research, experimentation, and innovation. This directly supports the claim that the company describes an AI Group that is involved in ongoing efforts to enhance its AI products, indicating a sustained investment in AI product development."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 6,
+    "input_tokens": 19983,
+    "output_tokens": 1684,
+    "estimated_cost_usd": 0.060174,
+    "latency_seconds": 25.138108499813825
+  }
+}

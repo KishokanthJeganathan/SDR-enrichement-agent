@@ -1,0 +1,124 @@
+{
+  "brief": {
+    "company": {
+      "value": "Discord is a communications platform centered on helping people connect around playing games through voice, video, and text. Its official site reports 90M+ daily active users as of Q4 2025.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Discord announced a $500M funding round led by Dragoneer Investment Group in September 2021, at a reported $15B valuation.",
+      "confidence": "HIGH",
+      "evidence": [
+        3
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Discord\u2019s careers page features an Engineering Manager, Safety Platform role, indicating active recruiting for its safety platform.",
+        "confidence": "HIGH",
+        "evidence": [
+          2
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "The featured safety-platform opening suggests continued investment in trust, safety, and platform operations alongside core gaming experiences.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          2
+        ],
+        "kind": "inference"
+      }
+    ],
+    "likely_use_case": {
+      "value": "A pre-call inbound-account research workflow for AEs: automatically consolidating company context, product/market signals, hiring activity, and funding history before calls. This is likely most useful where Discord\u2019s scale and expanding gaming-platform surface area make manual account preparation inconsistent.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "MID-ENTERPRISE",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        3
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current headcount, revenue, and procurement budget.",
+      "Whether Discord has a dedicated inbound AE team, the size of that team, and its current account-research process.",
+      "Current CRM, sales-engagement, enrichment, or competitive-intelligence tooling.",
+      "Buying owner, security requirements, implementation timeline, and commercial budget."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned preparing inbound accounts before AE calls. Given Discord\u2019s 90M+ daily-active-user scale and ongoing platform work\u2014including a featured Safety Platform engineering role\u2014how are reps currently pulling together timely company, hiring, and funding context before those conversations?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://discord.com/company",
+        "fetched_at": "2026-08-24T14:10:20.666869Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://discord.com/careers",
+        "fetched_at": "2026-08-24T14:10:20.668033Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
+        "url": "https://www.cnbc.com/2021/09/22/discord-doubles-valuation-to-15-billion-in-new-funding-round.html",
+        "fetched_at": "2026-08-24T14:10:20.672103Z",
+        "published_at": "2021-09-22T00:00:00"
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:10:20.672103Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Discord is a communications platform centered on helping people connect around playing games through voice, video, and text. Its official site reports 90M+ daily active users as of Q4 2025.",
+      "supported": false,
+      "reasoning": "The source text clearly states that Discord is a communications platform designed to help people connect while playing games through voice, video, and text features. However, it does not provide any information regarding the number of daily active users, specifically the claim of 90M+ daily active users as of Q4 2025. Therefore, while the first part of the claim is supported, the second part regarding user statistics is not mentioned in the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Discord announced a $500M funding round led by Dragoneer Investment Group in September 2021, at a reported $15B valuation.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Discord raised $500 million in a funding round led by Dragoneer Investment Group and that the company is now valued at $15 billion. This directly supports the claim made about the funding round and valuation in September 2021."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Discord\u2019s careers page features an Engineering Manager, Safety Platform role, indicating active recruiting for its safety platform.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions an open position for an \"Engineering Manager, Safety Platform\" at Discord, which directly supports the claim that Discord is actively recruiting for its safety platform. The presence of this job listing indicates that the company is looking for candidates to fill this role, confirming the claim."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false
+  },
+  "abstain_detail": {
+    "current_arr_or_revenue": true
+  },
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 9,
+    "input_tokens": 22084,
+    "output_tokens": 1537,
+    "estimated_cost_usd": 0.062612,
+    "latency_seconds": 25.227672416949645
+  }
+}

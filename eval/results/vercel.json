@@ -1,33 +1,34 @@
 {
   "brief": {
     "company": {
-      "value": "Vercel is an agentic-infrastructure company behind products including Next.js, v0, and AI SDK; it builds products intended to help teams move from idea to production with speed, security, and developer experience.",
+      "value": "Vercel describes itself as an agentic-infrastructure company and the team behind Next.js, v0, and AI SDK; its enterprise platform is for building, deploying, securing, and governing AI agents and modern web applications.",
       "confidence": "HIGH",
       "evidence": [
-        2
+        2,
+        3
       ],
       "kind": "verified"
     },
     "funding": null,
     "hiring_signals": [
       {
-        "value": "Vercel\u2019s careers page lists open sales roles across commercial, majors, enterprise, install-base, BDR, and sales-leadership segments, indicating active investment in a segmented go-to-market organization.",
+        "value": "Vercel is actively hiring a GTM Acceleration Lead, Value Selling, to build repeatable enterprise-sales plays, ROI models, discovery playbooks, and coaching systems for account executives.",
         "confidence": "HIGH",
         "evidence": [
-          1
+          4
         ],
         "kind": "verified"
       },
       {
-        "value": "Vercel is hiring for an Internal Agent role to build \u201cV,\u201d an internal agentic interface for answering questions, analyzing data, and executing multi-system workflows across Vercel.",
+        "value": "Vercel is hiring for an Internal Agent role to build \u201cV,\u201d an agentic interface for answering questions, analyzing data, and executing multi-system workflows across Vercel.",
         "confidence": "HIGH",
         "evidence": [
-          2
+          3
         ],
         "kind": "verified"
       },
       {
-        "value": "The company is also hiring technical roles focused on agentic infrastructure, AI Gateway, AI SDK, and security, signaling continued AI-platform and governance investment.",
+        "value": "Its careers page lists open sales roles across commercial, major-account, enterprise, BDR, and sales leadership functions, alongside agentic-infrastructure, AI Gateway, AI SDK, security, and observability roles.",
         "confidence": "HIGH",
         "evidence": [
           1
@@ -36,75 +37,87 @@
       }
     ],
     "likely_use_case": {
-      "value": "Vercel is likely evaluating automated account-context briefs for inbound sales calls, with an initial fit around giving its segmented sales teams concise, reliable research before conversations. This aligns with its stated inbound need and its internal-agent investment in question answering, data analysis, and multi-system workflows.",
+      "value": "Vercel is likely to prioritize an automated pre-call account-context workflow for its enterprise sales organization: consolidating account data, surfacing relevant context, and supporting repeatable discovery/value-selling preparation. This is an inference from its stated need to make AEs more effective through scalable plays and its parallel investment in an internal agent that analyzes data and executes cross-system work.",
       "confidence": "HIGH",
       "evidence": [
-        1,
-        2
+        3,
+        4
       ],
       "kind": "inference"
     },
     "deal_band": {
-      "value": "Likely mid-market to enterprise annual deal potential, but scope is not yet established; start with a focused inbound-sales workflow and validate user count, data sources, CRM workflow, and security requirements.",
+      "value": "Likely mid-market to enterprise deal potential; validate budget, rollout scope, and whether this is a sales-only workflow or a company-wide internal-agent initiative.",
       "confidence": "LOW",
       "evidence": [
-        1,
-        2
+        3,
+        4
       ],
       "kind": "inference"
     },
     "unverified": [
-      "Current funding beyond Vercel\u2019s historical public announcements was not confirmed from a fetchable primary or accessible news source.",
-      "The specific CRM, sales-engagement, data-enrichment, and call-prep tools used by Vercel\u2019s sales organization are not verified.",
-      "The number of sales users, required integrations, and purchasing timeline are not verified."
+      "Funding: a public funding figure was found in search results, but the underlying news source could not be fetched because of robots.txt restrictions, so no funding claim is included.",
+      "Current sales-tech stack, CRM, call-recording platform, account-data providers, and buyer/decision process.",
+      "Whether the requested pre-call context capability is intended for a pilot, a sales-wide deployment, or incorporation into Vercel\u2019s internal agent (\u201cV\u201d)."
     ],
     "conflicts": [],
-    "suggested_opening": "You mentioned the sales team wants automated account context before inbound calls. I noticed Vercel is building an internal agent for answering questions, analyzing data, and working across multiple systems\u2014are you looking to apply a similar trusted-agent workflow to inbound account research, or is the immediate goal a lighter-weight pre-call brief for reps?",
+    "suggested_opening": "Your GTM hiring points to a focus on making enterprise AEs more repeatable with stronger discovery and value-selling systems, while the Internal Agent role shows Vercel is also investing in cross-system data analysis and workflow automation. How are reps currently assembling account context before inbound enterprise calls, and where does that process break down? [3][4]",
     "sources": [
       {
         "index": 1,
         "url": "https://vercel.com/careers",
-        "fetched_at": "2026-08-24T13:05:49.575038Z",
+        "fetched_at": "2026-08-24T14:00:16.623611Z",
         "published_at": null
       },
       {
         "index": 2,
+        "url": "https://vercel.com/enterprise",
+        "fetched_at": "2026-08-24T14:00:23.480772Z",
+        "published_at": null
+      },
+      {
+        "index": 3,
         "url": "https://vercel.com/careers/member-of-the-technical-staff-internal-agent-us-6134374004",
-        "fetched_at": "2026-08-24T13:05:55.365609Z",
+        "fetched_at": "2026-08-24T14:00:23.483299Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://vercel.com/careers/gtm-acceleration-lead-value-selling-6119471004",
+        "fetched_at": "2026-08-24T14:00:23.484009Z",
         "published_at": null
       }
     ],
-    "overall_confidence": "MEDIUM",
-    "generated_at": "2026-08-24T13:05:55.367625Z"
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:00:23Z"
   },
   "citation_detail": [
     {
       "field": "company",
-      "claim": "Vercel is an agentic-infrastructure company behind products including Next.js, v0, and AI SDK; it builds products intended to help teams move from idea to production with speed, security, and developer experience.",
+      "claim": "Vercel describes itself as an agentic-infrastructure company and the team behind Next.js, v0, and AI SDK; its enterprise platform is for building, deploying, securing, and governing AI agents and modern web applications.",
       "supported": true,
-      "reasoning": "The source text explicitly states that Vercel is an \"agentic infrastructure company\" and mentions that it is the team behind products including Next.js, v0, and AI SDK. Additionally, it describes the purpose of these products as helping teams move from idea to production with speed, security, and exceptional developer experience. Therefore, the claim is directly supported by the source text."
+      "reasoning": "The source text explicitly states that \"Vercel is the agentic infrastructure company\" and mentions that it is the team behind Next.js, v0, and AI SDK. Additionally, it describes Vercel's platform as one that supports building, deploying, securing, and governing AI agents and modern web applications. Therefore, the claim is directly supported by the source text."
     },
     {
       "field": "hiring_signals[0]",
-      "claim": "Vercel\u2019s careers page lists open sales roles across commercial, majors, enterprise, install-base, BDR, and sales-leadership segments, indicating active investment in a segmented go-to-market organization.",
+      "claim": "Vercel is actively hiring a GTM Acceleration Lead, Value Selling, to build repeatable enterprise-sales plays, ROI models, discovery playbooks, and coaching systems for account executives.",
       "supported": true,
-      "reasoning": "The source text lists various open sales roles at Vercel, including positions such as Account Executive across different segments (Commercial, Majors, Enterprise, Install Base) and Business Development Representative roles. This indicates that Vercel is actively hiring in these specific sales segments, which supports the claim of active investment in a segmented go-to-market organization. The mention of roles across different sales categories directly aligns with the claim made."
+      "reasoning": "The source text explicitly states that Vercel is hiring a GTM Acceleration Lead, Value Selling, and details the responsibilities of the role, including building repeatable sales plays, ROI models, and discovery playbooks. This directly supports the claim made about the hiring of this position and its associated tasks."
     },
     {
       "field": "hiring_signals[1]",
-      "claim": "Vercel is hiring for an Internal Agent role to build \u201cV,\u201d an internal agentic interface for answering questions, analyzing data, and executing multi-system workflows across Vercel.",
+      "claim": "Vercel is hiring for an Internal Agent role to build \u201cV,\u201d an agentic interface for answering questions, analyzing data, and executing multi-system workflows across Vercel.",
       "supported": true,
       "reasoning": "The source text explicitly states that Vercel is hiring for a role titled 'Member of the Technical Staff, Internal Agent' and describes the responsibilities of this role, including designing and building 'V' as the primary agentic interface for tasks such as answering questions, analyzing data, and executing multi-system workflows across Vercel. This directly supports the claim that Vercel is hiring for an Internal Agent role to build 'V' with the specified functionalities."
     },
     {
       "field": "hiring_signals[2]",
-      "claim": "The company is also hiring technical roles focused on agentic infrastructure, AI Gateway, AI SDK, and security, signaling continued AI-platform and governance investment.",
+      "claim": "Its careers page lists open sales roles across commercial, major-account, enterprise, BDR, and sales leadership functions, alongside agentic-infrastructure, AI Gateway, AI SDK, security, and observability roles.",
       "supported": false,
-      "reasoning": "The source text lists various open positions at Vercel, including a specific role titled 'DevRel Engineer, Agentic Infrastructure.' However, it does not mention roles focused on 'AI Gateway,' 'AI SDK,' or 'security,' nor does it explicitly state that these roles signal continued investment in AI-platform and governance. Therefore, while there is a mention of a role related to agentic infrastructure, the claim about hiring for AI Gateway, AI SDK, and security is not supported by the text."
+      "reasoning": "The source text lists various open positions at Vercel, including roles in sales such as Account Executive for Commercial and Majors, Business Development Representative, and Enterprise Account Executive. It also mentions roles related to agentic infrastructure, specifically a DevRel Engineer for Agentic Infrastructure. However, it does not explicitly mention roles for AI Gateway, AI SDK, security, or observability. Therefore, while the text supports part of the claim regarding sales roles and agentic infrastructure, it does not fully support the entire claim as it lacks mention of the other specified roles."
     }
   ],
   "accuracy_detail": {
-    "hq_country": true,
+    "hq_country": false,
     "funding_round": false,
     "has_open_engineering_roles": false
   },
@@ -114,10 +127,10 @@
     "repair_attempts": 0,
     "initial_violations": 0,
     "model_calls": 3,
-    "tool_calls": 6,
-    "input_tokens": 20071,
-    "output_tokens": 1344,
-    "estimated_cost_usd": 0.05627,
-    "latency_seconds": 20.69954325002618
+    "tool_calls": 7,
+    "input_tokens": 20010,
+    "output_tokens": 1654,
+    "estimated_cost_usd": 0.059868,
+    "latency_seconds": 27.88834483292885
   }
 }

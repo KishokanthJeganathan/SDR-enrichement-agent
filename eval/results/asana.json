@@ -1,0 +1,96 @@
+{
+  "brief": {
+    "company": {
+      "value": "Asana is a work-management software provider whose platform supports coordinating plans, projects, processes, tasks, ownership, reporting, and integrations across teams.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "funding": null,
+    "hiring_signals": [
+      {
+        "value": "Asana\u2019s careers page directs candidates to open positions and identifies operating locations across North America, Europe, Asia-Pacific, and other regions; the page also includes a Revenue Operations Analyst employee profile.",
+        "confidence": "MEDIUM",
+        "evidence": [
+          1
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Potential fit for account-context tooling used in AE call preparation: Asana appears to operate a distributed, revenue-supporting organization, while its own product emphasizes bringing work, updates, and connected tools into a shared system. A solution that surfaces concise account context before calls may help reduce pre-call research and keep sales conversations aligned.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "MID-MARKET / ENTERPRISE potential, subject to qualification of AE-team size, existing sales systems, and purchasing owner.",
+      "confidence": "LOW",
+      "evidence": [
+        1,
+        2
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "Current open roles and whether any are specifically in sales, sales operations, or revenue systems.",
+      "AE-team size, sales-tech stack, CRM, and current account-research workflow.",
+      "Budget, procurement process, decision-maker, and timeline.",
+      "Funding history was not included because no primary source was successfully fetched to verify it."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You mentioned giving AEs better account context before calls. Given Asana\u2019s focus on reducing disconnected work and keeping teams aligned, how do reps today gather the customer, opportunity, and prior-conversation context they need before a meeting\u2014and where does that process break down?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://asana.com/careers",
+        "fetched_at": "2026-08-24T14:04:49.902164Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://asana.com/uses/work-management",
+        "fetched_at": "2026-08-24T14:04:57.051341Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "MEDIUM",
+    "generated_at": "2026-08-24T14:05:04.413884Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Asana is a work-management software provider whose platform supports coordinating plans, projects, processes, tasks, ownership, reporting, and integrations across teams.",
+      "supported": true,
+      "reasoning": "The source text describes Asana as a work management software that helps coordinate plans, projects, and processes across teams. It mentions features such as managing tasks, assigning responsibilities, and providing visibility into work, which aligns with the claim about supporting coordination of plans, projects, processes, tasks, ownership, reporting, and integrations. Therefore, the source text supports the claim."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Asana\u2019s careers page directs candidates to open positions and identifies operating locations across North America, Europe, Asia-Pacific, and other regions; the page also includes a Revenue Operations Analyst employee profile.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that Asana's careers page includes open positions and lists various operating locations across North America, Europe, Asia-Pacific, and other regions. Additionally, it includes a quote from Valerie Merosier, who is identified as a Revenue Operations Analyst, confirming the presence of an employee profile for that position. Therefore, the claim is directly supported by the source text."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": false,
+    "has_open_engineering_roles": false
+  },
+  "abstain_detail": {},
+  "conflict_detail": {},
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 4,
+    "tool_calls": 7,
+    "input_tokens": 28935,
+    "output_tokens": 1412,
+    "estimated_cost_usd": 0.074814,
+    "latency_seconds": 50.60222287499346
+  }
+}

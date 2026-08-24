@@ -1,0 +1,155 @@
+{
+  "brief": {
+    "company": {
+      "value": "Miro is an AI-enabled visual workspace for innovation, used for strategy, product/service design, and process management across the innovation lifecycle. Miro states that more than 100 million users at 250,000 organizations use the platform.",
+      "confidence": "HIGH",
+      "evidence": [
+        1
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Miro announced a $400M Series C on January 5, 2022, bringing total funding to $476M at a stated $17.5B post-money valuation. The company said it was profitable at that time.",
+      "confidence": "HIGH",
+      "evidence": [
+        2
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Miro\u2019s careers site describes a global team of more than 1,600 people and shows open positions across multiple hubs, indicating an established, distributed organization.",
+        "confidence": "HIGH",
+        "evidence": [
+          3
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "A current Head of Americas Sales posting calls for leadership of 60+ sellers and leaders across commercial, enterprise, and strategic segments, with a mandate to build a signal-driven revenue engine using product usage, customer insights, and AI.",
+        "confidence": "HIGH",
+        "evidence": [
+          4
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Miro is building/maintaining enterprise and strategic sales capacity. Its role description explicitly calls for AI-assisted account research, stakeholder mapping, territory strategy, opportunity planning, and sales productivity; it also describes complex, multi-year enterprise deals.",
+        "confidence": "HIGH",
+        "evidence": [
+          5
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Likely fit: sales-call preparation and account intelligence for Miro\u2019s inbound and enterprise sales motion\u2014especially surfacing account context, stakeholder maps, priorities, and expansion signals. This maps directly to its stated push for AI-supported research and a signal-driven revenue engine.",
+      "confidence": "HIGH",
+      "evidence": [
+        4,
+        5
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Enterprise sales-team deployment, likely above a small-seat pilot; exact budget and buying process are unverified.",
+      "confidence": "LOW",
+      "evidence": [
+        4,
+        5
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "The specific sales-research tools Miro uses today and any incumbent/vendor contract.",
+      "The size, location, seniority, and purchasing authority of the inbound team submitting the enquiry.",
+      "Budget, timeline, technical requirements, security review requirements, and procurement process for this initiative.",
+      "Whether the enquiry is for a pilot, a regional team, or a company-wide rollout."
+    ],
+    "conflicts": [],
+    "suggested_opening": "You\u2019re looking at research tools for inbound-call prep. I noticed Miro\u2019s sales organization is explicitly investing in AI-supported account research, stakeholder mapping, and signal-driven selling\u2014would it be useful to compare how a research workflow could give reps a concise account brief before every inbound conversation, without adding manual prep work?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://miro.com/about",
+        "fetched_at": "2026-08-24T14:11:26.760661Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://miro.com/newsroom/miro-series-c",
+        "fetched_at": "2026-08-24T14:11:26.761775Z",
+        "published_at": "2022-01-05T00:00:00"
+      },
+      {
+        "index": 3,
+        "url": "https://miro.com/careers",
+        "fetched_at": "2026-08-24T14:11:20.906281Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://miro.com/careers/vacancy/8498833002",
+        "fetched_at": "2026-08-24T14:11:26.762780Z",
+        "published_at": null
+      },
+      {
+        "index": 5,
+        "url": "https://miro.com/careers/vacancy/8634110002",
+        "fetched_at": "2026-08-24T14:11:26.764108Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T14:11:26.765216Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Miro is an AI-enabled visual workspace for innovation, used for strategy, product/service design, and process management across the innovation lifecycle. Miro states that more than 100 million users at 250,000 organizations use the platform.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Miro is a visual workspace for innovation that enables teams to develop strategy, design products and services, and manage processes throughout the innovation lifecycle. It also mentions that more than 100 million users in 250,000 organizations use the platform, which directly supports the claim. Therefore, the claim is fully supported by the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Miro announced a $400M Series C on January 5, 2022, bringing total funding to $476M at a stated $17.5B post-money valuation. The company said it was profitable at that time.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Miro announced a $400M Series C funding round on January 5, 2022, and confirms that this funding brings the total to $476M and the post-money valuation to $17.5B. Additionally, it clearly mentions that Miro was a profitable company at that time. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Miro\u2019s careers site describes a global team of more than 1,600 people and shows open positions across multiple hubs, indicating an established, distributed organization.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Miro is a global team of more than 1,600 people, which directly supports the claim. Additionally, it mentions open positions across various teams, indicating that the organization is distributed and has established operations in multiple areas. Therefore, the claim is well-supported by the information provided in the source text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "A current Head of Americas Sales posting calls for leadership of 60+ sellers and leaders across commercial, enterprise, and strategic segments, with a mandate to build a signal-driven revenue engine using product usage, customer insights, and AI.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that the Head of AMER Sales will lead a team of 60+ sellers and leaders across Commercial, Enterprise, and Strategic segments. It also mentions the responsibility to build a signal-driven revenue engine using product usage, customer insights, and AI. Therefore, the claim is directly supported by the source text."
+    },
+    {
+      "field": "hiring_signals[2]",
+      "claim": "Miro is building/maintaining enterprise and strategic sales capacity. Its role description explicitly calls for AI-assisted account research, stakeholder mapping, territory strategy, opportunity planning, and sales productivity; it also describes complex, multi-year enterprise deals.",
+      "supported": true,
+      "reasoning": "The source text explicitly describes the roles and responsibilities of the Enterprise and Strategic Account Executives at Miro, including the need for AI-assisted account research, stakeholder mapping, territory strategy, opportunity planning, and sales productivity. It also mentions that the deals are complex, multi-threaded, and often multi-year, which aligns with the claim. Therefore, the source text supports the claim made about Miro's focus on building and maintaining enterprise and strategic sales capacity."
+    }
+  ],
+  "accuracy_detail": {
+    "funding_round": true
+  },
+  "abstain_detail": {},
+  "conflict_detail": {
+    "user_count": false
+  },
+  "trace": {
+    "repair_attempts": 0,
+    "initial_violations": 0,
+    "model_calls": 3,
+    "tool_calls": 9,
+    "input_tokens": 25720,
+    "output_tokens": 1644,
+    "estimated_cost_usd": 0.071168,
+    "latency_seconds": 25.62963966699317
+  }
+}
