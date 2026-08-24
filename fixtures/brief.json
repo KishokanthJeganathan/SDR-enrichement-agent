@@ -1,0 +1,81 @@
+{
+  "company": {
+    "value": "Nordlyft Logistics — freight-forwarding SaaS platform, HQ Rotterdam, NL.",
+    "confidence": "HIGH",
+    "evidence": [1, 2],
+    "kind": "verified"
+  },
+  "funding": {
+    "value": "Raised a $14M Series B in March 2026, led by Keel Ventures.",
+    "confidence": "HIGH",
+    "evidence": [3],
+    "kind": "verified"
+  },
+  "hiring_signals": [
+    {
+      "value": "Two open reqs for \"Backend Engineer, Document Processing Pipelines\" — suggests active investment in automating freight-document ingestion (BoL, customs paperwork).",
+      "confidence": "HIGH",
+      "evidence": [4],
+      "kind": "verified"
+    },
+    {
+      "value": "One open req for \"Senior Data Engineer\" on a team described as \"customs & compliance.\"",
+      "confidence": "MEDIUM",
+      "evidence": [4],
+      "kind": "verified"
+    }
+  ],
+  "likely_use_case": {
+    "value": "Probable interest in document-extraction / OCR tooling to reduce manual handling of shipping paperwork, consistent with the Series B raise and the document-pipeline hiring push.",
+    "confidence": "MEDIUM",
+    "evidence": [3, 4],
+    "kind": "inference"
+  },
+  "deal_band": {
+    "value": "Likely mid-market band (~$25–60K ACV), based on headcount signals and Series B stage.",
+    "confidence": "LOW",
+    "evidence": [1, 3],
+    "kind": "inference"
+  },
+  "unverified": [
+    "Total headcount (site and LinkedIn disagree — see Conflicts below)",
+    "Whether they have an existing TMS vendor"
+  ],
+  "conflicts": [
+    {
+      "field": "headcount",
+      "positions": [
+        "Position A: \"~45 employees\" — company website team page. [1]",
+        "Position B: \"110-250 employees\" — LinkedIn company page. [2]"
+      ],
+      "evidence": [1, 2],
+      "resolution": "Neither is authoritative; reported as unverified rather than picking one. Website team pages are frequently stale; LinkedIn ranges are self-reported bands, not counts."
+    }
+  ],
+  "suggested_opening": "Congrats on the Series B — saw you're building out the document-processing side of the pipeline. A lot of teams at that stage are looking at cutting manual handling time on freight paperwork; is that something on your radar for this year?",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://nordlyft.example.com/about",
+      "fetched_at": "2026-08-24T09:01:11Z"
+    },
+    {
+      "index": 2,
+      "url": "https://www.linkedin.com/company/nordlyft-logistics",
+      "fetched_at": "2026-08-24T09:02:47Z"
+    },
+    {
+      "index": 3,
+      "url": "https://techcrunch.example.com/2026/03/nordlyft-series-b",
+      "fetched_at": "2026-08-24T09:03:30Z",
+      "published_at": "2026-03-11T00:00:00Z"
+    },
+    {
+      "index": 4,
+      "url": "https://nordlyft.example.com/careers",
+      "fetched_at": "2026-08-24T09:04:52Z"
+    }
+  ],
+  "overall_confidence": "MEDIUM",
+  "generated_at": "2026-08-24T09:12:03Z"
+}
