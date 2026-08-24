@@ -241,17 +241,17 @@ Add planning, the four sub-agents with isolated contexts, and the filesystem
 findings pattern. Re-run the eval. The delta versus Phase 2 is the headline
 result of the project.
 
-### Phase 5 — human in the loop
-
-`interrupt()` before any brief with a LOW-confidence field is released.
-Resume with approval, edit, or reject. Persist with a Postgres checkpointer so
-a paused run survives a restart.
-
-### Phase 6 — observability
+### Phase 5 — observability
 
 Langfuse (self-hostable, open source, appears by name in job postings) or
 LangSmith. Trace every run: tool calls, sub-agent spans, token cost, wall
 time. Add cost-per-brief and steps-per-brief to the eval output.
+
+### Phase 6 — human in the loop
+
+`interrupt()` before any brief with a LOW-confidence field is released.
+Resume with approval, edit, or reject. Persist with a Postgres checkpointer so
+a paused run survives a restart.
 
 ### Phase 7 — API and brief viewer
 
@@ -265,7 +265,7 @@ citations. No streaming yet.
 ### Phase 8 — live run view and review queue
 
 SSE streaming, the four sub-agent lanes, and the human-in-the-loop queue
-wired to the Phase 5 interrupts. Verify resumability explicitly: start a run,
+wired to the Phase 6 interrupts. Verify resumability explicitly: start a run,
 close the tab, reopen the thread URL, approve from there.
 
 **Done when:** a paused run survives a server restart and can be approved

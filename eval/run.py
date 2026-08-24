@@ -1,28 +1,44 @@
 """Phase 3 evaluation harness. See CLAUDE.md §7.
 
-Run: uv run python eval/run.py
+Run: uv run python eval/run.py --agent simple
+     uv run python eval/run.py --agent deep
 
 Most of these six metrics are deterministic by construction — that's a
 design property of the Brief schema, not a coincidence (CLAUDE.md §7). Only
 citation validity needs an LLM judge, and its own accuracy is checked first
 against hand-labeled examples before its numbers are printed as trustworthy.
+
+Results are written to results/<agent>/ so Phase 2 and Phase 4 runs stay
+inspectable side by side rather than one overwriting the other.
 """
 
+import argparse
 import json
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 EVAL_DIR = Path(__file__).parent
 sys.path.insert(0, str(EVAL_DIR))  # so `import judge` works regardless of cwd
 from judge import judge_citation, validate_judge  # noqa: E402
 
-from sdr.agent_simple import RunFailed, run  # noqa: E402
 from sdr.models import Brief, Claim, Enquiry  # noqa: E402
 from sdr.tools.fetch import fetch_text  # noqa: E402
+from sdr.trace import RunFailed, RunTrace  # noqa: E402
 
 GOLDEN_PATH = EVAL_DIR / "golden.json"
 JUDGE_LABELS_PATH = EVAL_DIR / "judge_labels.json"
 JUDGE_ACCURACY_THRESHOLD = 0.8
+
+
+def _run_fn(agent: str) -> Callable[[Enquiry], RunTrace]:
+    if agent == "simple":
+        from sdr.agent_simple import run
+    elif agent == "deep":
+        from sdr.agent_deep import run
+    else:
+        raise ValueError(f"unknown agent: {agent!r}")
+    return run
 
 _STOPWORDS = {"or", "and", "the", "a", "current", "exact"}
 _COUNTRY_SYNONYMS = {"US": ["US", "United States", "U.S."]}
@@ -127,7 +143,9 @@ def _print_misses(label: str, detail: dict) -> None:
             print(f"    MISS ({label}): {key}")
 
 
-def run_eval() -> None:
+def run_eval(agent: str = "simple") -> None:
+    run = _run_fn(agent)
+
     print("=== Validating citation judge against hand-labeled examples ===")
     labels = json.loads(JUDGE_LABELS_PATH.read_text())
     judge_accuracy, mismatches = validate_judge(JUDGE_LABELS_PATH)
@@ -143,8 +161,8 @@ def run_eval() -> None:
     else:
         print()
 
-    results_dir = EVAL_DIR / "results"
-    results_dir.mkdir(exist_ok=True)
+    results_dir = EVAL_DIR / "results" / agent
+    results_dir.mkdir(parents=True, exist_ok=True)
 
     golden = json.loads(GOLDEN_PATH.read_text())
     rows = []
@@ -243,4 +261,7 @@ def run_eval() -> None:
 
 
 if __name__ == "__main__":
-    run_eval()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--agent", choices=["simple", "deep"], default="simple")
+    args = parser.parse_args()
+    run_eval(args.agent)
