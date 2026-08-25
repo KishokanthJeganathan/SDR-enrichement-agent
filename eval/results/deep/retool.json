@@ -1,20 +1,20 @@
 {
   "brief": {
     "company": {
-      "value": "Retool is a San Francisco-based enterprise AppGen/developer platform that, by its own description, supports building production-ready internal apps, agents, and automations connected to business data with governed deployment controls. Built In lists 350 employees, which Retool does not independently confirm on the official pages reviewed.",
+      "value": "Retool is an enterprise application-development platform for building governed internal apps and automations. Retool says its platform can generate production-ready applications, connect to production data, and deploy with authentication, access controls, audit logging, and governance. It also describes core use cases spanning CRUD apps, workflows/automations, and enterprise-operations software.",
       "confidence": "HIGH",
       "evidence": [
         1,
         2,
-        3,
-        6
+        4
       ],
       "kind": "verified"
     },
     "funding": {
-      "value": "The most recent publicly announced financing located was a $45,000,000 Series C2 at a $3,200,000,000 valuation; Retool and TechCrunch identify the announcement as a Series C2, and TechCrunch published its coverage on 2022-07-28T13:03:00Z.",
+      "value": "The latest publicly announced financing located was a $45,000,000 Series C2 at a $3,200,000,000 valuation, announced by Retool on 2022-07-28T13:00:00Z. Retool named existing investors including Sequoia Capital, John Collison, Patrick Collison, Nat Friedman, Elad Gil, Daniel Gross, and Caryn Marooney.",
       "confidence": "HIGH",
       "evidence": [
+        8,
         9,
         10
       ],
@@ -22,31 +22,7 @@
     },
     "hiring_signals": [
       {
-        "value": "Retool\u2019s direct careers-page snapshot listed 32 open roles across functions including Engineering, Product, Data Science & Analytics, Sales, Sales Development, Success, and Support.",
-        "confidence": "HIGH",
-        "evidence": [
-          14
-        ],
-        "kind": "verified"
-      },
-      {
-        "value": "An open Staff Product Manager, Automation role says the hire will scale automation across workflows, integrations, and AI-driven agents, and characterizes automation as a core product-strategy pillar.",
-        "confidence": "HIGH",
-        "evidence": [
-          15
-        ],
-        "kind": "verified"
-      },
-      {
-        "value": "An open Software Engineer, Governance role covers policies, access controls, audit trails, security infrastructure, agent permissioning/observability, and security administration capabilities.",
-        "confidence": "HIGH",
-        "evidence": [
-          16
-        ],
-        "kind": "verified"
-      },
-      {
-        "value": "An open Business Development Representative role says Retool grew its sales team 3x in the prior year and needs to continue expanding to meet 2026 revenue targets; the role includes prospecting, testing outbound strategies, booking qualified meetings, and Salesforce pipeline analysis.",
+        "value": "Retool\u2019s careers page showed 32 open roles at fetch time, including engineering, product, and sales-development openings. This is direct evidence of active hiring, although it does not establish planned hire volume.",
         "confidence": "HIGH",
         "evidence": [
           18
@@ -54,255 +30,357 @@
         "kind": "verified"
       },
       {
-        "value": "The concurrent automation, governance, and GTM openings suggest Retool is investing in enterprise-ready AI/workflow capabilities while continuing structured outbound growth.",
-        "confidence": "MEDIUM",
+        "value": "A Staff Product Manager, Automation opening says Retool is defining and scaling next-generation automation across workflows, integrations, and AI-driven agents, with the goal of extending beyond internal apps into end-to-end process orchestration.",
+        "confidence": "HIGH",
         "evidence": [
-          15,
-          16,
-          18
+          20
         ],
-        "kind": "inference"
+        "kind": "verified"
+      },
+      {
+        "value": "An Enterprise Platform product role and a Governance engineering role indicate investment in deployment infrastructure, permissions, auditability, AI-agent controls, data-access policies, and enterprise security/governance.",
+        "confidence": "HIGH",
+        "evidence": [
+          21,
+          22
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "An enterprise AE posting describes enterprise as Retool\u2019s largest-by-revenue segment and references six- and seven-figure deals. A BDR posting says the sales team grew 3\u00d7 in the prior year and that Retool is expanding outbound capacity toward 2026 revenue targets.",
+        "confidence": "HIGH",
+        "evidence": [
+          23,
+          24
+        ],
+        "kind": "verified"
       }
     ],
     "likely_use_case": {
-      "value": "A plausible use case is an SDR research-and-qualification workflow that combines company-data research, AI-assisted account summaries, routing, and CRM workflow steps. This is an inference from Retool\u2019s stated app/agent/automation positioning and its active automation and outbound-sales hiring, not evidence of an existing Retool deployment for this use case.",
+      "value": "Retool is likely evaluating or could build a custom, governed SDR qualification/research workflow that connects approved sales data sources with AI-assisted research and internal automations. This is an inference from Retool\u2019s app/automation platform, MCP capability, and stated governance features\u2014not evidence of a packaged SDR-research product or current internal adoption by its SDR team.",
       "confidence": "MEDIUM",
       "evidence": [
         1,
-        15,
-        18
+        4,
+        27
       ],
       "kind": "inference"
     },
     "deal_band": {
-      "value": "Likely mid-market to enterprise opportunity, based on Retool\u2019s externally listed 350 employees, multi-office footprint, enterprise positioning, and active sales-development expansion. Budget, buying process, and the SDR organization\u2019s tooling are not verified.",
+      "value": "Enterprise / strategic: Retool\u2019s own enterprise-AE role references six- and seven-figure deals and identifies enterprise as its largest-by-revenue segment. This indicates that large enterprise deal sizes are part of its sales motion, but does not establish the size of any prospective research-automation purchase.",
       "confidence": "LOW",
       "evidence": [
-        5,
-        6,
-        18
+        23
       ],
       "kind": "inference"
     },
     "unverified": [
-      "Any financing announced after the publicly located Series C2 announcement covered by TechCrunch on 2022-07-28T13:03:00Z.",
-      "Retool\u2019s current company-confirmed employee count.",
-      "Publication dates for the current job listings.",
-      "Whether Retool currently uses a dedicated SDR research-automation product or has an active project/budget for one."
+      "A first-party, point-in-time total employee count was not found.",
+      "A primary Retool source explicitly designating its corporate headquarters was not found; Built In lists San Francisco, while Retool confirms offices in San Francisco, New York, Salt Lake City, and London.",
+      "An authoritative formal company-stage designation was not found.",
+      "No primary announcement of financing after the 2022-07-28T13:00:00Z Series C2 was located; this does not rule out later undisclosed financings, debt, or secondary transactions.",
+      "The current availability of Retool\u2019s MCP server for self-hosted deployments requires confirmation because Retool\u2019s first-party materials conflict.",
+      "No evidence was found that Retool currently uses a specific SDR research-automation tool or that it is actively purchasing one."
     ],
     "conflicts": [
       {
-        "field": "Open-role count",
+        "field": "headcount",
         "positions": [
-          "A fetched search result for the official careers URL reported 38 roles.",
-          "A direct fetch of the official careers page reported 32 roles."
+          "Built In lists 350 total employees.",
+          "LeadIQ lists approximately 416 employees as of 2026-07-01T00:00:00Z and a 201\u2013500 employee band."
         ],
         "evidence": [
-          19,
-          14
+          6,
+          7
         ],
-        "resolution": "Treat the count as a changing point-in-time snapshot. The direct official-page fetch is stronger evidence of the page at its fetch time, but neither count should be treated as stable."
+        "resolution": "Neither is a first-party workforce disclosure. LeadIQ provides a stated observation period, but both should be treated as third-party estimates rather than definitive current headcount."
       },
       {
-        "field": "Aggregate funding",
+        "field": "open-role count",
         "positions": [
-          "Clay\u2019s dossier states total funding of $141,000,000.",
-          "The same Clay page labels $3,200,000,000 as total amount raised, while Retool and TechCrunch identify $3,200,000,000 as the Series C2 valuation."
+          "Retool\u2019s directly fetched careers page displayed 32 open roles.",
+          "A separately fetched search-result representation for the same careers URL stated 38 roles."
         ],
         "evidence": [
-          13,
-          9,
-          10
+          18,
+          19
         ],
-        "resolution": "Do not use Clay\u2019s aggregate-funding fields as reliable without corroboration. The official and independent sources support the C2 round amount and valuation, but the fetched official announcements do not state a company-wide funding total."
+        "resolution": "The direct careers-page result is more reliable than a search-index snippet. The difference may reflect stale indexing or a page change and cannot be resolved from the fetched evidence."
+      },
+      {
+        "field": "total funding and number of rounds",
+        "positions": [
+          "Startup Intros reports $141,000,000 across five rounds.",
+          "Tracxn reports $165,000,000 across six rounds, including a separate $30,000,000 2021 Series B entry."
+        ],
+        "evidence": [
+          14,
+          15,
+          16,
+          12
+        ],
+        "resolution": "Neither database total is a complete primary-source funding record. Retool\u2019s disclosed $50,000,000 Series B and the arithmetic of the five reported rounds favor the $141,000,000 sequence for those reported rounds, but this does not establish complete lifetime funding."
+      },
+      {
+        "field": "latest-round classification",
+        "positions": [
+          "Retool and TechCrunch call the $45,000,000 financing a Series C2.",
+          "Tracxn classifies the same financing as Series C."
+        ],
+        "evidence": [
+          8,
+          10,
+          16
+        ],
+        "resolution": "Use Series C2 because Retool\u2019s own announcement is the stronger source for its financing nomenclature; note that some databases normalize it to Series C."
+      },
+      {
+        "field": "MCP server availability for self-hosted customers",
+        "positions": [
+          "Retool\u2019s 2026-05-08T00:00:00Z launch post says the MCP server was available to Cloud and self-hosted customers.",
+          "A later Retool guide says the native MCP server is in public beta on Cloud/all plans and that self-hosted access is coming in a future stable release."
+        ],
+        "evidence": [
+          27,
+          28
+        ],
+        "resolution": "The later guide is more specific about present deployment availability, but the first-party sources conflict. Verify current self-hosted availability in live documentation before relying on it."
       }
     ],
-    "suggested_opening": "I saw Retool is hiring around automation/AI agents and continuing to scale SDR outbound. How is the team currently turning account research into qualification context and Salesforce-ready outreach, and where does that process still require manual work?",
+    "suggested_opening": "How is the SDR organization planning to operationalize research before qualification calls\u2014especially where research needs to pull from approved internal data sources and remain governed?",
     "sources": [
       {
         "index": 1,
-        "url": "https://retool.com/",
-        "fetched_at": "2026-08-24T18:22:47.858746Z",
+        "url": "https://retool.com/about",
+        "fetched_at": "2026-08-24T19:06:29.855008Z",
         "published_at": null
       },
       {
         "index": 2,
-        "url": "https://docs.retool.com/legal/privacy-policy",
-        "fetched_at": "2026-08-24T18:22:55.963089Z",
+        "url": "https://retool.com/",
+        "fetched_at": "2026-08-24T19:06:29.855497Z",
         "published_at": null
       },
       {
         "index": 3,
-        "url": "https://retool.com/customers",
-        "fetched_at": "2026-08-24T18:22:47.860043Z",
-        "published_at": null
+        "url": "https://retool.com/blog/enterprise-appgen-the-future-of-low-code",
+        "fetched_at": "2026-08-24T19:06:24.778590Z",
+        "published_at": "2026-02-25T00:00:00Z"
       },
       {
         "index": 4,
-        "url": "https://retool.com/careers",
-        "fetched_at": "2026-08-24T18:22:55.961471Z",
+        "url": "https://retool.com/customers",
+        "fetched_at": "2026-08-24T19:06:24.775178Z",
         "published_at": null
       },
       {
         "index": 5,
-        "url": "https://retool.com/newsroom/retool-aws-strategic-collaboration",
-        "fetched_at": "2026-08-24T18:22:47.861630Z",
+        "url": "https://retool.com/careers",
+        "fetched_at": "2026-08-24T19:06:24.769868Z",
         "published_at": null
       },
       {
         "index": 6,
         "url": "https://builtin.com/company/retool",
-        "fetched_at": "2026-08-24T18:22:47.863894Z",
+        "fetched_at": "2026-08-24T19:06:29.850928Z",
         "published_at": null
       },
       {
         "index": 7,
-        "url": "https://retool.com/blog/retool-brand-story",
-        "fetched_at": "2026-08-24T18:22:55.965200Z",
-        "published_at": "2024-09-12T00:00:00Z"
+        "url": "https://leadiq.com/c/retool/5cb183411d00006201a5bf46",
+        "fetched_at": "2026-08-24T19:06:33.198078Z",
+        "published_at": null
       },
       {
         "index": 8,
-        "url": "https://retool.com/about",
-        "fetched_at": "2026-08-24T18:22:55.966621Z",
-        "published_at": null
+        "url": "https://www.globenewswire.com/news-release/2022/07/28/2487930/0/en/retool-raises-45m-series-c2-to-change-how-software-is-built.html",
+        "fetched_at": "2026-08-24T19:06:30.832828Z",
+        "published_at": "2022-07-28T13:00:00Z"
       },
       {
         "index": 9,
         "url": "https://retool.com/newsroom/series-c2",
-        "fetched_at": "2026-08-24T18:22:48.275350Z",
+        "fetched_at": "2026-08-24T19:06:23.896407Z",
         "published_at": null
       },
       {
         "index": 10,
         "url": "https://techcrunch.com/2022/07/28/retool-raises-45m-at-a-3-2b-valuation-to-make-building-custom-software-as-easy-as-buying-off-the-shelf",
-        "fetched_at": "2026-08-24T18:22:48.276871Z",
+        "fetched_at": "2026-08-24T19:06:23.900843Z",
         "published_at": "2022-07-28T13:03:00Z"
       },
       {
         "index": 11,
-        "url": "https://retool.com/newsroom/series-c",
-        "fetched_at": "2026-08-24T18:22:48.275961Z",
+        "url": "https://www.finsmes.com/2021/12/retool-raises-20m-in-series-c-funding-at-1-85-billion-valuation.html",
+        "fetched_at": "2026-08-24T19:06:30.841603Z",
         "published_at": null
       },
       {
         "index": 12,
         "url": "https://retool.com/newsroom/retool-raises-50-million-led-by-sequoia",
-        "fetched_at": "2026-08-24T18:22:48.277960Z",
+        "fetched_at": "2026-08-24T19:06:23.898247Z",
         "published_at": null
       },
       {
         "index": 13,
-        "url": "https://www.clay.com/dossier/retool-funding",
-        "fetched_at": "2026-08-24T18:22:54.248626Z",
-        "published_at": null
+        "url": "https://www.bloomberg.com/news/articles/2020-10-20/retool-nears-1-billion-valuation-with-funding-from-sequoia",
+        "fetched_at": "2026-08-24T19:06:23.907308Z",
+        "published_at": "2020-10-20T13:00:00Z"
       },
       {
         "index": 14,
-        "url": "https://retool.com/careers",
-        "fetched_at": "2026-08-24T18:23:04.150791Z",
+        "url": "https://startupintros.com/orgs/retool",
+        "fetched_at": "2026-08-24T19:06:30.843300Z",
         "published_at": null
       },
       {
         "index": 15,
-        "url": "https://retool.com/careers/staff-product-manager-automation--product--san-francisco-united-states",
-        "fetched_at": "2026-08-24T18:23:04.152830Z",
+        "url": "https://startupintros.com/news/2017-09-01-retool-seed",
+        "fetched_at": "2026-08-24T19:06:30.843300Z",
         "published_at": null
       },
       {
         "index": 16,
-        "url": "https://retool.com/careers/software-engineer-governance--engineering--san-francisco-united-states",
-        "fetched_at": "2026-08-24T18:22:53.240649Z",
+        "url": "https://tracxn.com/d/companies/retool/__3Qw2mDrisfHcLzB8sG6xEXwD7lueXw7kuVlus34H2KY",
+        "fetched_at": "2026-08-24T19:06:19.482455Z",
         "published_at": null
       },
       {
         "index": 17,
-        "url": "https://retool.com/careers/it-engineer--it---san-francisco-united-states",
-        "fetched_at": "2026-08-24T18:23:04.149727Z",
+        "url": "https://sacra.com/c/retool",
+        "fetched_at": "2026-08-24T19:06:30.842177Z",
         "published_at": null
       },
       {
         "index": 18,
-        "url": "https://retool.com/careers/business-development-representative--sales-development--salt-lake-city-united-states",
-        "fetched_at": "2026-08-24T18:22:53.241619Z",
+        "url": "https://retool.com/careers",
+        "fetched_at": "2026-08-24T19:06:19.161831Z",
         "published_at": null
       },
       {
         "index": 19,
         "url": "https://retool.com/careers",
-        "fetched_at": "2026-08-24T18:22:47.217612Z",
+        "fetched_at": "2026-08-24T19:06:19.163252Z",
         "published_at": null
       },
       {
         "index": 20,
-        "url": "https://retool.com/blog/retool-launches-react-ai-app-builder",
-        "fetched_at": "2026-08-24T18:22:49.442739Z",
-        "published_at": "2026-06-17T00:00:00Z"
+        "url": "https://retool.com/careers/staff-product-manager-automation--product--san-francisco-united-states",
+        "fetched_at": "2026-08-24T19:06:31.497607Z",
+        "published_at": null
       },
       {
         "index": 21,
-        "url": "https://retool.com/blog/retool-databricks-data-ai-summit-2026",
-        "fetched_at": "2026-08-24T18:22:49.443760Z",
-        "published_at": "2026-06-15T00:00:00Z"
+        "url": "https://retool.com/careers/senior-product-manager-enterprise-platform--product--san-francisco-united-states",
+        "fetched_at": "2026-08-24T19:06:31.497252Z",
+        "published_at": null
       },
       {
         "index": 22,
-        "url": "https://retool.com/blog/ai-build-vs-buy-report-2026",
-        "fetched_at": "2026-08-24T18:22:49.444901Z",
-        "published_at": "2026-02-17T00:00:00Z"
+        "url": "https://retool.com/careers/software-engineer-governance--engineering--san-francisco-united-states",
+        "fetched_at": "2026-08-24T19:06:25.105577Z",
+        "published_at": null
       },
       {
         "index": 23,
-        "url": "https://retool.com/newsroom/retool-aws-strategic-collaboration",
-        "fetched_at": "2026-08-24T18:23:00.516297Z",
+        "url": "https://retool.com/careers/account-executive-enterprise-west--sales--united-states-remote",
+        "fetched_at": "2026-08-24T19:06:31.495782Z",
         "published_at": null
       },
       {
         "index": 24,
-        "url": "https://retool.com/newsroom/retool-extends-enterprise-governance-to-vibe-coded-apps",
-        "fetched_at": "2026-08-24T18:22:49.440616Z",
+        "url": "https://retool.com/careers/business-development-representative--sales-development--salt-lake-city-united-states",
+        "fetched_at": "2026-08-24T19:06:31.489699Z",
+        "published_at": null
+      },
+      {
+        "index": 25,
+        "url": "https://retool.com/careers/software-engineer-data-platform--engineering--san-francisco-united-states",
+        "fetched_at": "2026-08-24T19:06:31.497934Z",
+        "published_at": null
+      },
+      {
+        "index": 26,
+        "url": "https://retool.com/blog/retool-launches-react-ai-app-builder",
+        "fetched_at": "2026-08-24T19:06:25.990444Z",
+        "published_at": "2026-06-17T00:00:00Z"
+      },
+      {
+        "index": 27,
+        "url": "https://retool.com/blog/retool-mcp-server",
+        "fetched_at": "2026-08-24T19:06:37.812937Z",
+        "published_at": "2026-05-08T00:00:00Z"
+      },
+      {
+        "index": 28,
+        "url": "https://retool.com/blog/how-to-use-mcp-in-retool",
+        "fetched_at": "2026-08-24T19:06:32.772860Z",
+        "published_at": null
+      },
+      {
+        "index": 29,
+        "url": "https://retool.com/blog/ai-build-vs-buy-report-2026",
+        "fetched_at": "2026-08-24T19:06:25.992210Z",
+        "published_at": "2026-02-17T00:00:00Z"
+      },
+      {
+        "index": 30,
+        "url": "https://retool.com/blog/ai-governance-report-2026",
+        "fetched_at": "2026-08-24T19:06:32.774317Z",
+        "published_at": "2026-06-17T00:00:00Z"
+      },
+      {
+        "index": 31,
+        "url": "https://community.retool.com/c/announcements-about-product-launches-or-solution-challenges-or-other-news/27",
+        "fetched_at": "2026-08-24T19:06:25.999105Z",
+        "published_at": null
+      },
+      {
+        "index": 32,
+        "url": "https://www.businesswire.com/news/home/20260217548274/en/Retools-2026-Build-vs.-Buy-Report-Reveals-35-of-Enterprises-Have-Already-Replaced-SaaS-With-Custom-Software",
+        "fetched_at": "2026-08-24T19:06:25.996324Z",
         "published_at": null
       }
     ],
-    "overall_confidence": "MEDIUM",
-    "generated_at": "2026-08-24T18:23:04.152830Z"
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T19:07:00Z"
   },
   "citation_detail": [
     {
       "field": "company",
-      "claim": "Retool is a San Francisco-based enterprise AppGen/developer platform that, by its own description, supports building production-ready internal apps, agents, and automations connected to business data with governed deployment controls. Built In lists 350 employees, which Retool does not independently confirm on the official pages reviewed.",
-      "supported": false,
-      "reasoning": "The source text confirms that Retool is based in San Francisco and describes it as a development platform for building business software, which aligns with the claim. It mentions that users can build apps connected to business data, which supports the claim about building production-ready internal apps and automations. However, the source does not explicitly mention 'governed deployment controls' or confirm the employee count independently, as it states that Built In lists 350 employees without Retool's confirmation. Therefore, while the main aspects of the claim are supported, the specific details about deployment controls and the independent confirmation of employee count are not directly addressed in the source text."
+      "claim": "Retool is an enterprise application-development platform for building governed internal apps and automations. Retool says its platform can generate production-ready applications, connect to production data, and deploy with authentication, access controls, audit logging, and governance. It also describes core use cases spanning CRUD apps, workflows/automations, and enterprise-operations software.",
+      "supported": true,
+      "reasoning": "The source text describes Retool as a platform that enables companies to build internal applications quickly and efficiently, emphasizing its capabilities in creating tools for operations and sales, as well as its features like access controls and audit logs. It mentions that Retool helps teams develop better software faster and supports compliance requirements, which aligns with the claim about Retool being an enterprise application-development platform for building governed internal apps and automations. Additionally, the text refers to core use cases such as workflows and internal tools, which supports the claim about its functionalities. Therefore, the source text directly supports the claim."
     },
     {
       "field": "funding",
-      "claim": "The most recent publicly announced financing located was a $45,000,000 Series C2 at a $3,200,000,000 valuation; Retool and TechCrunch identify the announcement as a Series C2, and TechCrunch published its coverage on 2022-07-28T13:03:00Z.",
+      "claim": "The latest publicly announced financing located was a $45,000,000 Series C2 at a $3,200,000,000 valuation, announced by Retool on 2022-07-28T13:00:00Z. Retool named existing investors including Sequoia Capital, John Collison, Patrick Collison, Nat Friedman, Elad Gil, Daniel Gross, and Caryn Marooney.",
       "supported": true,
-      "reasoning": "The source text explicitly states that Retool raised $45 million at a valuation of $3.2 billion and describes this funding round as a Series C2. Additionally, it mentions that TechCrunch published this information on July 28, 2022. Therefore, the claim is directly supported by the source text."
+      "reasoning": "The source text explicitly states that Retool raised $45 million in Series C2 funding at a $3.2 billion valuation on July 28, 2022. It also lists the existing investors, including Sequoia Capital, John and Patrick Collison, Nat Friedman, Elad Gil, Daniel Gross, and Caryn Marooney, which directly supports the claim. Therefore, the claim is fully supported by the source text."
     },
     {
       "field": "hiring_signals[0]",
-      "claim": "Retool\u2019s direct careers-page snapshot listed 32 open roles across functions including Engineering, Product, Data Science & Analytics, Sales, Sales Development, Success, and Support.",
+      "claim": "Retool\u2019s careers page showed 32 open roles at fetch time, including engineering, product, and sales-development openings. This is direct evidence of active hiring, although it does not establish planned hire volume.",
       "supported": false,
-      "reasoning": "The source text does not provide any specific information about the number of open roles at Retool or the functions they cover. It mentions that there are openings and describes the company culture and interview process, but it does not list any specific roles or their categories. Therefore, the claim that Retool\u2019s direct careers-page snapshot listed 32 open roles across various functions is not supported by the source text."
+      "reasoning": "The source text does not provide any specific information about the number of open roles at Retool or the types of positions available. It discusses the company culture, values, and the interview process, but it does not mention the actual count of job openings or the specific roles available. Therefore, it does not support the claim that Retool\u2019s careers page showed 32 open roles, including engineering, product, and sales-development openings."
     },
     {
       "field": "hiring_signals[1]",
-      "claim": "An open Staff Product Manager, Automation role says the hire will scale automation across workflows, integrations, and AI-driven agents, and characterizes automation as a core product-strategy pillar.",
+      "claim": "A Staff Product Manager, Automation opening says Retool is defining and scaling next-generation automation across workflows, integrations, and AI-driven agents, with the goal of extending beyond internal apps into end-to-end process orchestration.",
       "supported": true,
-      "reasoning": "The source text explicitly states that the role involves leading the evolution of Retool's automation capabilities, which includes workflows, integrations, and AI-driven agents. It also mentions that automation will be a core pillar of Retool's product strategy. Therefore, the claim is directly supported by the text."
+      "reasoning": "The source text explicitly states that the role of the Staff Product Manager, Automation at Retool involves defining and scaling the next generation of automation, including workflows, integrations, and AI-driven agents. It also mentions the goal of expanding the platform beyond internal applications into end-to-end process orchestration. This directly supports the claim made about the job opening."
     },
     {
       "field": "hiring_signals[2]",
-      "claim": "An open Software Engineer, Governance role covers policies, access controls, audit trails, security infrastructure, agent permissioning/observability, and security administration capabilities.",
+      "claim": "An Enterprise Platform product role and a Governance engineering role indicate investment in deployment infrastructure, permissions, auditability, AI-agent controls, data-access policies, and enterprise security/governance.",
       "supported": true,
-      "reasoning": "The source text explicitly mentions that the Governance team is responsible for building the foundational layer that includes policies, access controls, audit trails, and security infrastructure. It also discusses agent permissioning and observability in the context of governance. Therefore, the claim that an open Software Engineer, Governance role covers these specific areas is directly supported by the text."
+      "reasoning": "The source text explicitly mentions that the platform stack includes deployment infrastructure, permissions and access controls, audit logging, and governance requirements. It also discusses the need for evolving governance layers to handle new demands and operational complexity, which aligns with the claim about investment in deployment infrastructure, permissions, auditability, AI-agent controls, data-access policies, and enterprise security/governance. Therefore, the source text supports the claim."
     },
     {
       "field": "hiring_signals[3]",
-      "claim": "An open Business Development Representative role says Retool grew its sales team 3x in the prior year and needs to continue expanding to meet 2026 revenue targets; the role includes prospecting, testing outbound strategies, booking qualified meetings, and Salesforce pipeline analysis.",
-      "supported": true,
-      "reasoning": "The source text explicitly states that Retool has grown its sales team by 3x in the last year and that they need to continue expanding to meet their 2026 revenue targets. Additionally, it outlines the responsibilities of the Business Development Representative role, which includes prospecting, testing outbound strategies, booking qualified meetings, and Salesforce pipeline analysis. Therefore, the claim is directly supported by the source text."
+      "claim": "An enterprise AE posting describes enterprise as Retool\u2019s largest-by-revenue segment and references six- and seven-figure deals. A BDR posting says the sales team grew 3\u00d7 in the prior year and that Retool is expanding outbound capacity toward 2026 revenue targets.",
+      "supported": false,
+      "reasoning": "The source text mentions that Retool's sales team has grown by 3x in the last year and that they are expanding their team to meet 2026 revenue targets. However, it does not provide any information about enterprise being the largest-by-revenue segment or reference six- and seven-figure deals. Therefore, while part of the claim is supported, the specific details regarding enterprise revenue and deal sizes are not mentioned in the source text."
     }
   ],
   "accuracy_detail": {
@@ -315,13 +393,13 @@
   },
   "conflict_detail": {},
   "trace": {
-    "repair_attempts": 1,
+    "repair_attempts": 0,
     "initial_violations": 0,
-    "model_calls": 33,
-    "tool_calls": 94,
-    "input_tokens": 440744,
-    "output_tokens": 15881,
-    "estimated_cost_usd": 1.07206,
-    "latency_seconds": 112.00215204083361
+    "model_calls": 27,
+    "tool_calls": 72,
+    "input_tokens": 439290,
+    "output_tokens": 14510,
+    "estimated_cost_usd": 1.0527,
+    "latency_seconds": 94.4681144580245
   }
 }

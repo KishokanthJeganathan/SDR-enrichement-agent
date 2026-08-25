@@ -204,6 +204,7 @@ class _StatsCallback(BaseCallbackHandler):
         self.tool_calls = 0
         self.input_tokens = 0
         self.output_tokens = 0
+        self._tool_run_ids: set = set()
 
     def on_llm_end(self, response, **kwargs):
         self.model_calls += 1
@@ -215,8 +216,19 @@ class _StatsCallback(BaseCallbackHandler):
                     self.input_tokens += usage.get("input_tokens", 0)
                     self.output_tokens += usage.get("output_tokens", 0)
 
-    def on_tool_end(self, output, **kwargs):
-        self.tool_calls += 1
+    def on_tool_start(self, serialized, input_str, *, run_id, parent_run_id=None, **kwargs):
+        self._tool_run_ids.add(run_id)
+
+    def on_tool_end(self, output, *, run_id, parent_run_id=None, **kwargs):
+        # Some of our tools call another traced tool internally
+        # (lookup_funding -> web_search -> TavilySearch): LangChain fires
+        # on_tool_start/on_tool_end for that inner call too, which would
+        # double- or triple-count what was really one model-issued tool
+        # call. Only count a tool call whose parent isn't itself a tool
+        # call — confirmed via a real LangSmith trace this session, where
+        # this pattern inflated tool_calls by 24% (100 counted, 76 real).
+        if parent_run_id not in self._tool_run_ids:
+            self.tool_calls += 1
 
 
 def _build_agent():

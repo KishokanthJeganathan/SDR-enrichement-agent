@@ -1,0 +1,333 @@
+{
+  "brief": {
+    "company": {
+      "value": "Linear is a product-development system for teams and agents. It says more than 40,000 companies use it to plan, build, and ship products; its operating model is remote-first with optional co-working offices in San Francisco, New York, and London.",
+      "confidence": "HIGH",
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "kind": "verified"
+    },
+    "funding": {
+      "value": "Linear announced an $82M Series C at a $1.25B valuation on 2025-06-10T00:00:00Z, led by Accel, with continued support from Sequoia and 01A.",
+      "confidence": "HIGH",
+      "evidence": [
+        4
+      ],
+      "kind": "verified"
+    },
+    "hiring_signals": [
+      {
+        "value": "Linear has open senior/staff AI product-engineering hiring focused on AI-powered features, agentic workloads, model evaluation, privacy-aware AI infrastructure, and an agent platform for third parties.",
+        "confidence": "HIGH",
+        "evidence": [
+          9
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "An open Implementation Manager role describes enterprise rollout, including migrations, SSO/SCIM, Slack, GitHub, Jira sync, custom integrations, enablement, and adoption tracking; it prefers experience with 1,000+ user enterprise deployments.",
+        "confidence": "HIGH",
+        "evidence": [
+          12
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "An open Deal Desk role is being hired to support sales-led deals and quote-to-cash controls, including usage-based and consumption deals as AI billing rolls out.",
+        "confidence": "HIGH",
+        "evidence": [
+          13
+        ],
+        "kind": "verified"
+      },
+      {
+        "value": "Linear\u2019s careers page lists Enterprise, Growth, and Startups AE roles alongside customer-success, solutions-engineering, revenue-operations, and demand-generation roles.",
+        "confidence": "HIGH",
+        "evidence": [
+          8
+        ],
+        "kind": "verified"
+      }
+    ],
+    "likely_use_case": {
+      "value": "Linear is likely evaluating account-intelligence or sales-enablement tooling that helps AEs rapidly synthesize inbound-account context, especially for a growing enterprise sales motion involving complex implementation, migration, and integration conversations.",
+      "confidence": "MEDIUM",
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "kind": "inference"
+    },
+    "deal_band": {
+      "value": "Potentially mid-market to enterprise, given Linear\u2019s stated enterprise-rollout focus and 1,000+ user deployment preference; deal size is not publicly verified.",
+      "confidence": "LOW",
+      "evidence": [
+        12
+      ],
+      "kind": "inference"
+    },
+    "unverified": [
+      "A legal or corporate headquarters is not verified by an official Linear source.",
+      "A precise current employee headcount is not verified by an official Linear source.",
+      "A public hiring target, job-posting dates, and a timetable for AI-agent capabilities, AI billing, or enterprise rollout were not verified.",
+      "The $13M Series A amount was not available in a fetched announcement body; Linear\u2019s accessible archive identifies the Series A announcement, while the amount was only present in an inaccessible search result according to the funding findings.",
+      "No independently verified pricing, availability date, or terms for AI usage-based billing were found."
+    ],
+    "conflicts": [
+      {
+        "field": "headcount",
+        "positions": [
+          "Linear\u2019s About page visibly displayed 157 named people in its roster; this is a roster count rather than an explicit headcount.",
+          "GetLatka estimated approximately 118 employees in 2026, down from 178 in 2025, while disclosing that its figures are estimates based on public sources and proprietary models."
+        ],
+        "evidence": [
+          1,
+          5
+        ],
+        "resolution": "Neither source verifies precise current headcount. The official roster is more direct evidence of the names displayed, but is not necessarily a complete employee count; do not use either as a confirmed headcount."
+      },
+      {
+        "field": "total funding",
+        "positions": [
+          "The identified seed, Series A, Series B, and Series C amounts imply $134.2M, though the Series A dollar amount has an access caveat.",
+          "Startup Intros reports five rounds and $135.3M total, but does not expose supporting round-level evidence and also contains an internally inconsistent $52.2M narrative total."
+        ],
+        "evidence": [
+          4,
+          6,
+          7,
+          16
+        ],
+        "resolution": "Treat Linear\u2019s primary announcements as more reliable. Do not state a total-funding figure as verified because the Series A amount was not available in a fetched announcement body and the third-party total is internally inconsistent."
+      }
+    ],
+    "suggested_opening": "You mentioned helping AEs get up to speed on inbound accounts faster. With Linear building out enterprise implementation and sales operations, how are reps currently assembling the account, migration, and stakeholder context they need before an initial conversation?",
+    "sources": [
+      {
+        "index": 1,
+        "url": "https://linear.app/about",
+        "fetched_at": "2026-08-24T19:10:19.732469Z",
+        "published_at": null
+      },
+      {
+        "index": 2,
+        "url": "https://linear.app/now/building-our-way",
+        "fetched_at": "2026-08-24T19:10:36.249936Z",
+        "published_at": "2025-06-10T00:00:00Z"
+      },
+      {
+        "index": 3,
+        "url": "https://linear.app/careers/c21af93e-210f-4969-8eaa-90fb16a5b720",
+        "fetched_at": "2026-08-24T19:10:19.739574Z",
+        "published_at": null
+      },
+      {
+        "index": 4,
+        "url": "https://linear.app/now/building-our-way",
+        "fetched_at": "2026-08-24T19:10:18.216136Z",
+        "published_at": "2025-06-10T00:00:00Z"
+      },
+      {
+        "index": 5,
+        "url": "https://getlatka.com/companies/linear.app",
+        "fetched_at": "2026-08-24T19:10:31.296443Z",
+        "published_at": null
+      },
+      {
+        "index": 6,
+        "url": "https://linear.app/now/series-b",
+        "fetched_at": "2026-08-24T19:10:18.219141Z",
+        "published_at": "2023-09-14T00:00:00Z"
+      },
+      {
+        "index": 7,
+        "url": "https://linear.app/now/author/karri-saarinen",
+        "fetched_at": "2026-08-24T19:10:29.733923Z",
+        "published_at": null
+      },
+      {
+        "index": 8,
+        "url": "https://linear.app/careers",
+        "fetched_at": "2026-08-24T19:10:12.287592Z",
+        "published_at": null
+      },
+      {
+        "index": 9,
+        "url": "https://linear.app/careers/b4a7764e-c680-4bdf-9956-dc78f2ca94d5",
+        "fetched_at": "2026-08-24T19:10:20.738180Z",
+        "published_at": null
+      },
+      {
+        "index": 10,
+        "url": "https://linear.app/careers/86abcce0-04b2-405c-9a8e-e0ca84813914",
+        "fetched_at": "2026-08-24T19:10:20.739431Z",
+        "published_at": null
+      },
+      {
+        "index": 11,
+        "url": "https://linear.app/careers/c0abc97e-b4d7-4ad7-bd13-bc40f4023227",
+        "fetched_at": "2026-08-24T19:10:20.742022Z",
+        "published_at": null
+      },
+      {
+        "index": 12,
+        "url": "https://linear.app/careers/cec84487-60f2-4216-a514-dcf190c86c1e",
+        "fetched_at": "2026-08-24T19:10:20.735994Z",
+        "published_at": null
+      },
+      {
+        "index": 13,
+        "url": "https://linear.app/careers/1aa6f672-5917-49aa-b015-70ebff901923",
+        "fetched_at": "2026-08-24T19:10:20.741705Z",
+        "published_at": null
+      },
+      {
+        "index": 14,
+        "url": "https://linear.app/careers/c21af93e-210f-4969-8eaa-90fb16a5b720",
+        "fetched_at": "2026-08-24T19:10:20.742571Z",
+        "published_at": null
+      },
+      {
+        "index": 15,
+        "url": "https://sequoiacap.com/article/linear-spotlight",
+        "fetched_at": "2026-08-24T19:10:29.735232Z",
+        "published_at": "2023-01-05T00:00:00Z"
+      },
+      {
+        "index": 16,
+        "url": "https://startupintros.com/orgs/linear",
+        "fetched_at": "2026-08-24T19:10:32.791707Z",
+        "published_at": null
+      },
+      {
+        "index": 17,
+        "url": "https://medium.com/linear-app/linears-next-chapter-announcing-our-4-2m-seed-round-2b5035602b77",
+        "fetched_at": "2026-08-24T19:10:18.223276Z",
+        "published_at": "2019-11-21T00:00:00Z"
+      },
+      {
+        "index": 18,
+        "url": "https://linear.app/changelog/2026-03-24-introducing-linear-agent",
+        "fetched_at": "2026-08-24T19:10:21.387820Z",
+        "published_at": null
+      },
+      {
+        "index": 19,
+        "url": "https://linear.app/changelog/2026-04-30-releases",
+        "fetched_at": "2026-08-24T19:10:21.390648Z",
+        "published_at": null
+      },
+      {
+        "index": 20,
+        "url": "https://linear.app/changelog/2026-05-14-code-intelligence",
+        "fetched_at": "2026-08-24T19:10:24.215116Z",
+        "published_at": null
+      },
+      {
+        "index": 21,
+        "url": "https://linear.app/changelog",
+        "fetched_at": "2026-08-24T19:10:24.210130Z",
+        "published_at": null
+      },
+      {
+        "index": 22,
+        "url": "https://linear.app/changelog/2026-06-11-coding-sessions",
+        "fetched_at": "2026-08-24T19:10:21.392384Z",
+        "published_at": null
+      },
+      {
+        "index": 23,
+        "url": "https://linear.app/changelog/2026-07-20-introducing-loops",
+        "fetched_at": "2026-08-24T19:10:24.217822Z",
+        "published_at": null
+      },
+      {
+        "index": 24,
+        "url": "https://linear.app/changelog/2026-08-13-team-initiatives",
+        "fetched_at": "2026-08-24T19:10:21.398662Z",
+        "published_at": null
+      },
+      {
+        "index": 25,
+        "url": "https://linear.app/now/linear-incident-on-mar-24th-2026",
+        "fetched_at": "2026-08-24T19:10:24.212406Z",
+        "published_at": null
+      },
+      {
+        "index": 26,
+        "url": "https://linear.app/changelog/2026-05-28-linear-diffs",
+        "fetched_at": "2026-08-24T19:10:21.394685Z",
+        "published_at": null
+      },
+      {
+        "index": 27,
+        "url": "https://linear.app/now/post-mortem-on-linear-security-incident-on-march-24th-2026",
+        "fetched_at": "2026-08-24T19:10:21.398253Z",
+        "published_at": null
+      }
+    ],
+    "overall_confidence": "HIGH",
+    "generated_at": "2026-08-24T19:10:36.249936Z"
+  },
+  "citation_detail": [
+    {
+      "field": "company",
+      "claim": "Linear is a product-development system for teams and agents. It says more than 40,000 companies use it to plan, build, and ship products; its operating model is remote-first with optional co-working offices in San Francisco, New York, and London.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Linear is building a product development system for teams and agents, and it mentions that more than 40,000 companies use it to plan, build, and ship products. Additionally, it confirms that Linear operates as a remote-first company with optional co-working offices in San Francisco, New York, and London. Therefore, the claim is directly supported by the information provided in the source text."
+    },
+    {
+      "field": "funding",
+      "claim": "Linear announced an $82M Series C at a $1.25B valuation on 2025-06-10T00:00:00Z, led by Accel, with continued support from Sequoia and 01A.",
+      "supported": true,
+      "reasoning": "The source text explicitly states that Linear raised an $82M Series C at a $1.25B valuation on June 10, 2025, led by Accel, with continued support from Sequoia and 01A. This directly supports the claim made."
+    },
+    {
+      "field": "hiring_signals[0]",
+      "claim": "Linear has open senior/staff AI product-engineering hiring focused on AI-powered features, agentic workloads, model evaluation, privacy-aware AI infrastructure, and an agent platform for third parties.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that Linear is looking for experienced engineers to build AI-powered product features, design backend services for natural language interfaces, and optimize model behavior, which aligns with the claim about AI-powered features and model evaluation. It also discusses agentic workloads and mentions guiding an agent platform for third parties, directly supporting the claim. Additionally, the text refers to privacy-aware AI infrastructure, indicating a focus on reliable and privacy-conscious AI integration. Therefore, the claim is well-supported by the source text."
+    },
+    {
+      "field": "hiring_signals[1]",
+      "claim": "An open Implementation Manager role describes enterprise rollout, including migrations, SSO/SCIM, Slack, GitHub, Jira sync, custom integrations, enablement, and adoption tracking; it prefers experience with 1,000+ user enterprise deployments.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that the Implementation Manager role involves coordinating workspace architecture, migration, and integration workstreams, including SSO/SCIM, Slack, GitHub, and Jira sync, which aligns with the claim about enterprise rollout and migrations. Additionally, it states that a track record managing multi-workstream, multi-stakeholder enterprise rollouts with 1,000+ user deployments is preferred, directly supporting the claim's preference for experience with large enterprise deployments. Therefore, the source text supports the claim."
+    },
+    {
+      "field": "hiring_signals[2]",
+      "claim": "An open Deal Desk role is being hired to support sales-led deals and quote-to-cash controls, including usage-based and consumption deals as AI billing rolls out.",
+      "supported": true,
+      "reasoning": "The source text explicitly mentions that the Deal Desk role will support 'usage-based and consumption deals as AI billing rolls out,' which directly aligns with the claim about hiring for sales-led deals and quote-to-cash controls. Additionally, it discusses responsibilities related to sales-led deals and the quote-to-cash process, confirming that the role is indeed focused on these areas."
+    },
+    {
+      "field": "hiring_signals[3]",
+      "claim": "Linear\u2019s careers page lists Enterprise, Growth, and Startups AE roles alongside customer-success, solutions-engineering, revenue-operations, and demand-generation roles.",
+      "supported": true,
+      "reasoning": "The source text explicitly lists the roles available at Linear, including 'Account Executive, Enterprise', 'Account Executive, Growth', and 'Account Executive, Startups', as well as 'Customer Success Manager', 'Solutions Engineer', 'Revenue Operations', and 'Demand Generation Lead'. This directly supports the claim that Linear\u2019s careers page lists these specific roles."
+    }
+  ],
+  "accuracy_detail": {
+    "hq_country": true,
+    "funding_round": true,
+    "has_open_engineering_roles": true
+  },
+  "abstain_detail": {},
+  "conflict_detail": {
+    "customer_count": true
+  },
+  "trace": {
+    "repair_attempts": 1,
+    "initial_violations": 0,
+    "model_calls": 30,
+    "tool_calls": 67,
+    "input_tokens": 396497,
+    "output_tokens": 17086,
+    "estimated_cost_usd": 0.998026,
+    "latency_seconds": 110.38943074992858
+  }
+}
