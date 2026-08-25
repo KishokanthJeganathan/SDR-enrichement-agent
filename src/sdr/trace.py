@@ -1,7 +1,3 @@
-"""Shared run-trace contract for both agents (Phase 2 and Phase 4). See
-CLAUDE.md §7 — eval/run.py needs the same shape regardless of which agent
-produced it, so this stays independent of either agent module.
-"""
 
 from dataclasses import dataclass
 
@@ -11,8 +7,8 @@ from .models import Brief
 from .validate import Violation
 
 # gpt-5.6-terra, intro pricing as of Aug 2026. Both agents use the same model
-# on purpose (CLAUDE.md §6, Phase 4) — the architecture is the variable under
-# test, not the model — so one pricing table covers both.
+# on purpose — the architecture is the variable under test, not the model —
+# so one pricing table covers both.
 INPUT_PRICE_PER_MTOK = 2.0
 OUTPUT_PRICE_PER_MTOK = 12.0
 

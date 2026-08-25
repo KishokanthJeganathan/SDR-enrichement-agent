@@ -1,17 +1,4 @@
-"""Phase 2: a single plain LangGraph tool-calling agent. See CLAUDE.md §6.
 
-No sub-agents, no Deep Agents harness, no context isolation. This is
-expected to degrade as research grows within one shared context window —
-citations drifting, claims attributed to the wrong source. That failure is
-the point: it's the documented baseline Phase 4's isolated sub-agents have
-to beat.
-
-response_format=Brief gets structural validation for free (required fields,
-types, Literal values) via Claude's native structured output. It does not
-enforce the citation cross-referencing rules in validate.py — those need the
-whole Brief and are business logic, not shape — so this module layers its
-own repair loop on top for those specifically.
-"""
 
 import time
 

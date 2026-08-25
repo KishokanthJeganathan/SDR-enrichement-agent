@@ -1,17 +1,3 @@
-"""Phase 3 evaluation harness. See CLAUDE.md §7.
-
-Run: uv run python eval/run.py --agent simple
-     uv run python eval/run.py --agent deep
-
-Most of these six metrics are deterministic by construction — that's a
-design property of the Brief schema, not a coincidence (CLAUDE.md §7). Only
-citation validity needs an LLM judge, and its own accuracy is checked first
-against hand-labeled examples before its numbers are printed as trustworthy.
-
-Results are written to results/<agent>/ so Phase 2 and Phase 4 runs stay
-inspectable side by side rather than one overwriting the other.
-"""
-
 import argparse
 import json
 import sys

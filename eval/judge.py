@@ -1,12 +1,4 @@
-"""Citation-validity judge. See CLAUDE.md §7 — judge discipline: binary
-verdict, one criterion per call, reasoning before verdict, temperature 0.
 
-Deliberately NOT gpt-5.6-* (the research agent's model family): those are
-reasoning-tier models that force temperature=1 with no override, which
-would violate the temperature-0 requirement outright. gpt-4o-mini is a
-classic (non-reasoning) model that still honors temperature, and is cheap
-enough that judging every claim in a brief costs very little.
-"""
 
 import json
 from pathlib import Path

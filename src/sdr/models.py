@@ -1,10 +1,4 @@
-"""Pydantic schemas for the SDR account brief. See CLAUDE.md §3.
 
-These models enforce structure only: field presence and types. Cross-field
-and cross-object rules (an evidence index must exist in `sources`, an
-inference must rest on verified evidence) live in validate.py, since they
-need the whole Brief to check and don't map onto a single model's fields.
-"""
 
 from datetime import datetime
 from typing import Literal

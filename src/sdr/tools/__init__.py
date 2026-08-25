@@ -1,4 +1,3 @@
-"""Tool definitions for the research agent. See CLAUDE.md §5."""
 
 from .fetch import fetch_careers_page, fetch_page
 from .funding import lookup_funding

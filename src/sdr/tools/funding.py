@@ -1,12 +1,3 @@
-"""Funding lookup. See CLAUDE.md §5.
-
-There's no free, structured funding database available (Crunchbase/PitchBook
-are paid, and scraping them would violate the no-scraping-forbidden-sites
-constraint). This is a funding-focused web_search, not a real API
-integration — the agent still has to read results and fetch_page a source
-before treating anything here as verified.
-"""
-
 from langchain_core.tools import tool
 
 from .search import web_search

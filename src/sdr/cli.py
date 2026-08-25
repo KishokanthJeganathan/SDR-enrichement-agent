@@ -1,4 +1,3 @@
-"""Command-line entry point. See CLAUDE.md §9."""
 
 import argparse
 

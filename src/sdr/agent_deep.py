@@ -1,33 +1,4 @@
-"""Phase 4: Deep Agents harness. See CLAUDE.md §4, §6.
 
-Four sub-agents (company-profile, funding, hiring, news) research in
-isolated context windows via deepagents' `task` tool, each scoped to only
-the tools its area needs. The parent never researches directly: it
-delegates to all four, reads back only their `findings/*.md` files (never
-a sub-agent's raw tool-call history), and is solely responsible for
-building the Brief's `sources` list and citation numbering — sub-agents
-record facts with URLs and timestamps, but the parent assigns the final
-sequential indices during synthesis, since four sub-agents researching in
-parallel can't coordinate a shared numbering scheme.
-
-Same MODEL as agent_simple.py (Phase 2), on purpose — CLAUDE.md §6 Phase 4
-isolates the architecture variable from a model-choice variable when
-comparing the two.
-
-Two things confirmed empirically this session (see docs/phase4-plan.md),
-both correcting assumptions in earlier drafts of this project:
-- A sub-agent's findings do NOT land in a file automatically. Its return
-  value is plain text back to the parent unless its own system prompt
-  explicitly calls write_file before finishing — each sub-agent prompt
-  below does that explicitly.
-- A callback handler passed via config={"callbacks": [...]} on the
-  top-level agent.invoke() call DOES propagate into a sub-agent's own
-  nested model/tool calls (deepagents' task tool threads the
-  RunnableConfig through). Reading only the parent's result["messages"]
-  the way Phase 2 does would have badly undercounted cost, since a
-  sub-agent's internal messages live in a nested subgraph that never
-  surfaces there.
-"""
 
 import time
 import uuid
@@ -53,17 +24,17 @@ MODEL = "gpt-5.6-terra"
 MAX_REPAIR_ATTEMPTS = 2
 # deepagents defaults recursion_limit to 10,000 across nested sub-agent
 # delegation — sized for much deeper multi-expert setups than ours (four
-# sub-agents, one level deep). This is the blunt safety net CLAUDE.md's
-# gotcha #1 asks for (cap concurrency/steps), set low enough to stop a
-# genuine runaway well before 10,000 steps of spend, high enough not to
-# truncate four sub-agents doing real multi-tool research.
+# sub-agents, one level deep). This is a blunt safety net on concurrency/
+# steps, set low enough to stop a genuine runaway well before 10,000 steps
+# of spend, high enough not to truncate four sub-agents doing real
+# multi-tool research.
 RECURSION_LIMIT = 150
 
 # deepagents auto-adds a `general-purpose` subagent (filesystem tools only,
 # but otherwise unscoped and unprompted) to the parent's task tool whenever
 # no declared subagent uses that name. Disabled here so the parent's only
-# delegation options are the four we designed — CLAUDE.md §4 describes this
-# architecture as exactly four isolated sub-agents, not five.
+# delegation options are the four we designed — exactly four isolated
+# sub-agents, not five.
 register_harness_profile(
     f"openai:{MODEL}",
     HarnessProfile(general_purpose_subagent=GeneralPurposeSubagentProfile(enabled=False)),

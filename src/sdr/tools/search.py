@@ -1,10 +1,3 @@
-"""General web search, backed by Tavily. See CLAUDE.md §5.
-
-Wraps langchain_tavily's TavilySearch rather than handing it to the agent
-directly, so the tool's contract (always a URL + fetched_at per result) is
-ours to guarantee, not Tavily's raw response shape to depend on.
-"""
-
 import json
 from datetime import UTC, datetime
 

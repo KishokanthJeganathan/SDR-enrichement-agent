@@ -1,12 +1,3 @@
-"""Renders a validated Brief to the markdown format in docs/example_brief.md.
-
-The model never writes this markdown itself — it only ever produces a Brief
-object, and this module renders that object deterministically. See CLAUDE.md
-gotcha #7: if the model wrote the final text freehand, the citation
-guarantee would be worthless, because nothing would enforce that every claim
-on the page actually traces back to a source index.
-"""
-
 import json
 import sys
 from datetime import datetime

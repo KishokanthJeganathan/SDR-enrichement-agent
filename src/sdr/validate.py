@@ -1,17 +1,4 @@
-"""Business-rule validation for Brief objects. See CLAUDE.md §3.
 
-Pydantic (models.py) only guarantees shape. This module enforces the rules
-that make the citation guarantee real:
-
-- a verified claim must carry at least one evidence index
-- an inference must share at least one evidence index with some verified
-  claim, so it's traceable back to something the brief actually confirmed
-- every evidence index anywhere in the brief must point at a real source
-
-Returns a list of violations rather than raising, so a caller (later, the
-agent's repair loop) can see every problem at once instead of fixing them
-one exception at a time.
-"""
 
 from dataclasses import dataclass
 

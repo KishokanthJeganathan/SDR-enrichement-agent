@@ -1,10 +1,4 @@
-"""Page fetching, with robots.txt enforcement. See CLAUDE.md §2, §5.
 
-robots.txt is checked here, in code — not left to the model to remember to
-respect. If a page is disallowed, the tool reports that as a fetch error;
-it's then on the agent (per its system prompt) to treat the underlying fact
-as unverified rather than looking for another way to the same content.
-"""
 
 import json
 from datetime import UTC, datetime
